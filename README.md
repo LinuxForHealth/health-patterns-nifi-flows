@@ -1,9 +1,9 @@
 # Alvearie Health Patterns NiFi Flows
-The purpose of this Github repository is to deliver the public NiFi flows created under the health patterns project.
+The purpose of this Github repository is to deliver the public NiFi flows created under the [health-patterns](https://github.com/Alvearie/health-patterns) project.
 
-The health patterns NiFi flows are flows developed under the [health-patterns](https://github.com/Alvearie/health-patterns) project that support or implement the various clinical data integration use cases, and are stored here as a way to facilitate delivery to users.
+The health patterns NiFi flows are developed to support or implement the various clinical data integration use cases, and are stored here as a way to facilitate delivery to users.
 
-A consumer of the flows here can setup a NiFi registry with a Git flow persistence provider pointing at this repository and load the NiFi flows stored here into their NiFi instances.
+A consumer of the flows here can setup a [NiFi Registry](https://nifi.apache.org/registry.html) with a _Git flow persistence provider_ pointing at this repository and load the NiFi flows stored here into their own [NiFi](https://nifi.apache.org/registry.html) instances.
 
 **Important:** This repository should not be interacted with other than through a NiFi Registry.
 
