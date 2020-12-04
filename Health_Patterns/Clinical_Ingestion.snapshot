@@ -554,7 +554,7 @@
             "properties" : {
               "Store State" : "Do not store state",
               "canonical-value-lookup-cache-size" : "100",
-              "kafka.topic" : "ingest.dev-2333.data-adapters-001",
+              "kafka.topic" : "ingest.default.data-adapters-001",
               "batchId" : "batch012345"
             },
             "propertyDescriptors" : {
@@ -10406,21 +10406,6 @@
             "componentType" : "LABEL",
             "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "height" : 208.0,
-            "identifier" : "991f820b-5f2f-33c5-ae31-b9cb62b95e5d",
-            "label" : "De-identify data",
-            "position" : {
-              "x" : 272.0,
-              "y" : 752.0
-            },
-            "style" : {
-              "background-color" : "#be2633",
-              "font-size" : "18px"
-            },
-            "width" : 1040.0
-          }, {
-            "componentType" : "LABEL",
-            "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
-            "height" : 208.0,
             "identifier" : "a6282a9f-de32-344e-b71f-c69e42c244f7",
             "label" : "Run through Terminology Service",
             "position" : {
@@ -10429,6 +10414,21 @@
             },
             "style" : {
               "background-color" : "#eb8931",
+              "font-size" : "18px"
+            },
+            "width" : 1040.0
+          }, {
+            "componentType" : "LABEL",
+            "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
+            "height" : 208.0,
+            "identifier" : "991f820b-5f2f-33c5-ae31-b9cb62b95e5d",
+            "label" : "De-identify data",
+            "position" : {
+              "x" : 272.0,
+              "y" : 752.0
+            },
+            "style" : {
+              "background-color" : "#be2633",
               "font-size" : "18px"
             },
             "width" : 1040.0
@@ -10695,14 +10695,14 @@
                     "group" : "org.apache.nifi",
                     "version" : "1.12.1"
                   },
-                  "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
+                  "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
                 }, {
                   "bundle" : {
                     "artifact" : "nifi-standard-services-api-nar",
                     "group" : "org.apache.nifi",
                     "version" : "1.12.1"
                   },
-                  "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
+                  "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
                 } ],
                 "groupIdentifier" : "eae13b9c-e7b4-3972-b912-5a1cb4b4a8e1",
                 "identifier" : "a58cfb9d-40d6-3083-a521-52ed1d2a3710",
@@ -17686,14 +17686,14 @@
                   "group" : "org.apache.nifi",
                   "version" : "1.12.1"
                 },
-                "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
+                "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
               }, {
                 "bundle" : {
                   "artifact" : "nifi-standard-services-api-nar",
                   "group" : "org.apache.nifi",
                   "version" : "1.12.1"
                 },
-                "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
+                "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
               } ],
               "groupIdentifier" : "fb4cf433-9802-37ea-8f57-becf6a8a69bb",
               "identifier" : "964f4424-ab03-34d5-8c52-eb018c503acf",
