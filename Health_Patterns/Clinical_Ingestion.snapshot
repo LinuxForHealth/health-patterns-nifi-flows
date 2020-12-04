@@ -23282,8 +23282,8 @@
           "name" : "Add Common Attributes",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 698.6328658361602,
-            "y" : 1888.5007721983177
+            "x" : 696.0,
+            "y" : 1888.0
           },
           "properties" : {
             "batchName" : "trex-2019-10-07",
@@ -23404,7 +23404,7 @@
             "description" : "",
             "name" : "DEID_SERVICE_API_URL",
             "sensitive" : false,
-            "value" : "http://ingestion-deid/api/v1/deidentification"
+            "value" : "http://ingestion-deid:8080/api/v1/deidentification"
           }, {
             "description" : "",
             "name" : "DEID_APIKEY",
