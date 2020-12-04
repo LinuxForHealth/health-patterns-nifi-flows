@@ -10754,8 +10754,8 @@
                 "identifier" : "840b79e5-4393-3c58-a4ee-9bd811228308",
                 "name" : "fhir-bundles",
                 "position" : {
-                  "x" : -352.0,
-                  "y" : -200.0
+                  "x" : -488.0,
+                  "y" : -216.0
                 },
                 "type" : "INPUT_PORT"
               } ],
@@ -10770,8 +10770,8 @@
                 "identifier" : "0d5a9d51-1420-3dd0-96db-4935b7e434a5",
                 "name" : "translated-fhir-bundles",
                 "position" : {
-                  "x" : 576.0,
-                  "y" : -192.0
+                  "x" : 728.0,
+                  "y" : -200.0
                 },
                 "type" : "OUTPUT_PORT"
               } ],
@@ -23267,7 +23267,7 @@
             "description" : "The URL locations of kafka brokers to be watched for incoming messages.  Do not include protocol (https://) in the list.",
             "name" : "kafka.brokers",
             "sensitive" : false,
-            "value" : "tcp-client:80"
+            "value" : "ingestion-kafka:9092"
           }, {
             "description" : "The username used to authenticate with kafka.  Usually this is set to \"token\" and an apikey is used for the password.",
             "name" : "kafka.auth.user",
@@ -23304,7 +23304,7 @@
             "description" : "",
             "name" : "DEID_SERVICE_API_URL",
             "sensitive" : false,
-            "value" : "http://deid-server-http/api/v1/deidentification"
+            "value" : "http://ingestion-deid/api/v1/deidentification"
           }, {
             "description" : "",
             "name" : "DEID_APIKEY",
@@ -23313,7 +23313,7 @@
             "description" : "",
             "name" : "DEID_FHIR_SERVER",
             "sensitive" : false,
-            "value" : "http://fhir-deid/fhir-server/api/v4"
+            "value" : "http://ingestion-fhir-deid/fhir-server/api/v4"
           }, {
             "description" : "",
             "name" : "DEID_FHIR_PASSWORD",
@@ -23349,7 +23349,7 @@
             "description" : "The URL for the FHIR server used by this flow.",
             "name" : "FHIR_URL",
             "sensitive" : false,
-            "value" : "http://fhir-server/fhir-server/api/v4/"
+            "value" : "http://ingestion-fhir/fhir-server/api/v4/"
           } ]
         }
       }
