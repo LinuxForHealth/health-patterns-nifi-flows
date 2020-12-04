@@ -41,7 +41,10 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
+          "bends" : [ {
+            "x" : 1072.0,
+            "y" : 1836.0
+          } ],
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
@@ -52,20 +55,20 @@
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
-          "identifier" : "e6a87219-aa10-3ed4-ba6a-0fb848f889fb",
+          "identifier" : "01a8f5a0-834f-3098-b8a5-7b92d79411f2",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "" ],
+          "selectedRelationships" : [ "HL7 data not detected" ],
           "source" : {
             "comments" : "",
-            "groupId" : "00a01b33-4454-3c45-9acb-c677dc7b0305",
-            "id" : "0bdfef9c-2135-3c73-9bb7-723ac4c410b7",
-            "name" : "FHIRResource",
-            "type" : "OUTPUT_PORT"
+            "groupId" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+            "id" : "375a6d3f-29a6-3e6b-86fd-72d1507e6b08",
+            "name" : "HL7ToFhirProcessor",
+            "type" : "PROCESSOR"
           },
           "zIndex" : 0
         }, {
@@ -106,13 +109,13 @@
           "destination" : {
             "comments" : "",
             "groupId" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
-            "id" : "82b11cd4-a584-3e81-9993-b1767d419240",
-            "name" : "Add Common Attributes",
+            "id" : "375a6d3f-29a6-3e6b-86fd-72d1507e6b08",
+            "name" : "HL7ToFhirProcessor",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
-          "identifier" : "23c7aa3d-0f82-3b7f-85b2-70d3dc53ad39",
+          "identifier" : "13270629-eb06-33ce-b473-ae670bf50a51",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -186,6 +189,99 @@
             "id" : "b2f5b7c4-95fd-3049-9c10-6fdd01ee315f",
             "name" : "Success",
             "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+            "id" : "f079b702-829f-3958-83b8-75c0d60a7f2f",
+            "name" : "Error Log",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+          "identifier" : "e8892567-dfe6-3127-a6b3-4d80b10dbccb",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+            "id" : "375a6d3f-29a6-3e6b-86fd-72d1507e6b08",
+            "name" : "HL7ToFhirProcessor",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+            "id" : "375a6d3f-29a6-3e6b-86fd-72d1507e6b08",
+            "name" : "HL7ToFhirProcessor",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+          "identifier" : "6ae7f39e-3860-3b3e-8303-3781d85d0f7b",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "00a01b33-4454-3c45-9acb-c677dc7b0305",
+            "id" : "0bdfef9c-2135-3c73-9bb7-723ac4c410b7",
+            "name" : "FHIRResource",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 672.0,
+            "y" : 1836.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+            "id" : "82b11cd4-a584-3e81-9993-b1767d419240",
+            "name" : "Add Common Attributes",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+          "identifier" : "db46b081-e4b0-33e1-a5b9-ff7aa67531c3",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+            "id" : "375a6d3f-29a6-3e6b-86fd-72d1507e6b08",
+            "name" : "HL7ToFhirProcessor",
+            "type" : "PROCESSOR"
           },
           "zIndex" : 0
         } ],
@@ -348,8 +444,8 @@
           } ],
           "parameterContextName" : "Clinical Ingestion FHIR Parameter Context",
           "position" : {
-            "x" : 922.6328658361602,
-            "y" : 1608.5007721983177
+            "x" : 936.0,
+            "y" : 1360.0
           },
           "processGroups" : [ ],
           "processors" : [ {
@@ -5682,11 +5778,11 @@
                 "componentType" : "OUTPUT_PORT",
                 "concurrentlySchedulableTaskCount" : 1,
                 "groupIdentifier" : "85c0cdcf-e724-346a-898c-2dbaf027f7b1",
-                "identifier" : "42980193-0ad7-363c-9261-cccb62d447ce",
-                "name" : "API Failed",
+                "identifier" : "33b1244e-f6ed-3eb0-a083-16919dd85ec5",
+                "name" : "Split",
                 "position" : {
-                  "x" : -576.0,
-                  "y" : 1912.0
+                  "x" : 568.0,
+                  "y" : 1440.0
                 },
                 "type" : "OUTPUT_PORT"
               }, {
@@ -5695,11 +5791,11 @@
                 "componentType" : "OUTPUT_PORT",
                 "concurrentlySchedulableTaskCount" : 1,
                 "groupIdentifier" : "85c0cdcf-e724-346a-898c-2dbaf027f7b1",
-                "identifier" : "33b1244e-f6ed-3eb0-a083-16919dd85ec5",
-                "name" : "Split",
+                "identifier" : "42980193-0ad7-363c-9261-cccb62d447ce",
+                "name" : "API Failed",
                 "position" : {
-                  "x" : 568.0,
-                  "y" : 1440.0
+                  "x" : -576.0,
+                  "y" : 1912.0
                 },
                 "type" : "OUTPUT_PORT"
               } ],
@@ -10406,21 +10502,6 @@
             "componentType" : "LABEL",
             "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "height" : 208.0,
-            "identifier" : "a6282a9f-de32-344e-b71f-c69e42c244f7",
-            "label" : "Run through Terminology Service",
-            "position" : {
-              "x" : 272.0,
-              "y" : 1040.0
-            },
-            "style" : {
-              "background-color" : "#eb8931",
-              "font-size" : "18px"
-            },
-            "width" : 1040.0
-          }, {
-            "componentType" : "LABEL",
-            "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
-            "height" : 208.0,
             "identifier" : "991f820b-5f2f-33c5-ae31-b9cb62b95e5d",
             "label" : "De-identify data",
             "position" : {
@@ -10429,6 +10510,21 @@
             },
             "style" : {
               "background-color" : "#be2633",
+              "font-size" : "18px"
+            },
+            "width" : 1040.0
+          }, {
+            "componentType" : "LABEL",
+            "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
+            "height" : 208.0,
+            "identifier" : "a6282a9f-de32-344e-b71f-c69e42c244f7",
+            "label" : "Run through Terminology Service",
+            "position" : {
+              "x" : 272.0,
+              "y" : 1040.0
+            },
+            "style" : {
+              "background-color" : "#eb8931",
               "font-size" : "18px"
             },
             "width" : 1040.0
@@ -23096,8 +23192,8 @@
           "name" : "Consume From Kafka Topic",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 434.63286583616025,
-            "y" : 1632.5007721983177
+            "x" : 448.0,
+            "y" : 1384.0
           },
           "properties" : {
             "header-name-regex" : "batchId*",
@@ -23269,6 +23365,35 @@
           "autoTerminatedRelationships" : [ ],
           "bulletinLevel" : "WARN",
           "bundle" : {
+            "artifact" : "nifi-hl7tofhir-nar",
+            "group" : "com.ibm.healthpatterns",
+            "version" : "0.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+          "identifier" : "375a6d3f-29a6-3e6b-86fd-72d1507e6b08",
+          "name" : "HL7ToFhirProcessor",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 696.0,
+            "y" : 1656.0
+          },
+          "properties" : { },
+          "propertyDescriptors" : { },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "com.ibm.healthpatterns.processors.hl7tofhir.HL7ToFhirProcessor",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
             "artifact" : "nifi-update-attribute-nar",
             "group" : "org.apache.nifi",
             "version" : "1.12.1"
@@ -23349,6 +23474,91 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.12.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "a3711f4e-b8df-36fd-8c8b-0d2b271074db",
+          "identifier" : "f079b702-829f-3958-83b8-75c0d60a7f2f",
+          "name" : "Error Log",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1328.0,
+            "y" : 1656.0
+          },
+          "properties" : {
+            "character-set" : "utf-8",
+            "Log Level" : "info",
+            "attributes-to-log-regex" : ".*",
+            "Log Payload" : "false"
+          },
+          "propertyDescriptors" : {
+            "Log prefix" : {
+              "displayName" : "Log prefix",
+              "identifiesControllerService" : false,
+              "name" : "Log prefix",
+              "sensitive" : false
+            },
+            "character-set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "character-set",
+              "sensitive" : false
+            },
+            "Log Level" : {
+              "displayName" : "Log Level",
+              "identifiesControllerService" : false,
+              "name" : "Log Level",
+              "sensitive" : false
+            },
+            "attributes-to-ignore-regex" : {
+              "displayName" : "Attributes to Ignore by Regular Expression",
+              "identifiesControllerService" : false,
+              "name" : "attributes-to-ignore-regex",
+              "sensitive" : false
+            },
+            "Attributes to Ignore" : {
+              "displayName" : "Attributes to Ignore",
+              "identifiesControllerService" : false,
+              "name" : "Attributes to Ignore",
+              "sensitive" : false
+            },
+            "Attributes to Log" : {
+              "displayName" : "Attributes to Log",
+              "identifiesControllerService" : false,
+              "name" : "Attributes to Log",
+              "sensitive" : false
+            },
+            "attributes-to-log-regex" : {
+              "displayName" : "Attributes to Log by Regular Expression",
+              "identifiesControllerService" : false,
+              "name" : "attributes-to-log-regex",
+              "sensitive" : false
+            },
+            "Log Payload" : {
+              "displayName" : "Log Payload",
+              "identifiesControllerService" : false,
+              "name" : "Log Payload",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : {
+            "background-color" : "#ff0000"
+          },
+          "type" : "org.apache.nifi.processors.standard.LogAttribute",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
