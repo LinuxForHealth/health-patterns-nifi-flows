@@ -226,8 +226,8 @@
         } ],
         "parameterContextName" : "Clinical Ingestion Kafka Parameter Context",
         "position" : {
-          "x" : 744.0,
-          "y" : 456.0
+          "x" : 752.0,
+          "y" : 480.0
         },
         "processGroups" : [ {
           "comments" : "",
@@ -10194,7 +10194,7 @@
             "bucketId" : "c601a7b4-f047-461e-ac13-2f140f8fb9b2",
             "flowId" : "1681a7e6-fdfe-4956-9ce1-6c9302f3b32f",
             "registryUrl" : "http://172.17.0.1:18082",
-            "version" : 1
+            "version" : 2
           }
         } ],
         "processors" : [ {

@@ -1,8 +1,6 @@
 flows:
-  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 4, file: Clinical_Ingestion.snapshot,
-    comments: Added De-Identification enrichment. Updated Parameter Contexts to use
-      service names. Misc Fixes, author: anonymous, created: 1607033559347, flowName: Clinical
-      Ingestion}
+  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 5, file: Clinical_Ingestion.snapshot,
+    comments: '', author: anonymous, created: 1607044309951, flowName: Clinical Ingestion}
   1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 2, file: FHIR_Bundle_Enrichment.snapshot,
     comments: '', author: anonymous, created: 1607044301835, flowName: FHIR Bundle
       Enrichment, flowDesc: Alvearie Enrichment pipeline - this flow will enrich a
