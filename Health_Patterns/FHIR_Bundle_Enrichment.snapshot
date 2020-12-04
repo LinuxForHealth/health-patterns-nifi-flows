@@ -15,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "6c9d141e-6742-33b2-a97a-895439a69c86",
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "94128dc9-5c35-3120-abca-a2db06bc100c",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -32,7 +32,7 @@
           "selectedRelationships" : [ "unmatched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "999b58a8-6ff0-3451-a03d-36fc062cdb87",
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
@@ -45,13 +45,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "7dbe18ae-c663-310a-9045-ebe598d59c2b",
             "name" : "Enriched FHIR resource",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "b657c52d-cef2-3cd7-89c5-575e3a38f2b7",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -62,7 +62,7 @@
           "selectedRelationships" : [ "unmatched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "6c9d141e-6742-33b2-a97a-895439a69c86",
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
@@ -81,7 +81,7 @@
             "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "0b6318f8-8070-3804-aa17-c98a5a76a912",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -92,7 +92,7 @@
           "selectedRelationships" : [ "DeidentifyData" ],
           "source" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "999b58a8-6ff0-3451-a03d-36fc062cdb87",
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
@@ -105,13 +105,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "7dbe18ae-c663-310a-9045-ebe598d59c2b",
             "name" : "Enriched FHIR resource",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "31db93e3-69eb-3782-b6f3-e122776e075e",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -141,7 +141,7 @@
             "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "c083b15c-6e14-33d2-a9d8-bb5d73d9c55d",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -152,7 +152,7 @@
           "selectedRelationships" : [ "ResolveTerminology" ],
           "source" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "6c9d141e-6742-33b2-a97a-895439a69c86",
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
@@ -165,13 +165,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "999b58a8-6ff0-3451-a03d-36fc062cdb87",
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "2a0bf3a7-7863-3de3-b4ae-b77231f4ecbd",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -182,7 +182,7 @@
           "selectedRelationships" : [ "" ],
           "source" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "3562985a-8c51-3ccb-b947-b7891ae4db31",
             "name" : "FHIR resource",
             "type" : "INPUT_PORT"
@@ -195,13 +195,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "b04efb06-7439-34ef-9257-bd40520622bc",
+            "groupId" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
             "id" : "6c9d141e-6742-33b2-a97a-895439a69c86",
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "8dd3bf5b-ad7e-3d72-a4bb-fbe78e17bb86",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -223,24 +223,24 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+        "identifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
         "inputPorts" : [ {
           "allowRemoteAccess" : false,
           "comments" : "",
           "componentType" : "INPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "3562985a-8c51-3ccb-b947-b7891ae4db31",
           "name" : "FHIR resource",
           "position" : {
             "x" : 352.0,
-            "y" : 624.0
+            "y" : 632.0
           },
           "type" : "INPUT_PORT"
         } ],
         "labels" : [ {
           "componentType" : "LABEL",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "height" : 208.0,
           "identifier" : "37b3da4c-8254-3d01-9dd6-e430e4d12ad5",
           "label" : "Run through Terminology Service",
@@ -255,7 +255,7 @@
           "width" : 1040.0
         }, {
           "componentType" : "LABEL",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "height" : 208.0,
           "identifier" : "1f5bb8fb-c40d-303f-ba14-c3d906e429cc",
           "label" : "De-identify data",
@@ -275,7 +275,7 @@
           "comments" : "",
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "7dbe18ae-c663-310a-9045-ebe598d59c2b",
           "name" : "Enriched FHIR resource",
           "position" : {
@@ -285,8 +285,8 @@
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 1952.0,
-          "y" : 3072.0
+          "x" : 680.0,
+          "y" : 2152.0
         },
         "processGroups" : [ {
           "comments" : "",
@@ -386,7 +386,7 @@
           "flowFileConcurrency" : "UNBOUNDED",
           "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
           "funnels" : [ ],
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "df46e67b-d22c-3487-a8b8-eb6efe3b00e5",
           "inputPorts" : [ {
             "allowRemoteAccess" : false,
@@ -463,36 +463,6 @@
               "componentType" : "CONNECTION",
               "destination" : {
                 "comments" : "",
-                "groupId" : "7180ede7-60fb-3a15-b7b4-4e1d69b08295",
-                "id" : "90bb3556-577c-3694-81fa-ef1edb133927",
-                "name" : "translated-fhir-bundles",
-                "type" : "OUTPUT_PORT"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "7180ede7-60fb-3a15-b7b4-4e1d69b08295",
-              "identifier" : "6021b390-3394-3622-b981-2ca5d242eede",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "83204c50-4d7d-3889-9f1c-c2205fda6b89",
-                "id" : "a94885a1-98fb-3317-96c0-b9c0c1a958a4",
-                "name" : "translated-fhir-bundles",
-                "type" : "OUTPUT_PORT"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
                 "groupId" : "83204c50-4d7d-3889-9f1c-c2205fda6b89",
                 "id" : "ec087fd7-8f2c-3898-b433-b663f0ce97f3",
                 "name" : "fhir-bundles",
@@ -514,6 +484,36 @@
                 "id" : "3c794e57-8972-306d-9b0f-bb3b60398fb9",
                 "name" : "fhir-bundles",
                 "type" : "INPUT_PORT"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "7180ede7-60fb-3a15-b7b4-4e1d69b08295",
+                "id" : "90bb3556-577c-3694-81fa-ef1edb133927",
+                "name" : "translated-fhir-bundles",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "7180ede7-60fb-3a15-b7b4-4e1d69b08295",
+              "identifier" : "6021b390-3394-3622-b981-2ca5d242eede",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "83204c50-4d7d-3889-9f1c-c2205fda6b89",
+                "id" : "a94885a1-98fb-3317-96c0-b9c0c1a958a4",
+                "name" : "translated-fhir-bundles",
+                "type" : "OUTPUT_PORT"
               },
               "zIndex" : 0
             } ],
@@ -723,36 +723,6 @@
                 "destination" : {
                   "comments" : "",
                   "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
-                  "id" : "a672a44a-232c-3ffa-96d4-2b6208b3c2f2",
-                  "name" : "Error Log",
-                  "type" : "PROCESSOR"
-                },
-                "flowFileExpiration" : "0 sec",
-                "groupIdentifier" : "de2e1baf-5697-3da9-bbce-f70bac258626",
-                "identifier" : "704ee0a4-3389-34ae-bba6-c54961f788ca",
-                "labelIndex" : 1,
-                "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                "name" : "",
-                "partitioningAttribute" : "",
-                "prioritizers" : [ ],
-                "selectedRelationships" : [ "No Retry", "Failure" ],
-                "source" : {
-                  "comments" : "",
-                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
-                  "id" : "0fdd5b9d-bc71-3634-b14e-b5c6f9da0da4",
-                  "name" : "Create Resource",
-                  "type" : "PROCESSOR"
-                },
-                "zIndex" : 0
-              }, {
-                "backPressureDataSizeThreshold" : "1 GB",
-                "backPressureObjectThreshold" : 10000,
-                "bends" : [ ],
-                "componentType" : "CONNECTION",
-                "destination" : {
-                  "comments" : "",
-                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
                   "id" : "0fdd5b9d-bc71-3634-b14e-b5c6f9da0da4",
                   "name" : "Create Resource",
                   "type" : "PROCESSOR"
@@ -772,6 +742,36 @@
                   "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
                   "id" : "8b377752-a323-37f1-9c29-acfde7e15a83",
                   "name" : "Adjust MIME Type",
+                  "type" : "PROCESSOR"
+                },
+                "zIndex" : 0
+              }, {
+                "backPressureDataSizeThreshold" : "1 GB",
+                "backPressureObjectThreshold" : 10000,
+                "bends" : [ ],
+                "componentType" : "CONNECTION",
+                "destination" : {
+                  "comments" : "",
+                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
+                  "id" : "a672a44a-232c-3ffa-96d4-2b6208b3c2f2",
+                  "name" : "Error Log",
+                  "type" : "PROCESSOR"
+                },
+                "flowFileExpiration" : "0 sec",
+                "groupIdentifier" : "de2e1baf-5697-3da9-bbce-f70bac258626",
+                "identifier" : "704ee0a4-3389-34ae-bba6-c54961f788ca",
+                "labelIndex" : 1,
+                "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                "name" : "",
+                "partitioningAttribute" : "",
+                "prioritizers" : [ ],
+                "selectedRelationships" : [ "No Retry", "Failure" ],
+                "source" : {
+                  "comments" : "",
+                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
+                  "id" : "0fdd5b9d-bc71-3634-b14e-b5c6f9da0da4",
+                  "name" : "Create Resource",
                   "type" : "PROCESSOR"
                 },
                 "zIndex" : 0
@@ -873,36 +873,6 @@
                 "destination" : {
                   "comments" : "",
                   "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
-                  "id" : "618bb3b5-2f52-3910-ab47-9ce31cacdb3e",
-                  "name" : "Extract Resource",
-                  "type" : "PROCESSOR"
-                },
-                "flowFileExpiration" : "0 sec",
-                "groupIdentifier" : "de2e1baf-5697-3da9-bbce-f70bac258626",
-                "identifier" : "3b1ad11c-d8e8-37e6-858a-0c2af5e745a6",
-                "labelIndex" : 1,
-                "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                "name" : "",
-                "partitioningAttribute" : "",
-                "prioritizers" : [ ],
-                "selectedRelationships" : [ "matched" ],
-                "source" : {
-                  "comments" : "",
-                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
-                  "id" : "b6e8bee3-965f-3448-aa95-b7d39786f004",
-                  "name" : "Extract Resource Properties",
-                  "type" : "PROCESSOR"
-                },
-                "zIndex" : 0
-              }, {
-                "backPressureDataSizeThreshold" : "1 GB",
-                "backPressureObjectThreshold" : 10000,
-                "bends" : [ ],
-                "componentType" : "CONNECTION",
-                "destination" : {
-                  "comments" : "",
-                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
                   "id" : "38c8b1f5-a2a7-36de-9b33-917a37c3dead",
                   "name" : "Log Resource Created",
                   "type" : "PROCESSOR"
@@ -922,6 +892,36 @@
                   "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
                   "id" : "0fdd5b9d-bc71-3634-b14e-b5c6f9da0da4",
                   "name" : "Create Resource",
+                  "type" : "PROCESSOR"
+                },
+                "zIndex" : 0
+              }, {
+                "backPressureDataSizeThreshold" : "1 GB",
+                "backPressureObjectThreshold" : 10000,
+                "bends" : [ ],
+                "componentType" : "CONNECTION",
+                "destination" : {
+                  "comments" : "",
+                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
+                  "id" : "618bb3b5-2f52-3910-ab47-9ce31cacdb3e",
+                  "name" : "Extract Resource",
+                  "type" : "PROCESSOR"
+                },
+                "flowFileExpiration" : "0 sec",
+                "groupIdentifier" : "de2e1baf-5697-3da9-bbce-f70bac258626",
+                "identifier" : "3b1ad11c-d8e8-37e6-858a-0c2af5e745a6",
+                "labelIndex" : 1,
+                "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                "name" : "",
+                "partitioningAttribute" : "",
+                "prioritizers" : [ ],
+                "selectedRelationships" : [ "matched" ],
+                "source" : {
+                  "comments" : "",
+                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
+                  "id" : "b6e8bee3-965f-3448-aa95-b7d39786f004",
+                  "name" : "Extract Resource Properties",
                   "type" : "PROCESSOR"
                 },
                 "zIndex" : 0
@@ -963,36 +963,6 @@
                 "destination" : {
                   "comments" : "",
                   "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
-                  "id" : "b6e8bee3-965f-3448-aa95-b7d39786f004",
-                  "name" : "Extract Resource Properties",
-                  "type" : "PROCESSOR"
-                },
-                "flowFileExpiration" : "0 sec",
-                "groupIdentifier" : "de2e1baf-5697-3da9-bbce-f70bac258626",
-                "identifier" : "01a310e8-6c7a-328a-a726-2ac88da0ff05",
-                "labelIndex" : 1,
-                "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                "name" : "",
-                "partitioningAttribute" : "",
-                "prioritizers" : [ ],
-                "selectedRelationships" : [ "" ],
-                "source" : {
-                  "comments" : "",
-                  "groupId" : "9dd40e87-f65f-3685-9543-79772945375a",
-                  "id" : "fb3fc92f-8f6d-3993-92f7-3f8ffe291f46",
-                  "name" : "resources",
-                  "type" : "OUTPUT_PORT"
-                },
-                "zIndex" : 0
-              }, {
-                "backPressureDataSizeThreshold" : "1 GB",
-                "backPressureObjectThreshold" : 10000,
-                "bends" : [ ],
-                "componentType" : "CONNECTION",
-                "destination" : {
-                  "comments" : "",
-                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
                   "id" : "126e8d04-5f80-3f0e-b82a-aa3b8f8f3a4f",
                   "name" : "If (Resource exists) then/else",
                   "type" : "PROCESSOR"
@@ -1013,6 +983,36 @@
                   "id" : "c197665f-2af1-3d14-8d4b-8e733046a939",
                   "name" : "Extract Resource Exists Attribute",
                   "type" : "PROCESSOR"
+                },
+                "zIndex" : 0
+              }, {
+                "backPressureDataSizeThreshold" : "1 GB",
+                "backPressureObjectThreshold" : 10000,
+                "bends" : [ ],
+                "componentType" : "CONNECTION",
+                "destination" : {
+                  "comments" : "",
+                  "groupId" : "de2e1baf-5697-3da9-bbce-f70bac258626",
+                  "id" : "b6e8bee3-965f-3448-aa95-b7d39786f004",
+                  "name" : "Extract Resource Properties",
+                  "type" : "PROCESSOR"
+                },
+                "flowFileExpiration" : "0 sec",
+                "groupIdentifier" : "de2e1baf-5697-3da9-bbce-f70bac258626",
+                "identifier" : "01a310e8-6c7a-328a-a726-2ac88da0ff05",
+                "labelIndex" : 1,
+                "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                "name" : "",
+                "partitioningAttribute" : "",
+                "prioritizers" : [ ],
+                "selectedRelationships" : [ "" ],
+                "source" : {
+                  "comments" : "",
+                  "groupId" : "9dd40e87-f65f-3685-9543-79772945375a",
+                  "id" : "fb3fc92f-8f6d-3993-92f7-3f8ffe291f46",
+                  "name" : "resources",
+                  "type" : "OUTPUT_PORT"
                 },
                 "zIndex" : 0
               }, {
@@ -3009,36 +3009,6 @@
                 "bends" : [ ],
                 "componentType" : "CONNECTION",
                 "destination" : {
-                  "comments" : "The ID of the ConceptMap that will be used to $translate.",
-                  "groupId" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
-                  "id" : "a95ef02c-98f4-3af5-92fa-e97a9b116d29",
-                  "name" : "ConceptMap ID",
-                  "type" : "INPUT_PORT"
-                },
-                "flowFileExpiration" : "0 sec",
-                "groupIdentifier" : "83204c50-4d7d-3889-9f1c-c2205fda6b89",
-                "identifier" : "950a0af6-7782-3e79-bf44-8c47820d018f",
-                "labelIndex" : 1,
-                "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                "name" : "",
-                "partitioningAttribute" : "",
-                "prioritizers" : [ ],
-                "selectedRelationships" : [ "" ],
-                "source" : {
-                  "comments" : "",
-                  "groupId" : "b7daca9b-4a11-34a8-9c52-2410047cd375",
-                  "id" : "3799b1f5-fdbb-3d2c-8ef6-f5a8a64203b4",
-                  "name" : "concept-map-id",
-                  "type" : "OUTPUT_PORT"
-                },
-                "zIndex" : 0
-              }, {
-                "backPressureDataSizeThreshold" : "1 GB",
-                "backPressureObjectThreshold" : 10000,
-                "bends" : [ ],
-                "componentType" : "CONNECTION",
-                "destination" : {
                   "comments" : "",
                   "groupId" : "b7daca9b-4a11-34a8-9c52-2410047cd375",
                   "id" : "d68cfd85-0adc-3963-9d0e-b152598330c0",
@@ -3061,6 +3031,36 @@
                   "id" : "65236e8c-3b6d-3005-9c27-f9478585a22d",
                   "name" : "If \"code\" Then/Else",
                   "type" : "PROCESSOR"
+                },
+                "zIndex" : 0
+              }, {
+                "backPressureDataSizeThreshold" : "1 GB",
+                "backPressureObjectThreshold" : 10000,
+                "bends" : [ ],
+                "componentType" : "CONNECTION",
+                "destination" : {
+                  "comments" : "The ID of the ConceptMap that will be used to $translate.",
+                  "groupId" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
+                  "id" : "a95ef02c-98f4-3af5-92fa-e97a9b116d29",
+                  "name" : "ConceptMap ID",
+                  "type" : "INPUT_PORT"
+                },
+                "flowFileExpiration" : "0 sec",
+                "groupIdentifier" : "83204c50-4d7d-3889-9f1c-c2205fda6b89",
+                "identifier" : "950a0af6-7782-3e79-bf44-8c47820d018f",
+                "labelIndex" : 1,
+                "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                "name" : "",
+                "partitioningAttribute" : "",
+                "prioritizers" : [ ],
+                "selectedRelationships" : [ "" ],
+                "source" : {
+                  "comments" : "",
+                  "groupId" : "b7daca9b-4a11-34a8-9c52-2410047cd375",
+                  "id" : "3799b1f5-fdbb-3d2c-8ef6-f5a8a64203b4",
+                  "name" : "concept-map-id",
+                  "type" : "OUTPUT_PORT"
                 },
                 "zIndex" : 0
               }, {
@@ -3333,473 +3333,6 @@
                 "y" : -288.0
               },
               "processGroups" : [ {
-                "comments" : "Input:\nFHIR Bundles\n\nOutput:\n1) The original FHIR Bundles with the corresponding fragment.identifier and fragment.counts attributes based on the number of \"extensions\" that were extracted from each.\n\n2) The individual \"extension\" JSON object extracted from each Bundle, with their corresponding fragment.identifier and fragment.index so that they can be matched against the Bundle where they came from.\n\n3) The resulting flow files will include a couple of attributes: \"url\" with the extension \"URL\" field, and \"code\" with the extension \"valueCode\" field. If the extension is not of type \"valueCode\" it will still be output but the attribute will be empty.\n\n4) The actual JSON extension text will also be included as an attribute called \"extension\"",
-                "componentType" : "PROCESS_GROUP",
-                "connections" : [ {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "This processor extracts the actual JSON text of the extension as an attribute called \"extension\"",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "dac276e0-880e-30b8-ac8e-b77fb54cbdbf",
-                    "name" : "Extract Extension as Attribute",
-                    "type" : "PROCESSOR"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "607ec824-2524-3f0a-9f5f-f2a92bd48ce4",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "matched" ],
-                  "source" : {
-                    "comments" : "After the extension JSON objects have been extracted, this processor will save the corresponding URL and valueCode in attributes called \"url\" and \"code\" respectively.\n\nSample extensions:\n\n\t\t\t\t\"extension\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName\",\n\t\t\t\t\t\t\"valueString\": \"Graciela518 Badillo851\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthPlace\",\n\t\t\t\t\t\t\"valueAddress\": {\n\t\t\t\t\t\t\t\"city\": \"Caguas\",\n\t\t\t\t\t\t\t\"state\": \"Puerto Rico\",\n\t\t\t\t\t\t\t\"country\": \"PR\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs\",\n\t\t\t\t\t\t\"valueCode\": \"female\"\n\t\t\t\t\t},\n",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "b6aabdf5-007d-3ee9-9fe4-cf538979b30f",
-                    "name" : "Extract Extension URL & Code",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "2704b2ef-8058-320d-a536-12d2e79a9a1d",
-                    "name" : "fhir-bundle-extensions",
-                    "type" : "OUTPUT_PORT"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "9a6fec60-af06-301b-8f4c-47b86229289e",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "matched" ],
-                  "source" : {
-                    "comments" : "This processor extracts the actual JSON text of the extension as an attribute called \"extension\"",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "dac276e0-880e-30b8-ac8e-b77fb54cbdbf",
-                    "name" : "Extract Extension as Attribute",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "After the extension JSON objects have been extracted, this processor will save the corresponding URL and valueCode in attributes called \"url\" and \"code\" respectively.\n\nSample extensions:\n\n\t\t\t\t\"extension\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName\",\n\t\t\t\t\t\t\"valueString\": \"Graciela518 Badillo851\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthPlace\",\n\t\t\t\t\t\t\"valueAddress\": {\n\t\t\t\t\t\t\t\"city\": \"Caguas\",\n\t\t\t\t\t\t\t\"state\": \"Puerto Rico\",\n\t\t\t\t\t\t\t\"country\": \"PR\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs\",\n\t\t\t\t\t\t\"valueCode\": \"female\"\n\t\t\t\t\t},\n",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "b6aabdf5-007d-3ee9-9fe4-cf538979b30f",
-                    "name" : "Extract Extension URL & Code",
-                    "type" : "PROCESSOR"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "2f510522-d435-32b5-bea2-cb2e5bd5f686",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "split" ],
-                  "source" : {
-                    "comments" : "A FHIR Bundle may have multiple FHIR Resources (e.g. Patient, Observation, Encounter, MedicationRequest, etc.) and each of those FHIR Resources may have multiple \"extensions\". Some of those extensions may need to be translated. This processor extracts all of those extensions and sends the off to processing. \n\nThis processor additionally sends the original files from where the extensions were obtained to Wait, until all of the extensions from each FHIR Bundle are processed.",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "80edd094-8c4b-3a2e-aa35-73159061b29f",
-                    "name" : "Extract Bundle Extensions",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "2e88528f-4084-314e-9842-fe3957c33dd4",
-                    "name" : "original-fhir-bundles",
-                    "type" : "OUTPUT_PORT"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "0858ba00-67d0-3b56-8534-7fbc1d615e6c",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "original" ],
-                  "source" : {
-                    "comments" : "A FHIR Bundle may have multiple FHIR Resources (e.g. Patient, Observation, Encounter, MedicationRequest, etc.) and each of those FHIR Resources may have multiple \"extensions\". Some of those extensions may need to be translated. This processor extracts all of those extensions and sends the off to processing. \n\nThis processor additionally sends the original files from where the extensions were obtained to Wait, until all of the extensions from each FHIR Bundle are processed.",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "80edd094-8c4b-3a2e-aa35-73159061b29f",
-                    "name" : "Extract Bundle Extensions",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "A FHIR Bundle may have multiple FHIR Resources (e.g. Patient, Observation, Encounter, MedicationRequest, etc.) and each of those FHIR Resources may have multiple \"extensions\". Some of those extensions may need to be translated. This processor extracts all of those extensions and sends the off to processing. \n\nThis processor additionally sends the original files from where the extensions were obtained to Wait, until all of the extensions from each FHIR Bundle are processed.",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "80edd094-8c4b-3a2e-aa35-73159061b29f",
-                    "name" : "Extract Bundle Extensions",
-                    "type" : "PROCESSOR"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "4ad6dc1c-da47-39b9-a73b-ca327d13bd13",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "" ],
-                  "source" : {
-                    "comments" : "",
-                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                    "id" : "ed801e5b-5127-38b7-9bc1-eb1553223269",
-                    "name" : "fhir-bundles",
-                    "type" : "INPUT_PORT"
-                  },
-                  "zIndex" : 0
-                } ],
-                "controllerServices" : [ ],
-                "flowFileConcurrency" : "UNBOUNDED",
-                "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
-                "funnels" : [ ],
-                "groupIdentifier" : "83204c50-4d7d-3889-9f1c-c2205fda6b89",
-                "identifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                "inputPorts" : [ {
-                  "allowRemoteAccess" : false,
-                  "comments" : "",
-                  "componentType" : "INPUT_PORT",
-                  "concurrentlySchedulableTaskCount" : 1,
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "ed801e5b-5127-38b7-9bc1-eb1553223269",
-                  "name" : "fhir-bundles",
-                  "position" : {
-                    "x" : 264.0,
-                    "y" : -1296.0
-                  },
-                  "type" : "INPUT_PORT"
-                } ],
-                "labels" : [ ],
-                "name" : "Extract Bundle Extensions",
-                "outputPorts" : [ {
-                  "allowRemoteAccess" : false,
-                  "comments" : "",
-                  "componentType" : "OUTPUT_PORT",
-                  "concurrentlySchedulableTaskCount" : 1,
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "2e88528f-4084-314e-9842-fe3957c33dd4",
-                  "name" : "original-fhir-bundles",
-                  "position" : {
-                    "x" : 704.0,
-                    "y" : -1144.0
-                  },
-                  "type" : "OUTPUT_PORT"
-                }, {
-                  "allowRemoteAccess" : false,
-                  "comments" : "",
-                  "componentType" : "OUTPUT_PORT",
-                  "concurrentlySchedulableTaskCount" : 1,
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "2704b2ef-8058-320d-a536-12d2e79a9a1d",
-                  "name" : "fhir-bundle-extensions",
-                  "position" : {
-                    "x" : 272.0,
-                    "y" : -648.0
-                  },
-                  "type" : "OUTPUT_PORT"
-                } ],
-                "position" : {
-                  "x" : 760.0,
-                  "y" : -984.0
-                },
-                "processGroups" : [ ],
-                "processors" : [ {
-                  "autoTerminatedRelationships" : [ "unmatched" ],
-                  "bulletinLevel" : "WARN",
-                  "bundle" : {
-                    "artifact" : "nifi-standard-nar",
-                    "group" : "org.apache.nifi",
-                    "version" : "1.12.1"
-                  },
-                  "comments" : "This processor extracts the actual JSON text of the extension as an attribute called \"extension\"",
-                  "componentType" : "PROCESSOR",
-                  "concurrentlySchedulableTaskCount" : 1,
-                  "executionNode" : "ALL",
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "dac276e0-880e-30b8-ac8e-b77fb54cbdbf",
-                  "name" : "Extract Extension as Attribute",
-                  "penaltyDuration" : "30 sec",
-                  "position" : {
-                    "x" : 224.0,
-                    "y" : -824.0
-                  },
-                  "properties" : {
-                    "Enable Unicode Predefined Character Classes" : "false",
-                    "Permit Whitespace and Comments in Pattern" : "false",
-                    "Enable Unicode-aware Case Folding" : "false",
-                    "extension" : "(.*)",
-                    "Enable DOTALL Mode" : "true",
-                    "Enable Unix Lines Mode" : "false",
-                    "Maximum Buffer Size" : "1 MB",
-                    "Enable Canonical Equivalence" : "false",
-                    "Enable Case-insensitive Matching" : "false",
-                    "Enable Multiline Mode" : "true",
-                    "Maximum Capture Group Length" : "10000",
-                    "Enable Literal Parsing of the Pattern" : "false",
-                    "Character Set" : "UTF-8",
-                    "Include Capture Group 0" : "false",
-                    "extract-text-enable-repeating-capture-group" : "false"
-                  },
-                  "propertyDescriptors" : {
-                    "Enable Unicode Predefined Character Classes" : {
-                      "displayName" : "Enable Unicode Predefined Character Classes",
-                      "identifiesControllerService" : false,
-                      "name" : "Enable Unicode Predefined Character Classes",
-                      "sensitive" : false
-                    },
-                    "Permit Whitespace and Comments in Pattern" : {
-                      "displayName" : "Permit Whitespace and Comments in Pattern",
-                      "identifiesControllerService" : false,
-                      "name" : "Permit Whitespace and Comments in Pattern",
-                      "sensitive" : false
-                    },
-                    "Enable Unicode-aware Case Folding" : {
-                      "displayName" : "Enable Unicode-aware Case Folding",
-                      "identifiesControllerService" : false,
-                      "name" : "Enable Unicode-aware Case Folding",
-                      "sensitive" : false
-                    },
-                    "extension" : {
-                      "displayName" : "extension",
-                      "identifiesControllerService" : false,
-                      "name" : "extension",
-                      "sensitive" : false
-                    },
-                    "Enable DOTALL Mode" : {
-                      "displayName" : "Enable DOTALL Mode",
-                      "identifiesControllerService" : false,
-                      "name" : "Enable DOTALL Mode",
-                      "sensitive" : false
-                    },
-                    "Enable Unix Lines Mode" : {
-                      "displayName" : "Enable Unix Lines Mode",
-                      "identifiesControllerService" : false,
-                      "name" : "Enable Unix Lines Mode",
-                      "sensitive" : false
-                    },
-                    "Maximum Buffer Size" : {
-                      "displayName" : "Maximum Buffer Size",
-                      "identifiesControllerService" : false,
-                      "name" : "Maximum Buffer Size",
-                      "sensitive" : false
-                    },
-                    "Enable Canonical Equivalence" : {
-                      "displayName" : "Enable Canonical Equivalence",
-                      "identifiesControllerService" : false,
-                      "name" : "Enable Canonical Equivalence",
-                      "sensitive" : false
-                    },
-                    "Enable Case-insensitive Matching" : {
-                      "displayName" : "Enable Case-insensitive Matching",
-                      "identifiesControllerService" : false,
-                      "name" : "Enable Case-insensitive Matching",
-                      "sensitive" : false
-                    },
-                    "Enable Multiline Mode" : {
-                      "displayName" : "Enable Multiline Mode",
-                      "identifiesControllerService" : false,
-                      "name" : "Enable Multiline Mode",
-                      "sensitive" : false
-                    },
-                    "Maximum Capture Group Length" : {
-                      "displayName" : "Maximum Capture Group Length",
-                      "identifiesControllerService" : false,
-                      "name" : "Maximum Capture Group Length",
-                      "sensitive" : false
-                    },
-                    "Enable Literal Parsing of the Pattern" : {
-                      "displayName" : "Enable Literal Parsing of the Pattern",
-                      "identifiesControllerService" : false,
-                      "name" : "Enable Literal Parsing of the Pattern",
-                      "sensitive" : false
-                    },
-                    "Character Set" : {
-                      "displayName" : "Character Set",
-                      "identifiesControllerService" : false,
-                      "name" : "Character Set",
-                      "sensitive" : false
-                    },
-                    "Include Capture Group 0" : {
-                      "displayName" : "Include Capture Group 0",
-                      "identifiesControllerService" : false,
-                      "name" : "Include Capture Group 0",
-                      "sensitive" : false
-                    },
-                    "extract-text-enable-repeating-capture-group" : {
-                      "displayName" : "Enable repeating capture group",
-                      "identifiesControllerService" : false,
-                      "name" : "extract-text-enable-repeating-capture-group",
-                      "sensitive" : false
-                    }
-                  },
-                  "runDurationMillis" : 0,
-                  "scheduledState" : "ENABLED",
-                  "schedulingPeriod" : "0 sec",
-                  "schedulingStrategy" : "TIMER_DRIVEN",
-                  "style" : { },
-                  "type" : "org.apache.nifi.processors.standard.ExtractText",
-                  "yieldDuration" : "1 sec"
-                }, {
-                  "autoTerminatedRelationships" : [ "failure" ],
-                  "bulletinLevel" : "WARN",
-                  "bundle" : {
-                    "artifact" : "nifi-standard-nar",
-                    "group" : "org.apache.nifi",
-                    "version" : "1.12.1"
-                  },
-                  "comments" : "A FHIR Bundle may have multiple FHIR Resources (e.g. Patient, Observation, Encounter, MedicationRequest, etc.) and each of those FHIR Resources may have multiple \"extensions\". Some of those extensions may need to be translated. This processor extracts all of those extensions and sends the off to processing. \n\nThis processor additionally sends the original files from where the extensions were obtained to Wait, until all of the extensions from each FHIR Bundle are processed.",
-                  "componentType" : "PROCESSOR",
-                  "concurrentlySchedulableTaskCount" : 1,
-                  "executionNode" : "ALL",
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "80edd094-8c4b-3a2e-aa35-73159061b29f",
-                  "name" : "Extract Bundle Extensions",
-                  "penaltyDuration" : "30 sec",
-                  "position" : {
-                    "x" : 216.0,
-                    "y" : -1200.0
-                  },
-                  "properties" : {
-                    "Null Value Representation" : "empty string",
-                    "JsonPath Expression" : "$.entry[*].resource.extension[*]"
-                  },
-                  "propertyDescriptors" : {
-                    "Null Value Representation" : {
-                      "displayName" : "Null Value Representation",
-                      "identifiesControllerService" : false,
-                      "name" : "Null Value Representation",
-                      "sensitive" : false
-                    },
-                    "JsonPath Expression" : {
-                      "displayName" : "JsonPath Expression",
-                      "identifiesControllerService" : false,
-                      "name" : "JsonPath Expression",
-                      "sensitive" : false
-                    }
-                  },
-                  "runDurationMillis" : 0,
-                  "scheduledState" : "ENABLED",
-                  "schedulingPeriod" : "0 sec",
-                  "schedulingStrategy" : "TIMER_DRIVEN",
-                  "style" : { },
-                  "type" : "org.apache.nifi.processors.standard.SplitJson",
-                  "yieldDuration" : "1 sec"
-                }, {
-                  "autoTerminatedRelationships" : [ "failure", "unmatched" ],
-                  "bulletinLevel" : "WARN",
-                  "bundle" : {
-                    "artifact" : "nifi-standard-nar",
-                    "group" : "org.apache.nifi",
-                    "version" : "1.12.1"
-                  },
-                  "comments" : "After the extension JSON objects have been extracted, this processor will save the corresponding URL and valueCode in attributes called \"url\" and \"code\" respectively.\n\nSample extensions:\n\n\t\t\t\t\"extension\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName\",\n\t\t\t\t\t\t\"valueString\": \"Graciela518 Badillo851\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthPlace\",\n\t\t\t\t\t\t\"valueAddress\": {\n\t\t\t\t\t\t\t\"city\": \"Caguas\",\n\t\t\t\t\t\t\t\"state\": \"Puerto Rico\",\n\t\t\t\t\t\t\t\"country\": \"PR\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs\",\n\t\t\t\t\t\t\"valueCode\": \"female\"\n\t\t\t\t\t},\n",
-                  "componentType" : "PROCESSOR",
-                  "concurrentlySchedulableTaskCount" : 1,
-                  "executionNode" : "ALL",
-                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
-                  "identifier" : "b6aabdf5-007d-3ee9-9fe4-cf538979b30f",
-                  "name" : "Extract Extension URL & Code",
-                  "penaltyDuration" : "30 sec",
-                  "position" : {
-                    "x" : 216.0,
-                    "y" : -1008.0
-                  },
-                  "properties" : {
-                    "Destination" : "flowfile-attribute",
-                    "code" : "valueCode",
-                    "Return Type" : "auto-detect",
-                    "Null Value Representation" : "empty string",
-                    "url" : "url",
-                    "Path Not Found Behavior" : "ignore"
-                  },
-                  "propertyDescriptors" : {
-                    "Destination" : {
-                      "displayName" : "Destination",
-                      "identifiesControllerService" : false,
-                      "name" : "Destination",
-                      "sensitive" : false
-                    },
-                    "code" : {
-                      "displayName" : "code",
-                      "identifiesControllerService" : false,
-                      "name" : "code",
-                      "sensitive" : false
-                    },
-                    "Return Type" : {
-                      "displayName" : "Return Type",
-                      "identifiesControllerService" : false,
-                      "name" : "Return Type",
-                      "sensitive" : false
-                    },
-                    "Null Value Representation" : {
-                      "displayName" : "Null Value Representation",
-                      "identifiesControllerService" : false,
-                      "name" : "Null Value Representation",
-                      "sensitive" : false
-                    },
-                    "url" : {
-                      "displayName" : "url",
-                      "identifiesControllerService" : false,
-                      "name" : "url",
-                      "sensitive" : false
-                    },
-                    "Path Not Found Behavior" : {
-                      "displayName" : "Path Not Found Behavior",
-                      "identifiesControllerService" : false,
-                      "name" : "Path Not Found Behavior",
-                      "sensitive" : false
-                    }
-                  },
-                  "runDurationMillis" : 0,
-                  "scheduledState" : "ENABLED",
-                  "schedulingPeriod" : "0 sec",
-                  "schedulingStrategy" : "TIMER_DRIVEN",
-                  "style" : {
-                    "background-color" : "#ffffff"
-                  },
-                  "type" : "org.apache.nifi.processors.standard.EvaluateJsonPath",
-                  "yieldDuration" : "1 sec"
-                } ],
-                "remoteProcessGroups" : [ ],
-                "variables" : { }
-              }, {
                 "comments" : "Input:\n- FHIR Bundle resources with a boolean \"translated\" field\n\nOutput: \n- The same FHIR Bundle resources but with some logging to the Bulletin Board",
                 "componentType" : "PROCESS_GROUP",
                 "connections" : [ {
@@ -4384,6 +3917,473 @@
                 "remoteProcessGroups" : [ ],
                 "variables" : { }
               }, {
+                "comments" : "Input:\nFHIR Bundles\n\nOutput:\n1) The original FHIR Bundles with the corresponding fragment.identifier and fragment.counts attributes based on the number of \"extensions\" that were extracted from each.\n\n2) The individual \"extension\" JSON object extracted from each Bundle, with their corresponding fragment.identifier and fragment.index so that they can be matched against the Bundle where they came from.\n\n3) The resulting flow files will include a couple of attributes: \"url\" with the extension \"URL\" field, and \"code\" with the extension \"valueCode\" field. If the extension is not of type \"valueCode\" it will still be output but the attribute will be empty.\n\n4) The actual JSON extension text will also be included as an attribute called \"extension\"",
+                "componentType" : "PROCESS_GROUP",
+                "connections" : [ {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "This processor extracts the actual JSON text of the extension as an attribute called \"extension\"",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "dac276e0-880e-30b8-ac8e-b77fb54cbdbf",
+                    "name" : "Extract Extension as Attribute",
+                    "type" : "PROCESSOR"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "607ec824-2524-3f0a-9f5f-f2a92bd48ce4",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "matched" ],
+                  "source" : {
+                    "comments" : "After the extension JSON objects have been extracted, this processor will save the corresponding URL and valueCode in attributes called \"url\" and \"code\" respectively.\n\nSample extensions:\n\n\t\t\t\t\"extension\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName\",\n\t\t\t\t\t\t\"valueString\": \"Graciela518 Badillo851\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthPlace\",\n\t\t\t\t\t\t\"valueAddress\": {\n\t\t\t\t\t\t\t\"city\": \"Caguas\",\n\t\t\t\t\t\t\t\"state\": \"Puerto Rico\",\n\t\t\t\t\t\t\t\"country\": \"PR\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs\",\n\t\t\t\t\t\t\"valueCode\": \"female\"\n\t\t\t\t\t},\n",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "b6aabdf5-007d-3ee9-9fe4-cf538979b30f",
+                    "name" : "Extract Extension URL & Code",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "2704b2ef-8058-320d-a536-12d2e79a9a1d",
+                    "name" : "fhir-bundle-extensions",
+                    "type" : "OUTPUT_PORT"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "9a6fec60-af06-301b-8f4c-47b86229289e",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "matched" ],
+                  "source" : {
+                    "comments" : "This processor extracts the actual JSON text of the extension as an attribute called \"extension\"",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "dac276e0-880e-30b8-ac8e-b77fb54cbdbf",
+                    "name" : "Extract Extension as Attribute",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "After the extension JSON objects have been extracted, this processor will save the corresponding URL and valueCode in attributes called \"url\" and \"code\" respectively.\n\nSample extensions:\n\n\t\t\t\t\"extension\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName\",\n\t\t\t\t\t\t\"valueString\": \"Graciela518 Badillo851\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthPlace\",\n\t\t\t\t\t\t\"valueAddress\": {\n\t\t\t\t\t\t\t\"city\": \"Caguas\",\n\t\t\t\t\t\t\t\"state\": \"Puerto Rico\",\n\t\t\t\t\t\t\t\"country\": \"PR\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs\",\n\t\t\t\t\t\t\"valueCode\": \"female\"\n\t\t\t\t\t},\n",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "b6aabdf5-007d-3ee9-9fe4-cf538979b30f",
+                    "name" : "Extract Extension URL & Code",
+                    "type" : "PROCESSOR"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "2f510522-d435-32b5-bea2-cb2e5bd5f686",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "split" ],
+                  "source" : {
+                    "comments" : "A FHIR Bundle may have multiple FHIR Resources (e.g. Patient, Observation, Encounter, MedicationRequest, etc.) and each of those FHIR Resources may have multiple \"extensions\". Some of those extensions may need to be translated. This processor extracts all of those extensions and sends the off to processing. \n\nThis processor additionally sends the original files from where the extensions were obtained to Wait, until all of the extensions from each FHIR Bundle are processed.",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "80edd094-8c4b-3a2e-aa35-73159061b29f",
+                    "name" : "Extract Bundle Extensions",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "2e88528f-4084-314e-9842-fe3957c33dd4",
+                    "name" : "original-fhir-bundles",
+                    "type" : "OUTPUT_PORT"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "0858ba00-67d0-3b56-8534-7fbc1d615e6c",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "original" ],
+                  "source" : {
+                    "comments" : "A FHIR Bundle may have multiple FHIR Resources (e.g. Patient, Observation, Encounter, MedicationRequest, etc.) and each of those FHIR Resources may have multiple \"extensions\". Some of those extensions may need to be translated. This processor extracts all of those extensions and sends the off to processing. \n\nThis processor additionally sends the original files from where the extensions were obtained to Wait, until all of the extensions from each FHIR Bundle are processed.",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "80edd094-8c4b-3a2e-aa35-73159061b29f",
+                    "name" : "Extract Bundle Extensions",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "A FHIR Bundle may have multiple FHIR Resources (e.g. Patient, Observation, Encounter, MedicationRequest, etc.) and each of those FHIR Resources may have multiple \"extensions\". Some of those extensions may need to be translated. This processor extracts all of those extensions and sends the off to processing. \n\nThis processor additionally sends the original files from where the extensions were obtained to Wait, until all of the extensions from each FHIR Bundle are processed.",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "80edd094-8c4b-3a2e-aa35-73159061b29f",
+                    "name" : "Extract Bundle Extensions",
+                    "type" : "PROCESSOR"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "4ad6dc1c-da47-39b9-a73b-ca327d13bd13",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "" ],
+                  "source" : {
+                    "comments" : "",
+                    "groupId" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                    "id" : "ed801e5b-5127-38b7-9bc1-eb1553223269",
+                    "name" : "fhir-bundles",
+                    "type" : "INPUT_PORT"
+                  },
+                  "zIndex" : 0
+                } ],
+                "controllerServices" : [ ],
+                "flowFileConcurrency" : "UNBOUNDED",
+                "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+                "funnels" : [ ],
+                "groupIdentifier" : "83204c50-4d7d-3889-9f1c-c2205fda6b89",
+                "identifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                "inputPorts" : [ {
+                  "allowRemoteAccess" : false,
+                  "comments" : "",
+                  "componentType" : "INPUT_PORT",
+                  "concurrentlySchedulableTaskCount" : 1,
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "ed801e5b-5127-38b7-9bc1-eb1553223269",
+                  "name" : "fhir-bundles",
+                  "position" : {
+                    "x" : 264.0,
+                    "y" : -1296.0
+                  },
+                  "type" : "INPUT_PORT"
+                } ],
+                "labels" : [ ],
+                "name" : "Extract Bundle Extensions",
+                "outputPorts" : [ {
+                  "allowRemoteAccess" : false,
+                  "comments" : "",
+                  "componentType" : "OUTPUT_PORT",
+                  "concurrentlySchedulableTaskCount" : 1,
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "2e88528f-4084-314e-9842-fe3957c33dd4",
+                  "name" : "original-fhir-bundles",
+                  "position" : {
+                    "x" : 704.0,
+                    "y" : -1144.0
+                  },
+                  "type" : "OUTPUT_PORT"
+                }, {
+                  "allowRemoteAccess" : false,
+                  "comments" : "",
+                  "componentType" : "OUTPUT_PORT",
+                  "concurrentlySchedulableTaskCount" : 1,
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "2704b2ef-8058-320d-a536-12d2e79a9a1d",
+                  "name" : "fhir-bundle-extensions",
+                  "position" : {
+                    "x" : 272.0,
+                    "y" : -648.0
+                  },
+                  "type" : "OUTPUT_PORT"
+                } ],
+                "position" : {
+                  "x" : 760.0,
+                  "y" : -984.0
+                },
+                "processGroups" : [ ],
+                "processors" : [ {
+                  "autoTerminatedRelationships" : [ "unmatched" ],
+                  "bulletinLevel" : "WARN",
+                  "bundle" : {
+                    "artifact" : "nifi-standard-nar",
+                    "group" : "org.apache.nifi",
+                    "version" : "1.12.1"
+                  },
+                  "comments" : "This processor extracts the actual JSON text of the extension as an attribute called \"extension\"",
+                  "componentType" : "PROCESSOR",
+                  "concurrentlySchedulableTaskCount" : 1,
+                  "executionNode" : "ALL",
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "dac276e0-880e-30b8-ac8e-b77fb54cbdbf",
+                  "name" : "Extract Extension as Attribute",
+                  "penaltyDuration" : "30 sec",
+                  "position" : {
+                    "x" : 224.0,
+                    "y" : -824.0
+                  },
+                  "properties" : {
+                    "Enable Unicode Predefined Character Classes" : "false",
+                    "Permit Whitespace and Comments in Pattern" : "false",
+                    "Enable Unicode-aware Case Folding" : "false",
+                    "extension" : "(.*)",
+                    "Enable DOTALL Mode" : "true",
+                    "Enable Unix Lines Mode" : "false",
+                    "Maximum Buffer Size" : "1 MB",
+                    "Enable Canonical Equivalence" : "false",
+                    "Enable Case-insensitive Matching" : "false",
+                    "Enable Multiline Mode" : "true",
+                    "Maximum Capture Group Length" : "10000",
+                    "Enable Literal Parsing of the Pattern" : "false",
+                    "Character Set" : "UTF-8",
+                    "Include Capture Group 0" : "false",
+                    "extract-text-enable-repeating-capture-group" : "false"
+                  },
+                  "propertyDescriptors" : {
+                    "Enable Unicode Predefined Character Classes" : {
+                      "displayName" : "Enable Unicode Predefined Character Classes",
+                      "identifiesControllerService" : false,
+                      "name" : "Enable Unicode Predefined Character Classes",
+                      "sensitive" : false
+                    },
+                    "Permit Whitespace and Comments in Pattern" : {
+                      "displayName" : "Permit Whitespace and Comments in Pattern",
+                      "identifiesControllerService" : false,
+                      "name" : "Permit Whitespace and Comments in Pattern",
+                      "sensitive" : false
+                    },
+                    "Enable Unicode-aware Case Folding" : {
+                      "displayName" : "Enable Unicode-aware Case Folding",
+                      "identifiesControllerService" : false,
+                      "name" : "Enable Unicode-aware Case Folding",
+                      "sensitive" : false
+                    },
+                    "extension" : {
+                      "displayName" : "extension",
+                      "identifiesControllerService" : false,
+                      "name" : "extension",
+                      "sensitive" : false
+                    },
+                    "Enable DOTALL Mode" : {
+                      "displayName" : "Enable DOTALL Mode",
+                      "identifiesControllerService" : false,
+                      "name" : "Enable DOTALL Mode",
+                      "sensitive" : false
+                    },
+                    "Enable Unix Lines Mode" : {
+                      "displayName" : "Enable Unix Lines Mode",
+                      "identifiesControllerService" : false,
+                      "name" : "Enable Unix Lines Mode",
+                      "sensitive" : false
+                    },
+                    "Maximum Buffer Size" : {
+                      "displayName" : "Maximum Buffer Size",
+                      "identifiesControllerService" : false,
+                      "name" : "Maximum Buffer Size",
+                      "sensitive" : false
+                    },
+                    "Enable Canonical Equivalence" : {
+                      "displayName" : "Enable Canonical Equivalence",
+                      "identifiesControllerService" : false,
+                      "name" : "Enable Canonical Equivalence",
+                      "sensitive" : false
+                    },
+                    "Enable Case-insensitive Matching" : {
+                      "displayName" : "Enable Case-insensitive Matching",
+                      "identifiesControllerService" : false,
+                      "name" : "Enable Case-insensitive Matching",
+                      "sensitive" : false
+                    },
+                    "Enable Multiline Mode" : {
+                      "displayName" : "Enable Multiline Mode",
+                      "identifiesControllerService" : false,
+                      "name" : "Enable Multiline Mode",
+                      "sensitive" : false
+                    },
+                    "Maximum Capture Group Length" : {
+                      "displayName" : "Maximum Capture Group Length",
+                      "identifiesControllerService" : false,
+                      "name" : "Maximum Capture Group Length",
+                      "sensitive" : false
+                    },
+                    "Enable Literal Parsing of the Pattern" : {
+                      "displayName" : "Enable Literal Parsing of the Pattern",
+                      "identifiesControllerService" : false,
+                      "name" : "Enable Literal Parsing of the Pattern",
+                      "sensitive" : false
+                    },
+                    "Character Set" : {
+                      "displayName" : "Character Set",
+                      "identifiesControllerService" : false,
+                      "name" : "Character Set",
+                      "sensitive" : false
+                    },
+                    "Include Capture Group 0" : {
+                      "displayName" : "Include Capture Group 0",
+                      "identifiesControllerService" : false,
+                      "name" : "Include Capture Group 0",
+                      "sensitive" : false
+                    },
+                    "extract-text-enable-repeating-capture-group" : {
+                      "displayName" : "Enable repeating capture group",
+                      "identifiesControllerService" : false,
+                      "name" : "extract-text-enable-repeating-capture-group",
+                      "sensitive" : false
+                    }
+                  },
+                  "runDurationMillis" : 0,
+                  "scheduledState" : "ENABLED",
+                  "schedulingPeriod" : "0 sec",
+                  "schedulingStrategy" : "TIMER_DRIVEN",
+                  "style" : { },
+                  "type" : "org.apache.nifi.processors.standard.ExtractText",
+                  "yieldDuration" : "1 sec"
+                }, {
+                  "autoTerminatedRelationships" : [ "failure" ],
+                  "bulletinLevel" : "WARN",
+                  "bundle" : {
+                    "artifact" : "nifi-standard-nar",
+                    "group" : "org.apache.nifi",
+                    "version" : "1.12.1"
+                  },
+                  "comments" : "A FHIR Bundle may have multiple FHIR Resources (e.g. Patient, Observation, Encounter, MedicationRequest, etc.) and each of those FHIR Resources may have multiple \"extensions\". Some of those extensions may need to be translated. This processor extracts all of those extensions and sends the off to processing. \n\nThis processor additionally sends the original files from where the extensions were obtained to Wait, until all of the extensions from each FHIR Bundle are processed.",
+                  "componentType" : "PROCESSOR",
+                  "concurrentlySchedulableTaskCount" : 1,
+                  "executionNode" : "ALL",
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "80edd094-8c4b-3a2e-aa35-73159061b29f",
+                  "name" : "Extract Bundle Extensions",
+                  "penaltyDuration" : "30 sec",
+                  "position" : {
+                    "x" : 216.0,
+                    "y" : -1200.0
+                  },
+                  "properties" : {
+                    "Null Value Representation" : "empty string",
+                    "JsonPath Expression" : "$.entry[*].resource.extension[*]"
+                  },
+                  "propertyDescriptors" : {
+                    "Null Value Representation" : {
+                      "displayName" : "Null Value Representation",
+                      "identifiesControllerService" : false,
+                      "name" : "Null Value Representation",
+                      "sensitive" : false
+                    },
+                    "JsonPath Expression" : {
+                      "displayName" : "JsonPath Expression",
+                      "identifiesControllerService" : false,
+                      "name" : "JsonPath Expression",
+                      "sensitive" : false
+                    }
+                  },
+                  "runDurationMillis" : 0,
+                  "scheduledState" : "ENABLED",
+                  "schedulingPeriod" : "0 sec",
+                  "schedulingStrategy" : "TIMER_DRIVEN",
+                  "style" : { },
+                  "type" : "org.apache.nifi.processors.standard.SplitJson",
+                  "yieldDuration" : "1 sec"
+                }, {
+                  "autoTerminatedRelationships" : [ "failure", "unmatched" ],
+                  "bulletinLevel" : "WARN",
+                  "bundle" : {
+                    "artifact" : "nifi-standard-nar",
+                    "group" : "org.apache.nifi",
+                    "version" : "1.12.1"
+                  },
+                  "comments" : "After the extension JSON objects have been extracted, this processor will save the corresponding URL and valueCode in attributes called \"url\" and \"code\" respectively.\n\nSample extensions:\n\n\t\t\t\t\"extension\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName\",\n\t\t\t\t\t\t\"valueString\": \"Graciela518 Badillo851\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthPlace\",\n\t\t\t\t\t\t\"valueAddress\": {\n\t\t\t\t\t\t\t\"city\": \"Caguas\",\n\t\t\t\t\t\t\t\"state\": \"Puerto Rico\",\n\t\t\t\t\t\t\t\"country\": \"PR\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"url\": \"http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs\",\n\t\t\t\t\t\t\"valueCode\": \"female\"\n\t\t\t\t\t},\n",
+                  "componentType" : "PROCESSOR",
+                  "concurrentlySchedulableTaskCount" : 1,
+                  "executionNode" : "ALL",
+                  "groupIdentifier" : "384bb988-808f-36a7-ae2e-48c12ec9cd5c",
+                  "identifier" : "b6aabdf5-007d-3ee9-9fe4-cf538979b30f",
+                  "name" : "Extract Extension URL & Code",
+                  "penaltyDuration" : "30 sec",
+                  "position" : {
+                    "x" : 216.0,
+                    "y" : -1008.0
+                  },
+                  "properties" : {
+                    "Destination" : "flowfile-attribute",
+                    "code" : "valueCode",
+                    "Return Type" : "auto-detect",
+                    "Null Value Representation" : "empty string",
+                    "url" : "url",
+                    "Path Not Found Behavior" : "ignore"
+                  },
+                  "propertyDescriptors" : {
+                    "Destination" : {
+                      "displayName" : "Destination",
+                      "identifiesControllerService" : false,
+                      "name" : "Destination",
+                      "sensitive" : false
+                    },
+                    "code" : {
+                      "displayName" : "code",
+                      "identifiesControllerService" : false,
+                      "name" : "code",
+                      "sensitive" : false
+                    },
+                    "Return Type" : {
+                      "displayName" : "Return Type",
+                      "identifiesControllerService" : false,
+                      "name" : "Return Type",
+                      "sensitive" : false
+                    },
+                    "Null Value Representation" : {
+                      "displayName" : "Null Value Representation",
+                      "identifiesControllerService" : false,
+                      "name" : "Null Value Representation",
+                      "sensitive" : false
+                    },
+                    "url" : {
+                      "displayName" : "url",
+                      "identifiesControllerService" : false,
+                      "name" : "url",
+                      "sensitive" : false
+                    },
+                    "Path Not Found Behavior" : {
+                      "displayName" : "Path Not Found Behavior",
+                      "identifiesControllerService" : false,
+                      "name" : "Path Not Found Behavior",
+                      "sensitive" : false
+                    }
+                  },
+                  "runDurationMillis" : 0,
+                  "scheduledState" : "ENABLED",
+                  "schedulingPeriod" : "0 sec",
+                  "schedulingStrategy" : "TIMER_DRIVEN",
+                  "style" : {
+                    "background-color" : "#ffffff"
+                  },
+                  "type" : "org.apache.nifi.processors.standard.EvaluateJsonPath",
+                  "yieldDuration" : "1 sec"
+                } ],
+                "remoteProcessGroups" : [ ],
+                "variables" : { }
+              }, {
                 "comments" : "Input:\n- Attribute: conceptMapID, which will be used to invoke the $translate method on that ConceptMap\n- Attribute: code, which is the code to be translated\n\nOutput:\n- Attribute: translatedCode and translatedCodeSystem, with the translated code and the translated URL that will go in the extension object.\n",
                 "componentType" : "PROCESS_GROUP",
                 "connections" : [ {
@@ -4611,6 +4611,36 @@
                 }, {
                   "backPressureDataSizeThreshold" : "1 GB",
                   "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "FHIR Extension objects have a URL and some value. The URL points to the StructureDefinition that describes the extension, more details here: https://www.hl7.org/fhir/extensibility.html\n\nThis Processor will look the StructureDefinition in a Map. That Map will have the mappings from StructureDefinition to ValueSet to query.",
+                    "groupId" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
+                    "id" : "c6196b47-633b-387f-8db1-026f29a00a1f",
+                    "name" : "Get StructureDefinition from ValueSet ",
+                    "type" : "PROCESSOR"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
+                  "identifier" : "8ea29dd2-3182-38c6-b57d-cebe9d9454ec",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "success" ],
+                  "source" : {
+                    "comments" : "This processor expects that the \"system\" field in the $translate result will have a Value that can be looked up in the StructurDefinition <> ValueSet KeyValue store, that can be mapped to the desired StructureDefinition URL:\n\nFor instance, given the translation result below, there should be an entry from:\n\nhttp://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs -> http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth\n\n{\n\t\"resourceType\": \"Parameters\",\n\t\"parameter\": [\n\t\t{\n\t\t\t\"name\": \"result\",\n\t\t\t\"valueBoolean\": true\n\t\t},\n\t\t{\n\t\t\t\"name\": \"match\",\n\t\t\t\"part\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"equivalence\",\n\t\t\t\t\t\"valueCode\": \"equivalent\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"concept\",\n\t\t\t\t\t\"valueCoding\": {\n\t\t\t\t\t\t\"system\": \"http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs\",\n\t\t\t\t\t\t\"code\": \"female\",\n\t\t\t\t\t\t\"display\": \"Female\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t]\n}",
+                    "groupId" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
+                    "id" : "bd8afbc1-138a-3db4-bac5-b30a6a9a6f1c",
+                    "name" : "Extract New System & Code",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
                   "bends" : [ {
                     "x" : 1160.0,
                     "y" : -192.0
@@ -4638,36 +4668,6 @@
                     "groupId" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
                     "id" : "d8c3b0e7-fde2-35cf-a10f-391facd1fc5b",
                     "name" : "Extract New System & Code Array",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "FHIR Extension objects have a URL and some value. The URL points to the StructureDefinition that describes the extension, more details here: https://www.hl7.org/fhir/extensibility.html\n\nThis Processor will look the StructureDefinition in a Map. That Map will have the mappings from StructureDefinition to ValueSet to query.",
-                    "groupId" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
-                    "id" : "c6196b47-633b-387f-8db1-026f29a00a1f",
-                    "name" : "Get StructureDefinition from ValueSet ",
-                    "type" : "PROCESSOR"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
-                  "identifier" : "8ea29dd2-3182-38c6-b57d-cebe9d9454ec",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "success" ],
-                  "source" : {
-                    "comments" : "This processor expects that the \"system\" field in the $translate result will have a Value that can be looked up in the StructurDefinition <> ValueSet KeyValue store, that can be mapped to the desired StructureDefinition URL:\n\nFor instance, given the translation result below, there should be an entry from:\n\nhttp://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs -> http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth\n\n{\n\t\"resourceType\": \"Parameters\",\n\t\"parameter\": [\n\t\t{\n\t\t\t\"name\": \"result\",\n\t\t\t\"valueBoolean\": true\n\t\t},\n\t\t{\n\t\t\t\"name\": \"match\",\n\t\t\t\"part\": [\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"equivalence\",\n\t\t\t\t\t\"valueCode\": \"equivalent\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"concept\",\n\t\t\t\t\t\"valueCoding\": {\n\t\t\t\t\t\t\"system\": \"http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth-vs\",\n\t\t\t\t\t\t\"code\": \"female\",\n\t\t\t\t\t\t\"display\": \"Female\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t]\n}",
-                    "groupId" : "01f5aab3-1fab-3ca5-90ea-ed67d661c245",
-                    "id" : "bd8afbc1-138a-3db4-bac5-b30a6a9a6f1c",
-                    "name" : "Extract New System & Code",
                     "type" : "PROCESSOR"
                   },
                   "zIndex" : 0
@@ -7570,7 +7570,7 @@
           "flowFileConcurrency" : "UNBOUNDED",
           "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
           "funnels" : [ ],
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "4b630a89-4510-32aa-a41e-f8a709b23a03",
           "inputPorts" : [ {
             "allowRemoteAccess" : false,
@@ -7836,36 +7836,6 @@
               "componentType" : "CONNECTION",
               "destination" : {
                 "comments" : "",
-                "groupId" : "42ec6d4e-64b4-345d-bca0-f90f71b0747d",
-                "id" : "bb143f8c-5066-3063-8688-f4dcd3dc3bee",
-                "name" : "FHIR Bundle",
-                "type" : "INPUT_PORT"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
-              "identifier" : "5202403c-7970-3fe3-9c58-7b6cf2fa611d",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "bundle" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
-                "id" : "45dd9602-d587-3d25-aa9d-a2a907c6c9f9",
-                "name" : "Route On Resource Type",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
                 "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
                 "id" : "8d584c19-2547-3b58-bb64-36d399cc6e32",
                 "name" : "Retrieve Resource Id and Type",
@@ -7887,6 +7857,36 @@
                 "id" : "9748656a-64fc-3a19-b1da-fed05b6122d0",
                 "name" : "FHIR Resource",
                 "type" : "INPUT_PORT"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "42ec6d4e-64b4-345d-bca0-f90f71b0747d",
+                "id" : "bb143f8c-5066-3063-8688-f4dcd3dc3bee",
+                "name" : "FHIR Bundle",
+                "type" : "INPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
+              "identifier" : "5202403c-7970-3fe3-9c58-7b6cf2fa611d",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "bundle" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
+                "id" : "45dd9602-d587-3d25-aa9d-a2a907c6c9f9",
+                "name" : "Route On Resource Type",
+                "type" : "PROCESSOR"
               },
               "zIndex" : 0
             }, {
@@ -7930,36 +7930,6 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
-                "id" : "7ae5f3ae-8cd0-3356-919b-2a0c955673a5",
-                "name" : "Set RequestId from Input ResourceId",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
-              "identifier" : "d7a924d3-85c6-3399-915b-1d806343668a",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "matched" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
-                "id" : "8d584c19-2547-3b58-bb64-36d399cc6e32",
-                "name" : "Retrieve Resource Id and Type",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
                 "id" : "e513b5d3-91de-3f2b-a568-d9be00c61384",
                 "name" : "Set Fragment Count to 1",
                 "type" : "PROCESSOR"
@@ -7979,6 +7949,36 @@
                 "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
                 "id" : "45dd9602-d587-3d25-aa9d-a2a907c6c9f9",
                 "name" : "Route On Resource Type",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
+                "id" : "7ae5f3ae-8cd0-3356-919b-2a0c955673a5",
+                "name" : "Set RequestId from Input ResourceId",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
+              "identifier" : "d7a924d3-85c6-3399-915b-1d806343668a",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "matched" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "f79c8f51-9cbf-384f-b142-0459f1c1f734",
+                "id" : "8d584c19-2547-3b58-bb64-36d399cc6e32",
+                "name" : "Retrieve Resource Id and Type",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8714,36 +8714,6 @@
                 "componentType" : "CONNECTION",
                 "destination" : {
                   "comments" : "",
-                  "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                  "id" : "05a01f32-c958-3ff4-96e0-367242759eb2",
-                  "name" : "FHIR Patient",
-                  "type" : "INPUT_PORT"
-                },
-                "flowFileExpiration" : "0 sec",
-                "groupIdentifier" : "52341366-df3c-3049-9cdb-0da2cccc4f35",
-                "identifier" : "8bd37ca2-1920-34e2-b5a0-2aa2e5de2449",
-                "labelIndex" : 1,
-                "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                "name" : "",
-                "partitioningAttribute" : "",
-                "prioritizers" : [ ],
-                "selectedRelationships" : [ "patients" ],
-                "source" : {
-                  "comments" : "",
-                  "groupId" : "52341366-df3c-3049-9cdb-0da2cccc4f35",
-                  "id" : "870540bc-b500-30cf-b8f5-f08ac4263521",
-                  "name" : "Route on Resource Type",
-                  "type" : "PROCESSOR"
-                },
-                "zIndex" : 0
-              }, {
-                "backPressureDataSizeThreshold" : "1 GB",
-                "backPressureObjectThreshold" : 10000,
-                "bends" : [ ],
-                "componentType" : "CONNECTION",
-                "destination" : {
-                  "comments" : "",
                   "groupId" : "52341366-df3c-3049-9cdb-0da2cccc4f35",
                   "id" : "870540bc-b500-30cf-b8f5-f08ac4263521",
                   "name" : "Route on Resource Type",
@@ -8764,6 +8734,36 @@
                   "groupId" : "52341366-df3c-3049-9cdb-0da2cccc4f35",
                   "id" : "ae1b3eba-ee3b-3f3e-b06f-16dc7a82665a",
                   "name" : "Set Fragment Count",
+                  "type" : "PROCESSOR"
+                },
+                "zIndex" : 0
+              }, {
+                "backPressureDataSizeThreshold" : "1 GB",
+                "backPressureObjectThreshold" : 10000,
+                "bends" : [ ],
+                "componentType" : "CONNECTION",
+                "destination" : {
+                  "comments" : "",
+                  "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                  "id" : "05a01f32-c958-3ff4-96e0-367242759eb2",
+                  "name" : "FHIR Patient",
+                  "type" : "INPUT_PORT"
+                },
+                "flowFileExpiration" : "0 sec",
+                "groupIdentifier" : "52341366-df3c-3049-9cdb-0da2cccc4f35",
+                "identifier" : "8bd37ca2-1920-34e2-b5a0-2aa2e5de2449",
+                "labelIndex" : 1,
+                "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                "name" : "",
+                "partitioningAttribute" : "",
+                "prioritizers" : [ ],
+                "selectedRelationships" : [ "patients" ],
+                "source" : {
+                  "comments" : "",
+                  "groupId" : "52341366-df3c-3049-9cdb-0da2cccc4f35",
+                  "id" : "870540bc-b500-30cf-b8f5-f08ac4263521",
+                  "name" : "Route on Resource Type",
                   "type" : "PROCESSOR"
                 },
                 "zIndex" : 0
@@ -8981,36 +8981,6 @@
                   "bends" : [ ],
                   "componentType" : "CONNECTION",
                   "destination" : {
-                    "comments" : "",
-                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                    "id" : "d5e1d5ab-d035-30b5-8ad2-04021d66dfb5",
-                    "name" : "Error Log",
-                    "type" : "PROCESSOR"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                  "identifier" : "c5ec93b4-46e0-344e-98c2-13101ddc1db0",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "failure" ],
-                  "source" : {
-                    "comments" : "The De-ID REST API expects the FHIR resource to de-identify in the request to be a string containing JSON, not an actual JSON object. E.g.:\n\n{...\n \"data\": {\\\"some\\\":\\\"json\\\"}\n}\n\nInstead of:\n\n{...\n \"data\": { \"some\": \"json\"}\n}a\n\nThat is why we need to escape the quotes here",
-                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                    "id" : "153768b3-6754-36f8-9a4a-8642203e6d90",
-                    "name" : "Escape Quotes",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
                     "comments" : "Creates a table of old FHIR patient IDs to new FHIR patient IDs.",
                     "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
                     "id" : "d55e4868-7953-3ca3-bae1-d9d888466f3c",
@@ -9043,6 +9013,36 @@
                   "destination" : {
                     "comments" : "",
                     "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                    "id" : "d5e1d5ab-d035-30b5-8ad2-04021d66dfb5",
+                    "name" : "Error Log",
+                    "type" : "PROCESSOR"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                  "identifier" : "c5ec93b4-46e0-344e-98c2-13101ddc1db0",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "failure" ],
+                  "source" : {
+                    "comments" : "The De-ID REST API expects the FHIR resource to de-identify in the request to be a string containing JSON, not an actual JSON object. E.g.:\n\n{...\n \"data\": {\\\"some\\\":\\\"json\\\"}\n}\n\nInstead of:\n\n{...\n \"data\": { \"some\": \"json\"}\n}a\n\nThat is why we need to escape the quotes here",
+                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                    "id" : "153768b3-6754-36f8-9a4a-8642203e6d90",
+                    "name" : "Escape Quotes",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "",
+                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
                     "id" : "898e6aa1-e79f-3671-bf4e-e45f67272d94",
                     "name" : "Save New Patient ID",
                     "type" : "PROCESSOR"
@@ -9062,6 +9062,36 @@
                     "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
                     "id" : "68d965a7-8dd7-3980-af95-937593a63aae",
                     "name" : "Extract New Patient ID",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "",
+                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                    "id" : "d5e1d5ab-d035-30b5-8ad2-04021d66dfb5",
+                    "name" : "Error Log",
+                    "type" : "PROCESSOR"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                  "identifier" : "a30c14d1-16fd-372f-81a5-c158ead5f3a8",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
+                  "source" : {
+                    "comments" : "",
+                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                    "id" : "99ae1a96-9fe3-3ab9-8ce9-a28ef1b91cb5",
+                    "name" : "Create FHIR De-ID'd Patient",
                     "type" : "PROCESSOR"
                   },
                   "zIndex" : 0
@@ -9109,36 +9139,6 @@
                   },
                   "flowFileExpiration" : "0 sec",
                   "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                  "identifier" : "a30c14d1-16fd-372f-81a5-c158ead5f3a8",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
-                  "source" : {
-                    "comments" : "",
-                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                    "id" : "99ae1a96-9fe3-3ab9-8ce9-a28ef1b91cb5",
-                    "name" : "Create FHIR De-ID'd Patient",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "",
-                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                    "id" : "d5e1d5ab-d035-30b5-8ad2-04021d66dfb5",
-                    "name" : "Error Log",
-                    "type" : "PROCESSOR"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
                   "identifier" : "8619a16d-0ee4-3555-9341-cd143d0672a1",
                   "labelIndex" : 1,
                   "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -9152,36 +9152,6 @@
                     "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
                     "id" : "898e6aa1-e79f-3671-bf4e-e45f67272d94",
                     "name" : "Save New Patient ID",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "",
-                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                    "id" : "6f6f9438-12da-36d8-862e-2c2e95d77c99",
-                    "name" : "De-Identified FHIR Patient",
-                    "type" : "OUTPUT_PORT"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                  "identifier" : "8d4cab71-fd80-32c0-910c-9baf3e48c1b6",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "success" ],
-                  "source" : {
-                    "comments" : "Creates a table of old FHIR patient IDs to new FHIR patient IDs.",
-                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                    "id" : "d55e4868-7953-3ca3-bae1-d9d888466f3c",
-                    "name" : "Map Old Patient ID to New Patient ID",
                     "type" : "PROCESSOR"
                   },
                   "zIndex" : 0
@@ -9212,6 +9182,36 @@
                     "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
                     "id" : "aff35a9e-d40c-3982-8487-ddd66f86af1c",
                     "name" : "REST API De-ID Request",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "",
+                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                    "id" : "6f6f9438-12da-36d8-862e-2c2e95d77c99",
+                    "name" : "De-Identified FHIR Patient",
+                    "type" : "OUTPUT_PORT"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                  "identifier" : "8d4cab71-fd80-32c0-910c-9baf3e48c1b6",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "success" ],
+                  "source" : {
+                    "comments" : "Creates a table of old FHIR patient IDs to new FHIR patient IDs.",
+                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                    "id" : "d55e4868-7953-3ca3-bae1-d9d888466f3c",
+                    "name" : "Map Old Patient ID to New Patient ID",
                     "type" : "PROCESSOR"
                   },
                   "zIndex" : 0
@@ -9493,36 +9493,6 @@
                   "destination" : {
                     "comments" : "",
                     "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                    "id" : "aff35a9e-d40c-3982-8487-ddd66f86af1c",
-                    "name" : "REST API De-ID Request",
-                    "type" : "PROCESSOR"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                  "identifier" : "f9d81b3b-3d94-3891-8b86-1d578aaa0e38",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "success" ],
-                  "source" : {
-                    "comments" : "This processor sets the resource as an escaped string value for the \"data\" JSON field for the de-id REST request.\n\n{\n\t\"config\": \"an escaped JSON string with the masking config for the de-id service\",\n\t\"data\": [\n             \"a string with the resource to de-id, in this case the escaped JSON FHIR resource\"\n\t],\n\t\"schemaType\": \"FHIR\"\n}",
-                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                    "id" : "a18cadae-7658-365e-be86-40547e1ed990",
-                    "name" : "Prepare Request Body",
-                    "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "",
-                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
                     "id" : "99ae1a96-9fe3-3ab9-8ce9-a28ef1b91cb5",
                     "name" : "Create FHIR De-ID'd Patient",
                     "type" : "PROCESSOR"
@@ -9542,6 +9512,36 @@
                     "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
                     "id" : "08617980-aa86-3549-8b85-59620203994c",
                     "name" : "Extract De-ID'd Patient",
+                    "type" : "PROCESSOR"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "",
+                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                    "id" : "aff35a9e-d40c-3982-8487-ddd66f86af1c",
+                    "name" : "REST API De-ID Request",
+                    "type" : "PROCESSOR"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                  "identifier" : "f9d81b3b-3d94-3891-8b86-1d578aaa0e38",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "success" ],
+                  "source" : {
+                    "comments" : "This processor sets the resource as an escaped string value for the \"data\" JSON field for the de-id REST request.\n\n{\n\t\"config\": \"an escaped JSON string with the masking config for the de-id service\",\n\t\"data\": [\n             \"a string with the resource to de-id, in this case the escaped JSON FHIR resource\"\n\t],\n\t\"schemaType\": \"FHIR\"\n}",
+                    "groupId" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                    "id" : "a18cadae-7658-365e-be86-40547e1ed990",
+                    "name" : "Prepare Request Body",
                     "type" : "PROCESSOR"
                   },
                   "zIndex" : 0
@@ -9731,91 +9731,6 @@
                   "schedulingStrategy" : "TIMER_DRIVEN",
                   "style" : {
                     "background-color" : "#49d100"
-                  },
-                  "type" : "org.apache.nifi.processors.standard.LogAttribute",
-                  "yieldDuration" : "1 sec"
-                }, {
-                  "autoTerminatedRelationships" : [ "success" ],
-                  "bulletinLevel" : "WARN",
-                  "bundle" : {
-                    "artifact" : "nifi-standard-nar",
-                    "group" : "org.apache.nifi",
-                    "version" : "1.12.1"
-                  },
-                  "comments" : "",
-                  "componentType" : "PROCESSOR",
-                  "concurrentlySchedulableTaskCount" : 1,
-                  "executionNode" : "ALL",
-                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
-                  "identifier" : "d5e1d5ab-d035-30b5-8ad2-04021d66dfb5",
-                  "name" : "Error Log",
-                  "penaltyDuration" : "30 sec",
-                  "position" : {
-                    "x" : 2032.0,
-                    "y" : 1840.0
-                  },
-                  "properties" : {
-                    "character-set" : "utf-8",
-                    "Log Level" : "info",
-                    "attributes-to-log-regex" : ".*",
-                    "Log Payload" : "false"
-                  },
-                  "propertyDescriptors" : {
-                    "Log prefix" : {
-                      "displayName" : "Log prefix",
-                      "identifiesControllerService" : false,
-                      "name" : "Log prefix",
-                      "sensitive" : false
-                    },
-                    "character-set" : {
-                      "displayName" : "Character Set",
-                      "identifiesControllerService" : false,
-                      "name" : "character-set",
-                      "sensitive" : false
-                    },
-                    "Log Level" : {
-                      "displayName" : "Log Level",
-                      "identifiesControllerService" : false,
-                      "name" : "Log Level",
-                      "sensitive" : false
-                    },
-                    "attributes-to-ignore-regex" : {
-                      "displayName" : "Attributes to Ignore by Regular Expression",
-                      "identifiesControllerService" : false,
-                      "name" : "attributes-to-ignore-regex",
-                      "sensitive" : false
-                    },
-                    "Attributes to Ignore" : {
-                      "displayName" : "Attributes to Ignore",
-                      "identifiesControllerService" : false,
-                      "name" : "Attributes to Ignore",
-                      "sensitive" : false
-                    },
-                    "Attributes to Log" : {
-                      "displayName" : "Attributes to Log",
-                      "identifiesControllerService" : false,
-                      "name" : "Attributes to Log",
-                      "sensitive" : false
-                    },
-                    "attributes-to-log-regex" : {
-                      "displayName" : "Attributes to Log by Regular Expression",
-                      "identifiesControllerService" : false,
-                      "name" : "attributes-to-log-regex",
-                      "sensitive" : false
-                    },
-                    "Log Payload" : {
-                      "displayName" : "Log Payload",
-                      "identifiesControllerService" : false,
-                      "name" : "Log Payload",
-                      "sensitive" : false
-                    }
-                  },
-                  "runDurationMillis" : 0,
-                  "scheduledState" : "ENABLED",
-                  "schedulingPeriod" : "0 sec",
-                  "schedulingStrategy" : "TIMER_DRIVEN",
-                  "style" : {
-                    "background-color" : "#ff0000"
                   },
                   "type" : "org.apache.nifi.processors.standard.LogAttribute",
                   "yieldDuration" : "1 sec"
@@ -10072,6 +9987,91 @@
                     "background-color" : "#ffffff"
                   },
                   "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
+                  "yieldDuration" : "1 sec"
+                }, {
+                  "autoTerminatedRelationships" : [ "success" ],
+                  "bulletinLevel" : "WARN",
+                  "bundle" : {
+                    "artifact" : "nifi-standard-nar",
+                    "group" : "org.apache.nifi",
+                    "version" : "1.12.1"
+                  },
+                  "comments" : "",
+                  "componentType" : "PROCESSOR",
+                  "concurrentlySchedulableTaskCount" : 1,
+                  "executionNode" : "ALL",
+                  "groupIdentifier" : "74fdcf56-ab48-3ecc-a11c-c99070cd26d7",
+                  "identifier" : "d5e1d5ab-d035-30b5-8ad2-04021d66dfb5",
+                  "name" : "Error Log",
+                  "penaltyDuration" : "30 sec",
+                  "position" : {
+                    "x" : 2032.0,
+                    "y" : 1840.0
+                  },
+                  "properties" : {
+                    "character-set" : "utf-8",
+                    "Log Level" : "info",
+                    "attributes-to-log-regex" : ".*",
+                    "Log Payload" : "false"
+                  },
+                  "propertyDescriptors" : {
+                    "Log prefix" : {
+                      "displayName" : "Log prefix",
+                      "identifiesControllerService" : false,
+                      "name" : "Log prefix",
+                      "sensitive" : false
+                    },
+                    "character-set" : {
+                      "displayName" : "Character Set",
+                      "identifiesControllerService" : false,
+                      "name" : "character-set",
+                      "sensitive" : false
+                    },
+                    "Log Level" : {
+                      "displayName" : "Log Level",
+                      "identifiesControllerService" : false,
+                      "name" : "Log Level",
+                      "sensitive" : false
+                    },
+                    "attributes-to-ignore-regex" : {
+                      "displayName" : "Attributes to Ignore by Regular Expression",
+                      "identifiesControllerService" : false,
+                      "name" : "attributes-to-ignore-regex",
+                      "sensitive" : false
+                    },
+                    "Attributes to Ignore" : {
+                      "displayName" : "Attributes to Ignore",
+                      "identifiesControllerService" : false,
+                      "name" : "Attributes to Ignore",
+                      "sensitive" : false
+                    },
+                    "Attributes to Log" : {
+                      "displayName" : "Attributes to Log",
+                      "identifiesControllerService" : false,
+                      "name" : "Attributes to Log",
+                      "sensitive" : false
+                    },
+                    "attributes-to-log-regex" : {
+                      "displayName" : "Attributes to Log by Regular Expression",
+                      "identifiesControllerService" : false,
+                      "name" : "attributes-to-log-regex",
+                      "sensitive" : false
+                    },
+                    "Log Payload" : {
+                      "displayName" : "Log Payload",
+                      "identifiesControllerService" : false,
+                      "name" : "Log Payload",
+                      "sensitive" : false
+                    }
+                  },
+                  "runDurationMillis" : 0,
+                  "scheduledState" : "ENABLED",
+                  "schedulingPeriod" : "0 sec",
+                  "schedulingStrategy" : "TIMER_DRIVEN",
+                  "style" : {
+                    "background-color" : "#ff0000"
+                  },
+                  "type" : "org.apache.nifi.processors.standard.LogAttribute",
                   "yieldDuration" : "1 sec"
                 }, {
                   "autoTerminatedRelationships" : [ "failure" ],
@@ -11124,6 +11124,36 @@
                   "zIndex" : 0
                 }, {
                   "backPressureDataSizeThreshold" : "1 GB",
+                  "backPressureObjectThreshold" : 10000,
+                  "bends" : [ ],
+                  "componentType" : "CONNECTION",
+                  "destination" : {
+                    "comments" : "Given a JSON FHIR resource, this processor extracts its ID and puts it in an attribute called resourceId.",
+                    "groupId" : "ba774d5e-d6b2-360f-a651-c7316f5ac540",
+                    "id" : "5f415ced-fb7e-36d5-8d65-c1fe91d4fc4d",
+                    "name" : "Extract Patient ID",
+                    "type" : "PROCESSOR"
+                  },
+                  "flowFileExpiration" : "0 sec",
+                  "groupIdentifier" : "ba774d5e-d6b2-360f-a651-c7316f5ac540",
+                  "identifier" : "3e977ca6-b4d4-3b70-b436-9d3bcae66887",
+                  "labelIndex" : 1,
+                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
+                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+                  "name" : "",
+                  "partitioningAttribute" : "",
+                  "prioritizers" : [ ],
+                  "selectedRelationships" : [ "" ],
+                  "source" : {
+                    "comments" : "",
+                    "groupId" : "ba774d5e-d6b2-360f-a651-c7316f5ac540",
+                    "id" : "ebac9b73-6f3e-389e-b397-1889973464f0",
+                    "name" : "FHIR Resource",
+                    "type" : "INPUT_PORT"
+                  },
+                  "zIndex" : 0
+                }, {
+                  "backPressureDataSizeThreshold" : "1 GB",
                   "backPressureObjectThreshold" : 1000,
                   "bends" : [ {
                     "x" : -1048.4798941212532,
@@ -11156,36 +11186,6 @@
                     "id" : "0cf2bd38-4185-3a7f-b387-feeb9c4a9f07",
                     "name" : "Retrieve De-Identified Patient ID",
                     "type" : "PROCESSOR"
-                  },
-                  "zIndex" : 0
-                }, {
-                  "backPressureDataSizeThreshold" : "1 GB",
-                  "backPressureObjectThreshold" : 10000,
-                  "bends" : [ ],
-                  "componentType" : "CONNECTION",
-                  "destination" : {
-                    "comments" : "Given a JSON FHIR resource, this processor extracts its ID and puts it in an attribute called resourceId.",
-                    "groupId" : "ba774d5e-d6b2-360f-a651-c7316f5ac540",
-                    "id" : "5f415ced-fb7e-36d5-8d65-c1fe91d4fc4d",
-                    "name" : "Extract Patient ID",
-                    "type" : "PROCESSOR"
-                  },
-                  "flowFileExpiration" : "0 sec",
-                  "groupIdentifier" : "ba774d5e-d6b2-360f-a651-c7316f5ac540",
-                  "identifier" : "3e977ca6-b4d4-3b70-b436-9d3bcae66887",
-                  "labelIndex" : 1,
-                  "loadBalanceCompression" : "DO_NOT_COMPRESS",
-                  "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-                  "name" : "",
-                  "partitioningAttribute" : "",
-                  "prioritizers" : [ ],
-                  "selectedRelationships" : [ "" ],
-                  "source" : {
-                    "comments" : "",
-                    "groupId" : "ba774d5e-d6b2-360f-a651-c7316f5ac540",
-                    "id" : "ebac9b73-6f3e-389e-b397-1889973464f0",
-                    "name" : "FHIR Resource",
-                    "type" : "INPUT_PORT"
                   },
                   "zIndex" : 0
                 } ],
@@ -11232,74 +11232,6 @@
                 },
                 "processGroups" : [ ],
                 "processors" : [ {
-                  "autoTerminatedRelationships" : [ ],
-                  "bulletinLevel" : "WARN",
-                  "bundle" : {
-                    "artifact" : "nifi-standard-nar",
-                    "group" : "org.apache.nifi",
-                    "version" : "1.12.1"
-                  },
-                  "comments" : "",
-                  "componentType" : "PROCESSOR",
-                  "concurrentlySchedulableTaskCount" : 16,
-                  "executionNode" : "ALL",
-                  "groupIdentifier" : "ba774d5e-d6b2-360f-a651-c7316f5ac540",
-                  "identifier" : "0cf2bd38-4185-3a7f-b387-feeb9c4a9f07",
-                  "name" : "Retrieve De-Identified Patient ID",
-                  "penaltyDuration" : "30 sec",
-                  "position" : {
-                    "x" : -952.0,
-                    "y" : 2112.0
-                  },
-                  "properties" : {
-                    "Cache Entry Identifier" : "${patientId}",
-                    "Put Cache Value In Attribute" : "newPatientId",
-                    "Distributed Cache Service" : "75e9f18c-ca7e-3ddc-8ef9-cbfa1e22c076",
-                    "Max Length To Put In Attribute" : "256",
-                    "Character Set" : "UTF-8"
-                  },
-                  "propertyDescriptors" : {
-                    "Cache Entry Identifier" : {
-                      "displayName" : "Cache Entry Identifier",
-                      "identifiesControllerService" : false,
-                      "name" : "Cache Entry Identifier",
-                      "sensitive" : false
-                    },
-                    "Put Cache Value In Attribute" : {
-                      "displayName" : "Put Cache Value In Attribute",
-                      "identifiesControllerService" : false,
-                      "name" : "Put Cache Value In Attribute",
-                      "sensitive" : false
-                    },
-                    "Distributed Cache Service" : {
-                      "displayName" : "Distributed Cache Service",
-                      "identifiesControllerService" : true,
-                      "name" : "Distributed Cache Service",
-                      "sensitive" : false
-                    },
-                    "Max Length To Put In Attribute" : {
-                      "displayName" : "Max Length To Put In Attribute",
-                      "identifiesControllerService" : false,
-                      "name" : "Max Length To Put In Attribute",
-                      "sensitive" : false
-                    },
-                    "Character Set" : {
-                      "displayName" : "Character Set",
-                      "identifiesControllerService" : false,
-                      "name" : "Character Set",
-                      "sensitive" : false
-                    }
-                  },
-                  "runDurationMillis" : 0,
-                  "scheduledState" : "ENABLED",
-                  "schedulingPeriod" : "1 sec",
-                  "schedulingStrategy" : "TIMER_DRIVEN",
-                  "style" : {
-                    "background-color" : "#ffffff"
-                  },
-                  "type" : "org.apache.nifi.processors.standard.FetchDistributedMapCache",
-                  "yieldDuration" : "1 sec"
-                }, {
                   "autoTerminatedRelationships" : [ "Original" ],
                   "bulletinLevel" : "WARN",
                   "bundle" : {
@@ -11550,6 +11482,74 @@
                   "schedulingStrategy" : "TIMER_DRIVEN",
                   "style" : { },
                   "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
+                  "yieldDuration" : "1 sec"
+                }, {
+                  "autoTerminatedRelationships" : [ ],
+                  "bulletinLevel" : "WARN",
+                  "bundle" : {
+                    "artifact" : "nifi-standard-nar",
+                    "group" : "org.apache.nifi",
+                    "version" : "1.12.1"
+                  },
+                  "comments" : "",
+                  "componentType" : "PROCESSOR",
+                  "concurrentlySchedulableTaskCount" : 16,
+                  "executionNode" : "ALL",
+                  "groupIdentifier" : "ba774d5e-d6b2-360f-a651-c7316f5ac540",
+                  "identifier" : "0cf2bd38-4185-3a7f-b387-feeb9c4a9f07",
+                  "name" : "Retrieve De-Identified Patient ID",
+                  "penaltyDuration" : "30 sec",
+                  "position" : {
+                    "x" : -952.0,
+                    "y" : 2112.0
+                  },
+                  "properties" : {
+                    "Cache Entry Identifier" : "${patientId}",
+                    "Put Cache Value In Attribute" : "newPatientId",
+                    "Distributed Cache Service" : "75e9f18c-ca7e-3ddc-8ef9-cbfa1e22c076",
+                    "Max Length To Put In Attribute" : "256",
+                    "Character Set" : "UTF-8"
+                  },
+                  "propertyDescriptors" : {
+                    "Cache Entry Identifier" : {
+                      "displayName" : "Cache Entry Identifier",
+                      "identifiesControllerService" : false,
+                      "name" : "Cache Entry Identifier",
+                      "sensitive" : false
+                    },
+                    "Put Cache Value In Attribute" : {
+                      "displayName" : "Put Cache Value In Attribute",
+                      "identifiesControllerService" : false,
+                      "name" : "Put Cache Value In Attribute",
+                      "sensitive" : false
+                    },
+                    "Distributed Cache Service" : {
+                      "displayName" : "Distributed Cache Service",
+                      "identifiesControllerService" : true,
+                      "name" : "Distributed Cache Service",
+                      "sensitive" : false
+                    },
+                    "Max Length To Put In Attribute" : {
+                      "displayName" : "Max Length To Put In Attribute",
+                      "identifiesControllerService" : false,
+                      "name" : "Max Length To Put In Attribute",
+                      "sensitive" : false
+                    },
+                    "Character Set" : {
+                      "displayName" : "Character Set",
+                      "identifiesControllerService" : false,
+                      "name" : "Character Set",
+                      "sensitive" : false
+                    }
+                  },
+                  "runDurationMillis" : 0,
+                  "scheduledState" : "ENABLED",
+                  "schedulingPeriod" : "1 sec",
+                  "schedulingStrategy" : "TIMER_DRIVEN",
+                  "style" : {
+                    "background-color" : "#ffffff"
+                  },
+                  "type" : "org.apache.nifi.processors.standard.FetchDistributedMapCache",
                   "yieldDuration" : "1 sec"
                 }, {
                   "autoTerminatedRelationships" : [ ],
@@ -12733,7 +12733,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "999b58a8-6ff0-3451-a03d-36fc062cdb87",
           "name" : "RouteOnAttribute",
           "penaltyDuration" : "30 sec",
@@ -12778,7 +12778,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b04efb06-7439-34ef-9257-bd40520622bc",
+          "groupIdentifier" : "f4e80f2a-342c-3b86-b664-ed656db16ed4",
           "identifier" : "6c9d141e-6742-33b2-a97a-895439a69c86",
           "name" : "RouteOnAttribute",
           "penaltyDuration" : "30 sec",

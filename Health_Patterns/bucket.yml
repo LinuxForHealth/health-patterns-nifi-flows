@@ -3,10 +3,9 @@ flows:
     comments: Added De-Identification enrichment. Updated Parameter Contexts to use
       service names. Misc Fixes, author: anonymous, created: 1607033559347, flowName: Clinical
       Ingestion}
-  1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 1, file: FHIR_Bundle_Enrichment.snapshot,
-    comments: Initial delivery of the Enrichment pipeline.  Currently supports De-Identification
-      and Terminology Services, author: anonymous, created: 1607033252142, flowName: FHIR
-      Bundle Enrichment, flowDesc: Alvearie Enrichment pipeline - this flow will enrich
-      a FHIR bundle in various ways}
+  1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 2, file: FHIR_Bundle_Enrichment.snapshot,
+    comments: '', author: anonymous, created: 1607044301835, flowName: FHIR Bundle
+      Enrichment, flowDesc: Alvearie Enrichment pipeline - this flow will enrich a
+      FHIR bundle in various ways}
 layoutVer: 1
 bucketId: c601a7b4-f047-461e-ac13-2f140f8fb9b2
