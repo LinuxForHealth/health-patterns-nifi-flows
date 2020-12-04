@@ -1,7 +1,7 @@
 flows:
-  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 8, file: Clinical_Ingestion.snapshot,
-    comments: Set tenantId to "default" for REST-posted resources, author: anonymous,
-    created: 1607093868585, flowName: Clinical Ingestion}
+  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 9, file: Clinical_Ingestion.snapshot,
+    comments: Include DistributedMapCacheServer in flow, author: anonymous, created: 1607097002726,
+    flowName: Clinical Ingestion}
   1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 2, file: FHIR_Bundle_Enrichment.snapshot,
     comments: '', author: anonymous, created: 1607044301835, flowName: FHIR Bundle
       Enrichment, flowDesc: Alvearie Enrichment pipeline - this flow will enrich a

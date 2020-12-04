@@ -10689,6 +10689,56 @@
                 },
                 "comments" : "",
                 "componentType" : "CONTROLLER_SERVICE",
+                "controllerServiceApis" : [ ],
+                "groupIdentifier" : "eae13b9c-e7b4-3972-b912-5a1cb4b4a8e1",
+                "identifier" : "dec29bd7-aebb-363e-b02e-1ad5f07935cf",
+                "name" : "DistributedMapCacheServer",
+                "properties" : {
+                  "Eviction Strategy" : "Least Frequently Used",
+                  "Port" : "4557",
+                  "Maximum Cache Entries" : "10000"
+                },
+                "propertyDescriptors" : {
+                  "Eviction Strategy" : {
+                    "displayName" : "Eviction Strategy",
+                    "identifiesControllerService" : false,
+                    "name" : "Eviction Strategy",
+                    "sensitive" : false
+                  },
+                  "SSL Context Service" : {
+                    "displayName" : "SSL Context Service",
+                    "identifiesControllerService" : true,
+                    "name" : "SSL Context Service",
+                    "sensitive" : false
+                  },
+                  "Persistence Directory" : {
+                    "displayName" : "Persistence Directory",
+                    "identifiesControllerService" : false,
+                    "name" : "Persistence Directory",
+                    "sensitive" : false
+                  },
+                  "Port" : {
+                    "displayName" : "Port",
+                    "identifiesControllerService" : false,
+                    "name" : "Port",
+                    "sensitive" : false
+                  },
+                  "Maximum Cache Entries" : {
+                    "displayName" : "Maximum Cache Entries",
+                    "identifiesControllerService" : false,
+                    "name" : "Maximum Cache Entries",
+                    "sensitive" : false
+                  }
+                },
+                "type" : "org.apache.nifi.distributed.cache.server.map.DistributedMapCacheServer"
+              }, {
+                "bundle" : {
+                  "artifact" : "nifi-distributed-cache-services-nar",
+                  "group" : "org.apache.nifi",
+                  "version" : "1.12.1"
+                },
+                "comments" : "",
+                "componentType" : "CONTROLLER_SERVICE",
                 "controllerServiceApis" : [ {
                   "bundle" : {
                     "artifact" : "nifi-standard-services-api-nar",
@@ -17673,6 +17723,56 @@
               "zIndex" : 0
             } ],
             "controllerServices" : [ {
+              "bundle" : {
+                "artifact" : "nifi-distributed-cache-services-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.12.1"
+              },
+              "comments" : "",
+              "componentType" : "CONTROLLER_SERVICE",
+              "controllerServiceApis" : [ ],
+              "groupIdentifier" : "fb4cf433-9802-37ea-8f57-becf6a8a69bb",
+              "identifier" : "acbec4a6-8be6-3b59-b371-4d74fe8aea87",
+              "name" : "DistributedMapCacheServer",
+              "properties" : {
+                "Eviction Strategy" : "Least Frequently Used",
+                "Port" : "4558",
+                "Maximum Cache Entries" : "10000"
+              },
+              "propertyDescriptors" : {
+                "Eviction Strategy" : {
+                  "displayName" : "Eviction Strategy",
+                  "identifiesControllerService" : false,
+                  "name" : "Eviction Strategy",
+                  "sensitive" : false
+                },
+                "SSL Context Service" : {
+                  "displayName" : "SSL Context Service",
+                  "identifiesControllerService" : true,
+                  "name" : "SSL Context Service",
+                  "sensitive" : false
+                },
+                "Persistence Directory" : {
+                  "displayName" : "Persistence Directory",
+                  "identifiesControllerService" : false,
+                  "name" : "Persistence Directory",
+                  "sensitive" : false
+                },
+                "Port" : {
+                  "displayName" : "Port",
+                  "identifiesControllerService" : false,
+                  "name" : "Port",
+                  "sensitive" : false
+                },
+                "Maximum Cache Entries" : {
+                  "displayName" : "Maximum Cache Entries",
+                  "identifiesControllerService" : false,
+                  "name" : "Maximum Cache Entries",
+                  "sensitive" : false
+                }
+              },
+              "type" : "org.apache.nifi.distributed.cache.server.map.DistributedMapCacheServer"
+            }, {
               "bundle" : {
                 "artifact" : "nifi-distributed-cache-services-nar",
                 "group" : "org.apache.nifi",
