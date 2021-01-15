@@ -1,0 +1,7 @@
+flows:
+  298bd759-fb0d-4468-83a7-26df48528a76: {ver: 1, file: Log_and_Post_Failure.snapshot,
+    comments: '', author: anonymous, created: 1610720514225, flowName: Log and Post
+      Failure, flowDesc: Simple processor group to handle failure by creating log
+      message and kafka post}
+layoutVer: 1
+bucketId: 2c036a2b-92fa-4716-9eaa-d7af450ae2bd
