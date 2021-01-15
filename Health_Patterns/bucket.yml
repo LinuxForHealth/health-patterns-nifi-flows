@@ -1,6 +1,6 @@
 flows:
-  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 16, file: Clinical_Ingestion.snapshot,
-    comments: Testing registry commit, author: anonymous, created: 1610549853156,
+  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 17, file: Clinical_Ingestion.snapshot,
+    comments: Add failure logging processor group, author: anonymous, created: 1610741634702,
     flowName: Clinical Ingestion}
   1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 2, file: FHIR_Bundle_Enrichment.snapshot,
     comments: '', author: anonymous, created: 1607044301835, flowName: FHIR Bundle
