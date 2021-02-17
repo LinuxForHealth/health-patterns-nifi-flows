@@ -21,7 +21,7 @@ In order to setup a NiFi Registry backed by this repository, follow the instruct
         <property name="Remote To Push"></property>
         <property name="Remote Access User"></property>
         <property name="Remote Access Password"></property>
-        <property name="Remote Clone Repository">https://github.ibm.com/Alvearie/health-patterns-nifi-flows.git</property>
+        <property name="Remote Clone Repository">https://github.com/Alvearie/health-patterns-nifi-flows.git</property>
     </flowPersistenceProvider>
 ```
 4. Start your NiFi Registry
