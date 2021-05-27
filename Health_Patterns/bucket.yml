@@ -1,7 +1,8 @@
 flows:
-  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 30, file: Clinical_Ingestion.snapshot,
-    comments: Support lowercased header parms correctly, author: anonymous, created: 1620413173190,
-    flowName: Clinical Ingestion}
+  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 31, file: Clinical_Ingestion.snapshot,
+    comments: 'Update Clinical Ingestion to rely on separate Enrichment pipeline,
+      communicating via kafka ', author: anonymous, created: 1622129950326, flowName: Clinical
+      Ingestion}
   1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 4, file: FHIR_Bundle_Enrichment.snapshot,
     comments: Increase max message size and map headers to/from attributes, author: anonymous,
     created: 1622129907528, flowName: FHIR Bundle Enrichment, flowDesc: Alvearie Enrichment
