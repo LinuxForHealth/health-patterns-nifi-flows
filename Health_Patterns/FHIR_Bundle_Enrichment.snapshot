@@ -2510,7 +2510,7 @@
             "description" : "",
             "name" : "ASCVD_FROM_FHIR_URL",
             "sensitive" : false,
-            "value" : "https://ingestion-ascvd-from-fhir:5000"
+            "value" : "http://ingestion-ascvd-from-fhir:5000"
           } ]
         }
       }
