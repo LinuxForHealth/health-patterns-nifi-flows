@@ -1,7 +1,7 @@
 flows:
-  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 32, file: Clinical_Ingestion.snapshot,
-    comments: Remove debug kafka publish processor, author: anonymous, created: 1622140454757,
-    flowName: Clinical Ingestion}
+  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 33, file: Clinical_Ingestion.snapshot,
+    comments: Switch to HL7-Resource-Generator-Service for HL7->FHIR conversion, author: anonymous,
+    created: 1625590387020, flowName: Clinical Ingestion}
   1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 5, file: FHIR_Bundle_Enrichment.snapshot,
     comments: Update default ASCVD From FHIR URL, author: anonymous, created: 1624293055912,
     flowName: FHIR Bundle Enrichment, flowDesc: Alvearie Enrichment pipeline - this
