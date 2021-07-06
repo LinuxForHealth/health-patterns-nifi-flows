@@ -14,14 +14,14 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
             "id" : "cdc6ba33-1bde-3135-ba89-a989435b553b",
             "name" : "Failure",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-          "identifier" : "c85a543f-06e9-3310-83a2-4818caf06498",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+          "identifier" : "fa649e04-30e5-3cb8-bd60-3c6407d56f94",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -30,7 +30,7 @@
           "prioritizers" : [ ],
           "selectedRelationships" : [ "" ],
           "source" : {
-            "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
             "name" : "Failure",
             "type" : "OUTPUT_PORT"
@@ -43,13 +43,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "id" : "fef3ad4b-53db-3879-b4e8-c32a75c336c3",
             "name" : "FHIR resource",
             "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
           "identifier" : "3746cafa-4908-3847-9159-6ec0587c094e",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -60,7 +60,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
             "id" : "22f030d1-d837-3920-ab44-9dd6a7288ec3",
             "name" : "Listening for Updated Patients",
             "type" : "PROCESSOR"
@@ -69,21 +69,77 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
-          "bends" : [ {
-            "x" : 2752.983239608412,
-            "y" : 1506.5819992006036
-          } ],
+          "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+            "id" : "fe6cb592-1960-3474-9428-af4e2438b6b9",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+          "identifier" : "08eb306c-427a-3812-a00a-83aba165da01",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+            "id" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
+            "name" : "Publish Enriched Patient",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+            "id" : "cdc6ba33-1bde-3135-ba89-a989435b553b",
+            "name" : "Failure",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+          "identifier" : "3c76d25a-588c-36ba-aeac-474f49cdf3a7",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+            "id" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
+            "name" : "Publish Enriched Patient",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
             "id" : "e67a05b4-6f93-357c-abe7-3ab07bcc3621",
             "name" : "LogMessage",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-          "identifier" : "ba14cdbc-6177-3461-b18e-fc455627b286",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+          "identifier" : "4d228851-7b9e-3040-a4c5-33e3c7f662d1",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -93,7 +149,40 @@
           "selectedRelationships" : [ "" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "id" : "519fb1ad-adc7-310d-921d-ea273ef35367",
+            "name" : "DeID FHIR Resource",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 2752.0,
+            "y" : 1384.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+            "id" : "e67a05b4-6f93-357c-abe7-3ab07bcc3621",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+          "identifier" : "40f3de73-0cff-35c9-a1eb-0de5f4cf9377",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "id" : "22182f75-4fb7-34be-afeb-62c56ec96f8f",
             "name" : "DeID FHIR Response",
             "type" : "OUTPUT_PORT"
@@ -106,44 +195,14 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-            "id" : "e67a05b4-6f93-357c-abe7-3ab07bcc3621",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-          "identifier" : "88c437e8-acfe-3601-b677-4034f07b7b2f",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "id" : "519fb1ad-adc7-310d-921d-ea273ef35367",
-            "name" : "DeID FHIR Resource",
-            "type" : "OUTPUT_PORT"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+            "groupId" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
             "id" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
             "name" : "Publish Enriched Patient",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-          "identifier" : "496a244e-b41a-35a1-a7f4-a0a16f190734",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+          "identifier" : "7411f5f0-ec31-32c6-8ab6-4e0e2125f37c",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -153,69 +212,10 @@
           "selectedRelationships" : [ "" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "id" : "c9cb8abf-b552-3031-9e88-8956e555541e",
             "name" : "Enriched FHIR resource",
             "type" : "OUTPUT_PORT"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-            "id" : "fe6cb592-1960-3474-9428-af4e2438b6b9",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-          "identifier" : "08eb306c-427a-3812-a00a-83aba165da01",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-            "id" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
-            "name" : "Publish Enriched Patient",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-            "id" : "cdc6ba33-1bde-3135-ba89-a989435b553b",
-            "name" : "Failure",
-            "type" : "OUTPUT_PORT"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-          "identifier" : "3c76d25a-588c-36ba-aeac-474f49cdf3a7",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-            "id" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
-            "name" : "Publish Enriched Patient",
-            "type" : "PROCESSOR"
           },
           "zIndex" : 0
         } ],
@@ -223,11 +223,11 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+        "identifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
         "inputPorts" : [ ],
         "labels" : [ {
           "componentType" : "LABEL",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
           "height" : 32.0,
           "identifier" : "22b10441-7d00-3dfa-aebe-063f1a886b11",
           "label" : "enrich.in",
@@ -241,7 +241,7 @@
           "width" : 152.0
         }, {
           "componentType" : "LABEL",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
           "height" : 32.0,
           "identifier" : "e415c284-4f99-3947-bfeb-13772e87e98f",
           "label" : "enrich.out",
@@ -259,7 +259,7 @@
           "allowRemoteAccess" : false,
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
           "identifier" : "cdc6ba33-1bde-3135-ba89-a989435b553b",
           "name" : "Failure",
           "position" : {
@@ -270,8 +270,8 @@
         } ],
         "parameterContextName" : "Enrichment Parameter Context",
         "position" : {
-          "x" : 698.000015868651,
-          "y" : 123.0000301391417
+          "x" : -152.0,
+          "y" : -16.0
         },
         "processGroups" : [ {
           "comments" : "",
@@ -282,73 +282,15 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "ab112e4c-b75c-3487-b9fd-601b0907b5be",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "c9cb8abf-b552-3031-9e88-8956e555541e",
               "name" : "Enriched FHIR resource",
               "type" : "OUTPUT_PORT"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "b13e631e-9e9d-3c65-b542-1bd09c401840",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "unmatched" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
-              "name" : "RouteOnAttribute",
-              "type" : "PROCESSOR"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "22182f75-4fb7-34be-afeb-62c56ec96f8f",
-              "name" : "DeID FHIR Response",
-              "type" : "OUTPUT_PORT"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "749a788d-56c3-3c56-bbfe-6ab2964bceb2",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "8a688276-589e-3a32-8d97-5768afdbc485",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -358,37 +300,7 @@
             "selectedRelationships" : [ "" ],
             "source" : {
               "comments" : "",
-              "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "id" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
-              "name" : "FHIR Response",
-              "type" : "OUTPUT_PORT"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "c9cb8abf-b552-3031-9e88-8956e555541e",
-              "name" : "Enriched FHIR resource",
-              "type" : "OUTPUT_PORT"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "3c63c104-62c4-3e0f-bb77-b2d60e537d41",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+              "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "id" : "1f5f5055-9e5c-3256-8918-b354c885135a",
               "name" : "Output",
               "type" : "OUTPUT_PORT"
@@ -401,25 +313,83 @@
             "componentType" : "CONNECTION",
             "destination" : {
               "comments" : "",
-              "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "id" : "aee62770-b784-3db0-b17e-b8d7c8a97ce2",
-              "name" : "FHIR Resource",
-              "type" : "INPUT_PORT"
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "22182f75-4fb7-34be-afeb-62c56ec96f8f",
+              "name" : "DeID FHIR Response",
+              "type" : "OUTPUT_PORT"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "808a9197-6e88-3f0f-9355-cac82e6fdebc",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "59f38207-643d-31d1-a98a-c87361a40cff",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
             "name" : "",
             "partitioningAttribute" : "",
             "prioritizers" : [ ],
-            "selectedRelationships" : [ "DeidentifyData" ],
+            "selectedRelationships" : [ "" ],
             "source" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "1875c95f-253a-37c5-9589-d3353d5d9af0",
+              "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "id" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
+              "name" : "FHIR Response",
+              "type" : "OUTPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
+              "name" : "Failure",
+              "type" : "OUTPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "b68ad56d-8905-34c2-86a1-b6e3bad48331",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+              "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
+              "name" : "Failure",
+              "type" : "OUTPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "c9cb8abf-b552-3031-9e88-8956e555541e",
+              "name" : "Enriched FHIR resource",
+              "type" : "OUTPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "b13e631e-9e9d-3c65-b542-1bd09c401840",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "unmatched" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
             },
@@ -430,14 +400,14 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
               "name" : "Failure",
               "type" : "OUTPUT_PORT"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "156e4dbc-7ac2-3fc5-affe-f781be850af9",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "7d00b27d-14fd-3c9b-b612-680d7744323a",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -446,7 +416,7 @@
             "prioritizers" : [ ],
             "selectedRelationships" : [ "" ],
             "source" : {
-              "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
+              "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
               "id" : "36a7aa41-7b61-36f3-b1b2-5708f8e82f3e",
               "name" : "Failure",
               "type" : "OUTPUT_PORT"
@@ -459,83 +429,25 @@
             "componentType" : "CONNECTION",
             "destination" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
-              "name" : "RouteOnAttribute",
-              "type" : "PROCESSOR"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "afed848e-3a1d-324a-8f3b-db9a38a98218",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "id" : "1f5f5055-9e5c-3256-8918-b354c885135a",
-              "name" : "Output",
-              "type" : "OUTPUT_PORT"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "4432cb83-e020-3e57-a972-8d50d18f5072",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
-              "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
-              "id" : "d257175c-4548-311a-9003-56f9305285a9",
+              "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "id" : "aee62770-b784-3db0-b17e-b8d7c8a97ce2",
               "name" : "FHIR Resource",
               "type" : "INPUT_PORT"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "2638cfb2-7d41-33f4-9b75-94196a658d5b",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "808a9197-6e88-3f0f-9355-cac82e6fdebc",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
             "name" : "",
             "partitioningAttribute" : "",
             "prioritizers" : [ ],
-            "selectedRelationships" : [ "RunASCVD" ],
+            "selectedRelationships" : [ "DeidentifyData" ],
             "source" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "1875c95f-253a-37c5-9589-d3353d5d9af0",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
             },
@@ -547,14 +459,14 @@
             "componentType" : "CONNECTION",
             "destination" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "519fb1ad-adc7-310d-921d-ea273ef35367",
               "name" : "DeID FHIR Resource",
               "type" : "OUTPUT_PORT"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "86c939a4-5c3e-39a8-8afc-0e60ee30fe62",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "7e9bb852-61fe-34c3-8c5d-d571d15e89af",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -563,7 +475,7 @@
             "prioritizers" : [ ],
             "selectedRelationships" : [ "" ],
             "source" : {
-              "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
+              "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
               "id" : "b70a5d82-0603-3a23-b1e2-9ecfc814a794",
               "name" : "De-Identified FHIR Resource",
               "type" : "OUTPUT_PORT"
@@ -576,25 +488,25 @@
             "componentType" : "CONNECTION",
             "destination" : {
               "comments" : "",
-              "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
+              "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "id" : "d257175c-4548-311a-9003-56f9305285a9",
               "name" : "FHIR Resource",
               "type" : "INPUT_PORT"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "b49281af-d615-3672-88d5-d3aace8acb7b",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "2638cfb2-7d41-33f4-9b75-94196a658d5b",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
             "name" : "",
             "partitioningAttribute" : "",
             "prioritizers" : [ ],
-            "selectedRelationships" : [ "ResolveTerminology" ],
+            "selectedRelationships" : [ "RunASCVD" ],
             "source" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-              "id" : "f1a1f3a5-2b12-36dd-8f93-63772746b2eb",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
             },
@@ -605,14 +517,72 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
+              "name" : "Failure",
+              "type" : "OUTPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "d7e1bd39-0a58-3a2b-b427-09fa1f469c02",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
+              "name" : "Failure",
+              "type" : "OUTPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "4ea12a5c-bd7a-39be-a72d-2554aba8e4b5",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "id" : "1f5f5055-9e5c-3256-8918-b354c885135a",
+              "name" : "Output",
+              "type" : "OUTPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
+              "name" : "RouteOnAttribute",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "d4205ad2-9e50-3d19-938b-c9c716626d75",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -623,7 +593,7 @@
             "selectedRelationships" : [ "unmatched" ],
             "source" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "f1a1f3a5-2b12-36dd-8f93-63772746b2eb",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
@@ -636,13 +606,43 @@
             "componentType" : "CONNECTION",
             "destination" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "id" : "d257175c-4548-311a-9003-56f9305285a9",
+              "name" : "FHIR Resource",
+              "type" : "INPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "b49281af-d615-3672-88d5-d3aace8acb7b",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "ResolveTerminology" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "f1a1f3a5-2b12-36dd-8f93-63772746b2eb",
+              "name" : "RouteOnAttribute",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "f1a1f3a5-2b12-36dd-8f93-63772746b2eb",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "2ed273bc-736c-3eff-abe9-70604cdea319",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -653,7 +653,7 @@
             "selectedRelationships" : [ "DeidentifyData", "unmatched" ],
             "source" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "1875c95f-253a-37c5-9589-d3353d5d9af0",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
@@ -666,13 +666,13 @@
             "componentType" : "CONNECTION",
             "destination" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "1875c95f-253a-37c5-9589-d3353d5d9af0",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "66efc5d7-fdcc-3543-9ceb-8285b11a3f6e",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -683,7 +683,7 @@
             "selectedRelationships" : [ "" ],
             "source" : {
               "comments" : "",
-              "groupId" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "fef3ad4b-53db-3879-b4e8-c32a75c336c3",
               "name" : "FHIR resource",
               "type" : "INPUT_PORT"
@@ -694,14 +694,14 @@
           "flowFileConcurrency" : "UNBOUNDED",
           "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
           "funnels" : [ ],
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
-          "identifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
+          "identifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
           "inputPorts" : [ {
             "allowRemoteAccess" : false,
             "comments" : "",
             "componentType" : "INPUT_PORT",
             "concurrentlySchedulableTaskCount" : 1,
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "fef3ad4b-53db-3879-b4e8-c32a75c336c3",
             "name" : "FHIR resource",
             "position" : {
@@ -712,7 +712,7 @@
           } ],
           "labels" : [ {
             "componentType" : "LABEL",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "height" : 208.0,
             "identifier" : "14e0eb82-8386-3c2a-8590-c93537146f9d",
             "label" : "Run through ASCVD",
@@ -727,22 +727,7 @@
             "width" : 1040.0
           }, {
             "componentType" : "LABEL",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "height" : 208.0,
-            "identifier" : "991f820b-5f2f-33c5-ae31-b9cb62b95e5d",
-            "label" : "De-identify data",
-            "position" : {
-              "x" : 272.0,
-              "y" : 752.0
-            },
-            "style" : {
-              "background-color" : "#be2633",
-              "font-size" : "18px"
-            },
-            "width" : 1040.0
-          }, {
-            "componentType" : "LABEL",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "height" : 208.0,
             "identifier" : "a6282a9f-de32-344e-b71f-c69e42c244f7",
             "label" : "Run through Terminology Service",
@@ -755,6 +740,21 @@
               "font-size" : "18px"
             },
             "width" : 1040.0
+          }, {
+            "componentType" : "LABEL",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "height" : 208.0,
+            "identifier" : "991f820b-5f2f-33c5-ae31-b9cb62b95e5d",
+            "label" : "De-identify data",
+            "position" : {
+              "x" : 272.0,
+              "y" : 752.0
+            },
+            "style" : {
+              "background-color" : "#be2633",
+              "font-size" : "18px"
+            },
+            "width" : 1040.0
           } ],
           "name" : "Enrich FHIR Data",
           "outputPorts" : [ {
@@ -762,7 +762,7 @@
             "comments" : "",
             "componentType" : "OUTPUT_PORT",
             "concurrentlySchedulableTaskCount" : 1,
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "22182f75-4fb7-34be-afeb-62c56ec96f8f",
             "name" : "DeID FHIR Response",
             "position" : {
@@ -775,7 +775,7 @@
             "comments" : "",
             "componentType" : "OUTPUT_PORT",
             "concurrentlySchedulableTaskCount" : 1,
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "519fb1ad-adc7-310d-921d-ea273ef35367",
             "name" : "DeID FHIR Resource",
             "position" : {
@@ -788,7 +788,7 @@
             "comments" : "",
             "componentType" : "OUTPUT_PORT",
             "concurrentlySchedulableTaskCount" : 1,
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "c9cb8abf-b552-3031-9e88-8956e555541e",
             "name" : "Enriched FHIR resource",
             "position" : {
@@ -800,7 +800,7 @@
             "allowRemoteAccess" : false,
             "componentType" : "OUTPUT_PORT",
             "concurrentlySchedulableTaskCount" : 1,
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
             "name" : "Failure",
             "position" : {
@@ -811,8 +811,8 @@
           } ],
           "parameterContextName" : "Enrichment Parameter Context",
           "position" : {
-            "x" : 2232.983239608412,
-            "y" : 1362.5819992006036
+            "x" : 2232.0,
+            "y" : 1368.0
           },
           "processGroups" : [ {
             "comments" : "",
@@ -823,13 +823,564 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
-                "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
+                "name" : "FHIR Response",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "39cdac38-cd3d-3b66-be3a-f3d3584a6aca",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "Original" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "73cacc40-a805-35a9-8bdb-8baf9c3b1249",
+                "name" : "InvokeHTTP",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "6e2c3cf7-8b41-3bcf-809d-459f81ffff06",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "9ae25684-6d91-3d37-a207-dc588b071a60",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "Response" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "73cacc40-a805-35a9-8bdb-8baf9c3b1249",
+                "name" : "InvokeHTTP",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "b70a5d82-0603-3a23-b1e2-9ecfc814a794",
+                "name" : "De-Identified FHIR Resource",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "9d6bc1c1-0a92-3290-acfe-0bc34c6b9e8f",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "Success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "6e2c3cf7-8b41-3bcf-809d-459f81ffff06",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "73cacc40-a805-35a9-8bdb-8baf9c3b1249",
+                "name" : "InvokeHTTP",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "cb90366a-3d53-3c5e-8df0-dd9d9797aa80",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "aee62770-b784-3db0-b17e-b8d7c8a97ce2",
+                "name" : "FHIR Resource",
+                "type" : "INPUT_PORT"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "36a7aa41-7b61-36f3-b1b2-5708f8e82f3e",
+                "name" : "Failure",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "c7638529-4328-32a9-baf1-d05232d00e1c",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "unmatched" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "6e2c3cf7-8b41-3bcf-809d-459f81ffff06",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 1032.0,
+                "y" : -56.0
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "36a7aa41-7b61-36f3-b1b2-5708f8e82f3e",
+                "name" : "Failure",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "033da377-0e76-3851-9896-8fec1184e591",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "73cacc40-a805-35a9-8bdb-8baf9c3b1249",
+                "name" : "InvokeHTTP",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            } ],
+            "controllerServices" : [ ],
+            "flowFileConcurrency" : "UNBOUNDED",
+            "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+            "funnels" : [ ],
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+            "inputPorts" : [ {
+              "allowRemoteAccess" : false,
+              "comments" : "",
+              "componentType" : "INPUT_PORT",
+              "concurrentlySchedulableTaskCount" : 1,
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "aee62770-b784-3db0-b17e-b8d7c8a97ce2",
+              "name" : "FHIR Resource",
+              "position" : {
+                "x" : 264.0,
+                "y" : -264.0
+              },
+              "type" : "INPUT_PORT"
+            } ],
+            "labels" : [ ],
+            "name" : "De-identify Patient Data",
+            "outputPorts" : [ {
+              "allowRemoteAccess" : false,
+              "componentType" : "OUTPUT_PORT",
+              "concurrentlySchedulableTaskCount" : 1,
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "b70a5d82-0603-3a23-b1e2-9ecfc814a794",
+              "name" : "De-Identified FHIR Resource",
+              "position" : {
+                "x" : 416.0,
+                "y" : 336.0
+              },
+              "type" : "OUTPUT_PORT"
+            }, {
+              "allowRemoteAccess" : false,
+              "componentType" : "OUTPUT_PORT",
+              "concurrentlySchedulableTaskCount" : 1,
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "36a7aa41-7b61-36f3-b1b2-5708f8e82f3e",
+              "name" : "Failure",
+              "position" : {
+                "x" : 912.0,
+                "y" : 336.0
+              },
+              "type" : "OUTPUT_PORT"
+            }, {
+              "allowRemoteAccess" : false,
+              "comments" : "",
+              "componentType" : "OUTPUT_PORT",
+              "concurrentlySchedulableTaskCount" : 1,
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
+              "name" : "FHIR Response",
+              "position" : {
+                "x" : -32.0,
+                "y" : 336.0
+              },
+              "type" : "OUTPUT_PORT"
+            } ],
+            "parameterContextName" : "Enrichment Parameter Context",
+            "position" : {
+              "x" : 896.0,
+              "y" : 768.0
+            },
+            "processGroups" : [ ],
+            "processors" : [ {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.12.1"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "73cacc40-a805-35a9-8bdb-8baf9c3b1249",
+              "name" : "InvokeHTTP",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 208.0,
+                "y" : -120.0
+              },
+              "properties" : {
+                "use-etag" : "false",
+                "Proxy Type" : "http",
+                "Connection Timeout" : "5 secs",
+                "send-message-body" : "true",
+                "set-form-filename" : "true",
+                "Always Output Response" : "false",
+                "etag-max-cache-size" : "10MB",
+                "idle-timeout" : "5 mins",
+                "Use Chunked Encoding" : "false",
+                "Follow Redirects" : "True",
+                "Remote URL" : "#{DEID_PREP_URL}",
+                "Content-Type" : "${mime.type}",
+                "max-idle-connections" : "5",
+                "Read Timeout" : "15 secs",
+                "Max Length To Put In Attribute" : "256",
+                "ignore-response-content" : "false",
+                "Digest Authentication" : "false",
+                "HTTP Method" : "POST",
+                "Add Response Headers to Request" : "false",
+                "Include Date Header" : "True",
+                "Penalize on \"No Retry\"" : "false"
+              },
+              "propertyDescriptors" : {
+                "Proxy Host" : {
+                  "displayName" : "Proxy Host",
+                  "identifiesControllerService" : false,
+                  "name" : "Proxy Host",
+                  "sensitive" : false
+                },
+                "Attributes to Send" : {
+                  "displayName" : "Attributes to Send",
+                  "identifiesControllerService" : false,
+                  "name" : "Attributes to Send",
+                  "sensitive" : false
+                },
+                "use-etag" : {
+                  "displayName" : "Use HTTP ETag",
+                  "identifiesControllerService" : false,
+                  "name" : "use-etag",
+                  "sensitive" : false
+                },
+                "proxy-configuration-service" : {
+                  "displayName" : "Proxy Configuration Service",
+                  "identifiesControllerService" : true,
+                  "name" : "proxy-configuration-service",
+                  "sensitive" : false
+                },
+                "Proxy Type" : {
+                  "displayName" : "Proxy Type",
+                  "identifiesControllerService" : false,
+                  "name" : "Proxy Type",
+                  "sensitive" : false
+                },
+                "Basic Authentication Password" : {
+                  "displayName" : "Basic Authentication Password",
+                  "identifiesControllerService" : false,
+                  "name" : "Basic Authentication Password",
+                  "sensitive" : true
+                },
+                "Connection Timeout" : {
+                  "displayName" : "Connection Timeout",
+                  "identifiesControllerService" : false,
+                  "name" : "Connection Timeout",
+                  "sensitive" : false
+                },
+                "send-message-body" : {
+                  "displayName" : "Send Message Body",
+                  "identifiesControllerService" : false,
+                  "name" : "send-message-body",
+                  "sensitive" : false
+                },
+                "set-form-filename" : {
+                  "displayName" : "Set Flowfile Form Data File Name",
+                  "identifiesControllerService" : false,
+                  "name" : "set-form-filename",
+                  "sensitive" : false
+                },
+                "Always Output Response" : {
+                  "displayName" : "Always Output Response",
+                  "identifiesControllerService" : false,
+                  "name" : "Always Output Response",
+                  "sensitive" : false
+                },
+                "etag-max-cache-size" : {
+                  "displayName" : "Maximum ETag Cache Size",
+                  "identifiesControllerService" : false,
+                  "name" : "etag-max-cache-size",
+                  "sensitive" : false
+                },
+                "idle-timeout" : {
+                  "displayName" : "Idle Timeout",
+                  "identifiesControllerService" : false,
+                  "name" : "idle-timeout",
+                  "sensitive" : false
+                },
+                "Put Response Body In Attribute" : {
+                  "displayName" : "Put Response Body In Attribute",
+                  "identifiesControllerService" : false,
+                  "name" : "Put Response Body In Attribute",
+                  "sensitive" : false
+                },
+                "Use Chunked Encoding" : {
+                  "displayName" : "Use Chunked Encoding",
+                  "identifiesControllerService" : false,
+                  "name" : "Use Chunked Encoding",
+                  "sensitive" : false
+                },
+                "Follow Redirects" : {
+                  "displayName" : "Follow Redirects",
+                  "identifiesControllerService" : false,
+                  "name" : "Follow Redirects",
+                  "sensitive" : false
+                },
+                "Remote URL" : {
+                  "displayName" : "Remote URL",
+                  "identifiesControllerService" : false,
+                  "name" : "Remote URL",
+                  "sensitive" : false
+                },
+                "Content-Type" : {
+                  "displayName" : "Content-Type",
+                  "identifiesControllerService" : false,
+                  "name" : "Content-Type",
+                  "sensitive" : false
+                },
+                "form-body-form-name" : {
+                  "displayName" : "Flowfile Form Data Name",
+                  "identifiesControllerService" : false,
+                  "name" : "form-body-form-name",
+                  "sensitive" : false
+                },
+                "max-idle-connections" : {
+                  "displayName" : "Max Idle Connections",
+                  "identifiesControllerService" : false,
+                  "name" : "max-idle-connections",
+                  "sensitive" : false
+                },
+                "invokehttp-proxy-user" : {
+                  "displayName" : "Proxy Username",
+                  "identifiesControllerService" : false,
+                  "name" : "invokehttp-proxy-user",
+                  "sensitive" : false
+                },
+                "Read Timeout" : {
+                  "displayName" : "Read Timeout",
+                  "identifiesControllerService" : false,
+                  "name" : "Read Timeout",
+                  "sensitive" : false
+                },
+                "Max Length To Put In Attribute" : {
+                  "displayName" : "Max Length To Put In Attribute",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Length To Put In Attribute",
+                  "sensitive" : false
+                },
+                "invokehttp-proxy-password" : {
+                  "displayName" : "Proxy Password",
+                  "identifiesControllerService" : false,
+                  "name" : "invokehttp-proxy-password",
+                  "sensitive" : true
+                },
+                "ignore-response-content" : {
+                  "displayName" : "Ignore response's content",
+                  "identifiesControllerService" : false,
+                  "name" : "ignore-response-content",
+                  "sensitive" : false
+                },
+                "Proxy Port" : {
+                  "displayName" : "Proxy Port",
+                  "identifiesControllerService" : false,
+                  "name" : "Proxy Port",
+                  "sensitive" : false
+                },
+                "SSL Context Service" : {
+                  "displayName" : "SSL Context Service",
+                  "identifiesControllerService" : true,
+                  "name" : "SSL Context Service",
+                  "sensitive" : false
+                },
+                "Digest Authentication" : {
+                  "displayName" : "Use Digest Authentication",
+                  "identifiesControllerService" : false,
+                  "name" : "Digest Authentication",
+                  "sensitive" : false
+                },
+                "HTTP Method" : {
+                  "displayName" : "HTTP Method",
+                  "identifiesControllerService" : false,
+                  "name" : "HTTP Method",
+                  "sensitive" : false
+                },
+                "Add Response Headers to Request" : {
+                  "displayName" : "Add Response Headers to Request",
+                  "identifiesControllerService" : false,
+                  "name" : "Add Response Headers to Request",
+                  "sensitive" : false
+                },
+                "Basic Authentication Username" : {
+                  "displayName" : "Basic Authentication Username",
+                  "identifiesControllerService" : false,
+                  "name" : "Basic Authentication Username",
+                  "sensitive" : false
+                },
+                "Include Date Header" : {
+                  "displayName" : "Include Date Header",
+                  "identifiesControllerService" : false,
+                  "name" : "Include Date Header",
+                  "sensitive" : false
+                },
+                "Penalize on \"No Retry\"" : {
+                  "displayName" : "Penalize on \"No Retry\"",
+                  "identifiesControllerService" : false,
+                  "name" : "Penalize on \"No Retry\"",
+                  "sensitive" : false
+                },
+                "Useragent" : {
+                  "displayName" : "Useragent",
+                  "identifiesControllerService" : false,
+                  "name" : "Useragent",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.12.1"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "6e2c3cf7-8b41-3bcf-809d-459f81ffff06",
+              "name" : "RouteOnAttribute",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 360.0,
+                "y" : 120.0
+              },
+              "properties" : {
+                "Routing Strategy" : "Route to Property name",
+                "Success" : "${invokehttp.status.code:equals('200')}"
+              },
+              "propertyDescriptors" : {
+                "Routing Strategy" : {
+                  "displayName" : "Routing Strategy",
+                  "identifiesControllerService" : false,
+                  "name" : "Routing Strategy",
+                  "sensitive" : false
+                },
+                "Success" : {
+                  "displayName" : "Success",
+                  "identifiesControllerService" : false,
+                  "name" : "Success",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+              "yieldDuration" : "1 sec"
+            } ],
+            "remoteProcessGroups" : [ ],
+            "variables" : { }
+          }, {
+            "comments" : "",
+            "componentType" : "PROCESS_GROUP",
+            "connections" : [ {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 1944.0,
+                "y" : 952.0
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
                 "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
                 "name" : "Failure",
                 "type" : "OUTPUT_PORT"
               },
               "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "identifier" : "e125a172-1fbc-322d-9a13-a3265dc48981",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -840,7 +1391,7 @@
               "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
               "source" : {
                 "comments" : "",
-                "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
                 "id" : "fe5de16d-2f25-3b2a-a576-c92014af7a48",
                 "name" : "Calculate ASCVD and add RiskAssessment to Bundle",
                 "type" : "PROCESSOR"
@@ -853,13 +1404,13 @@
               "componentType" : "CONNECTION",
               "destination" : {
                 "comments" : "",
-                "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
                 "id" : "fe5de16d-2f25-3b2a-a576-c92014af7a48",
                 "name" : "Calculate ASCVD and add RiskAssessment to Bundle",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "identifier" : "723414ab-4da2-3996-8f5e-babc60b3becb",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -870,7 +1421,7 @@
               "selectedRelationships" : [ "" ],
               "source" : {
                 "comments" : "",
-                "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
                 "id" : "d257175c-4548-311a-9003-56f9305285a9",
                 "name" : "FHIR Resource",
                 "type" : "INPUT_PORT"
@@ -882,14 +1433,73 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+                "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
+                "name" : "Failure",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+              "identifier" : "0cc0efca-5876-31a4-a9e0-f9b39e208ab0",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "unmatched" ],
+              "source" : {
                 "comments" : "",
-                "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+                "id" : "781921fd-fbc2-3e92-bf1f-54e818d76a41",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
                 "id" : "1f5f5055-9e5c-3256-8918-b354c885135a",
                 "name" : "Output",
                 "type" : "OUTPUT_PORT"
               },
               "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+              "identifier" : "2c35b8ad-7181-3d6f-9744-966b57f170fc",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "Success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+                "id" : "781921fd-fbc2-3e92-bf1f-54e818d76a41",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+                "id" : "781921fd-fbc2-3e92-bf1f-54e818d76a41",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "identifier" : "a7ab66e5-5148-3026-8eb3-c7146b0de6d3",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -900,7 +1510,7 @@
               "selectedRelationships" : [ "Response" ],
               "source" : {
                 "comments" : "",
-                "groupId" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+                "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
                 "id" : "fe5de16d-2f25-3b2a-a576-c92014af7a48",
                 "name" : "Calculate ASCVD and add RiskAssessment to Bundle",
                 "type" : "PROCESSOR"
@@ -911,14 +1521,14 @@
             "flowFileConcurrency" : "UNBOUNDED",
             "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
             "funnels" : [ ],
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
             "inputPorts" : [ {
               "allowRemoteAccess" : false,
               "comments" : "",
               "componentType" : "INPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "identifier" : "d257175c-4548-311a-9003-56f9305285a9",
               "name" : "FHIR Resource",
               "position" : {
@@ -934,24 +1544,24 @@
               "comments" : "",
               "componentType" : "OUTPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "identifier" : "1f5f5055-9e5c-3256-8918-b354c885135a",
               "name" : "Output",
               "position" : {
-                "x" : 1192.0,
-                "y" : 1000.0
+                "x" : 1104.0,
+                "y" : 1248.0
               },
               "type" : "OUTPUT_PORT"
             }, {
               "allowRemoteAccess" : false,
               "componentType" : "OUTPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "identifier" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
               "name" : "Failure",
               "position" : {
-                "x" : 1688.0,
-                "y" : 1000.0
+                "x" : 1824.0,
+                "y" : 1248.0
               },
               "type" : "OUTPUT_PORT"
             } ],
@@ -973,7 +1583,7 @@
               "componentType" : "PROCESSOR",
               "concurrentlySchedulableTaskCount" : 1,
               "executionNode" : "ALL",
-              "groupIdentifier" : "dea121a6-8a8b-33de-a1ae-a7f39d16fe1f",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
               "identifier" : "fe5de16d-2f25-3b2a-a576-c92014af7a48",
               "name" : "Calculate ASCVD and add RiskAssessment to Bundle",
               "penaltyDuration" : "30 sec",
@@ -1211,199 +1821,42 @@
               "style" : { },
               "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
               "yieldDuration" : "1 sec"
-            } ],
-            "remoteProcessGroups" : [ ],
-            "variables" : { }
-          }, {
-            "comments" : "",
-            "componentType" : "PROCESS_GROUP",
-            "connections" : [ {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-                "id" : "1f5f5055-9e5c-3256-8918-b354c885135a",
-                "name" : "Output",
-                "type" : "OUTPUT_PORT"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "identifier" : "7961bef9-b9c6-3fde-b57e-a41c3391fc05",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "success" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-                "id" : "baab324d-68e1-3c0c-b40e-f98f8fb4b22b",
-                "name" : "FHIRTranslation",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
             }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-                "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
-                "name" : "Failure",
-                "type" : "OUTPUT_PORT"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "identifier" : "5a4d41ab-8f55-35c4-abd8-95b4c9e9a439",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "failure" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-                "id" : "baab324d-68e1-3c0c-b40e-f98f8fb4b22b",
-                "name" : "FHIRTranslation",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-                "id" : "baab324d-68e1-3c0c-b40e-f98f8fb4b22b",
-                "name" : "FHIRTranslation",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "identifier" : "a763f96b-03ef-3a22-b432-49c281b9a46c",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-                "id" : "d257175c-4548-311a-9003-56f9305285a9",
-                "name" : "FHIR Resource",
-                "type" : "INPUT_PORT"
-              },
-              "zIndex" : 0
-            } ],
-            "controllerServices" : [ ],
-            "flowFileConcurrency" : "UNBOUNDED",
-            "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
-            "funnels" : [ ],
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-            "inputPorts" : [ {
-              "allowRemoteAccess" : false,
-              "comments" : "",
-              "componentType" : "INPUT_PORT",
-              "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "identifier" : "d257175c-4548-311a-9003-56f9305285a9",
-              "name" : "FHIR Resource",
-              "position" : {
-                "x" : 368.0,
-                "y" : 152.0
-              },
-              "type" : "INPUT_PORT"
-            } ],
-            "labels" : [ ],
-            "name" : "Resolve Terminology",
-            "outputPorts" : [ {
-              "allowRemoteAccess" : false,
-              "comments" : "",
-              "componentType" : "OUTPUT_PORT",
-              "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "identifier" : "1f5f5055-9e5c-3256-8918-b354c885135a",
-              "name" : "Output",
-              "position" : {
-                "x" : 1344.0,
-                "y" : 80.0
-              },
-              "type" : "OUTPUT_PORT"
-            }, {
-              "allowRemoteAccess" : false,
-              "componentType" : "OUTPUT_PORT",
-              "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "identifier" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
-              "name" : "Failure",
-              "position" : {
-                "x" : 1352.0,
-                "y" : 240.0
-              },
-              "type" : "OUTPUT_PORT"
-            } ],
-            "parameterContextName" : "cms_adapter_parameters",
-            "position" : {
-              "x" : 904.0,
-              "y" : 1056.0
-            },
-            "processGroups" : [ ],
-            "processors" : [ {
               "autoTerminatedRelationships" : [ ],
               "bulletinLevel" : "WARN",
               "bundle" : {
-                "artifact" : "nifi-health-patterns-nar",
-                "group" : "com.ibm.healthpatterns",
-                "version" : "0.0.2-SNAPSHOT"
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.12.1"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
               "concurrentlySchedulableTaskCount" : 1,
               "executionNode" : "ALL",
-              "groupIdentifier" : "244b5a82-d615-3e00-aaa0-1dccc7326857",
-              "identifier" : "baab324d-68e1-3c0c-b40e-f98f8fb4b22b",
-              "name" : "FHIRTranslation",
+              "groupIdentifier" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+              "identifier" : "781921fd-fbc2-3e92-bf1f-54e818d76a41",
+              "name" : "RouteOnAttribute",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 744.0,
-                "y" : 112.0
+                "x" : 1376.0,
+                "y" : 968.0
               },
               "properties" : {
-                "FHIR Server Username" : "#{FHIR_User_PatientAccess}",
-                "FHIR Server URL" : "#{FHIR_URL_PatientAccess}",
-                "FHIR Server Password" : "#{FHIR_UserPwd_PatientAccess}"
+                "Routing Strategy" : "Route to Property name",
+                "Success" : "${invokehttp.status.code:equals('200')}"
               },
               "propertyDescriptors" : {
-                "FHIR Server Username" : {
-                  "displayName" : "FHIR Server Username",
+                "Routing Strategy" : {
+                  "displayName" : "Routing Strategy",
                   "identifiesControllerService" : false,
-                  "name" : "FHIR Server Username",
+                  "name" : "Routing Strategy",
                   "sensitive" : false
                 },
-                "FHIR Server URL" : {
-                  "displayName" : "FHIR Server URL",
+                "Success" : {
+                  "displayName" : "Success",
                   "identifiesControllerService" : false,
-                  "name" : "FHIR Server URL",
+                  "name" : "Success",
                   "sensitive" : false
-                },
-                "FHIR Server Password" : {
-                  "displayName" : "FHIR Server Password",
-                  "identifiesControllerService" : false,
-                  "name" : "FHIR Server Password",
-                  "sensitive" : true
                 }
               },
               "runDurationMillis" : 0,
@@ -1411,7 +1864,7 @@
               "schedulingPeriod" : "0 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
-              "type" : "com.ibm.healthpatterns.processors.terminology.FHIRTranslation",
+              "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
               "yieldDuration" : "1 sec"
             } ],
             "remoteProcessGroups" : [ ],
@@ -1425,26 +1878,27 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
-                "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-                "id" : "b70a5d82-0603-3a23-b1e2-9ecfc814a794",
-                "name" : "De-Identified FHIR Resource",
+                "comments" : "",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "1f5f5055-9e5c-3256-8918-b354c885135a",
+                "name" : "Output",
                 "type" : "OUTPUT_PORT"
               },
               "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "ebd7596a-6e32-3f81-8511-732aa02c694c",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "1b10ab6e-c21a-35b6-8666-b51127c8bfb7",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
               "name" : "",
               "partitioningAttribute" : "",
               "prioritizers" : [ ],
-              "selectedRelationships" : [ "deidentified" ],
+              "selectedRelationships" : [ "Success" ],
               "source" : {
                 "comments" : "",
-                "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-                "id" : "89529bea-7d1f-3834-9743-be565aa47417",
-                "name" : "DeIdentify",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "95c2cbe8-a8ea-35ab-be23-1b9dea39e83f",
+                "name" : "RouteOnAttribute",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -1454,56 +1908,58 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
-                "comments" : "",
-                "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-                "id" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
-                "name" : "FHIR Response",
-                "type" : "OUTPUT_PORT"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "29cd5f93-4faa-373b-a14a-5352bb0155d0",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "success" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-                "id" : "89529bea-7d1f-3834-9743-be565aa47417",
-                "name" : "DeIdentify",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-                "id" : "36a7aa41-7b61-36f3-b1b2-5708f8e82f3e",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
                 "name" : "Failure",
                 "type" : "OUTPUT_PORT"
               },
               "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "920c5855-3313-3232-8b29-9da3f88f3173",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "f1060b11-8197-3d76-ae77-26d6cfb0ce7a",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
               "name" : "",
               "partitioningAttribute" : "",
               "prioritizers" : [ ],
-              "selectedRelationships" : [ "failure" ],
+              "selectedRelationships" : [ "unmatched" ],
               "source" : {
                 "comments" : "",
-                "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-                "id" : "89529bea-7d1f-3834-9743-be565aa47417",
-                "name" : "DeIdentify",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "95c2cbe8-a8ea-35ab-be23-1b9dea39e83f",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 1280.0,
+                "y" : 336.0
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
+                "name" : "Failure",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "b1dd0d82-5542-32fb-9966-560fcb38714e",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "c1d3d962-e9d1-36b5-81c1-8933de1c2e91",
+                "name" : "InvokeHTTP",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -1514,14 +1970,14 @@
               "componentType" : "CONNECTION",
               "destination" : {
                 "comments" : "",
-                "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-                "id" : "89529bea-7d1f-3834-9743-be565aa47417",
-                "name" : "DeIdentify",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "c1d3d962-e9d1-36b5-81c1-8933de1c2e91",
+                "name" : "InvokeHTTP",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "e0140fea-2232-3e72-a241-1fc95d3cdf5b",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "12d85fc9-f95a-335d-bce5-5d5383a08bcf",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -1531,10 +1987,40 @@
               "selectedRelationships" : [ "" ],
               "source" : {
                 "comments" : "",
-                "groupId" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-                "id" : "aee62770-b784-3db0-b17e-b8d7c8a97ce2",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "d257175c-4548-311a-9003-56f9305285a9",
                 "name" : "FHIR Resource",
                 "type" : "INPUT_PORT"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "95c2cbe8-a8ea-35ab-be23-1b9dea39e83f",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "ef433c89-44b7-3074-a292-06401597bb96",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "Response" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "c1d3d962-e9d1-36b5-81c1-8933de1c2e91",
+                "name" : "InvokeHTTP",
+                "type" : "PROCESSOR"
               },
               "zIndex" : 0
             } ],
@@ -1542,117 +2028,91 @@
             "flowFileConcurrency" : "UNBOUNDED",
             "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
             "funnels" : [ ],
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
-            "identifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
             "inputPorts" : [ {
               "allowRemoteAccess" : false,
               "comments" : "",
               "componentType" : "INPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "aee62770-b784-3db0-b17e-b8d7c8a97ce2",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "d257175c-4548-311a-9003-56f9305285a9",
               "name" : "FHIR Resource",
               "position" : {
-                "x" : -304.0,
-                "y" : -80.0
+                "x" : 832.0,
+                "y" : -112.0
               },
               "type" : "INPUT_PORT"
             } ],
             "labels" : [ ],
-            "name" : "De-identify Patient Data",
+            "name" : "Resolve Terminology",
             "outputPorts" : [ {
-              "allowRemoteAccess" : false,
-              "componentType" : "OUTPUT_PORT",
-              "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "b70a5d82-0603-3a23-b1e2-9ecfc814a794",
-              "name" : "De-Identified FHIR Resource",
-              "position" : {
-                "x" : 808.0,
-                "y" : 48.0
-              },
-              "type" : "OUTPUT_PORT"
-            }, {
-              "allowRemoteAccess" : false,
-              "componentType" : "OUTPUT_PORT",
-              "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "36a7aa41-7b61-36f3-b1b2-5708f8e82f3e",
-              "name" : "Failure",
-              "position" : {
-                "x" : 240.0,
-                "y" : 176.0
-              },
-              "type" : "OUTPUT_PORT"
-            }, {
               "allowRemoteAccess" : false,
               "comments" : "",
               "componentType" : "OUTPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
-              "name" : "FHIR Response",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "1f5f5055-9e5c-3256-8918-b354c885135a",
+              "name" : "Output",
               "position" : {
-                "x" : 800.0,
-                "y" : -152.0
+                "x" : 568.0,
+                "y" : 600.0
+              },
+              "type" : "OUTPUT_PORT"
+            }, {
+              "allowRemoteAccess" : false,
+              "componentType" : "OUTPUT_PORT",
+              "concurrentlySchedulableTaskCount" : 1,
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
+              "name" : "Failure",
+              "position" : {
+                "x" : 1160.0,
+                "y" : 600.0
               },
               "type" : "OUTPUT_PORT"
             } ],
-            "parameterContextName" : "Clinical Ingestion De-Identification Parameter Context",
+            "parameterContextName" : "Enrichment Parameter Context",
             "position" : {
-              "x" : 896.0,
-              "y" : 768.0
+              "x" : 904.0,
+              "y" : 1056.0
             },
             "processGroups" : [ ],
             "processors" : [ {
-              "autoTerminatedRelationships" : [ "original" ],
+              "autoTerminatedRelationships" : [ ],
               "bulletinLevel" : "WARN",
               "bundle" : {
-                "artifact" : "nifi-health-patterns-nar",
-                "group" : "com.ibm.healthpatterns",
-                "version" : "0.0.2-SNAPSHOT"
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.12.1"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
               "concurrentlySchedulableTaskCount" : 1,
               "executionNode" : "ALL",
-              "groupIdentifier" : "7d295d3e-de2e-3390-8d18-245eb0ade35e",
-              "identifier" : "89529bea-7d1f-3834-9743-be565aa47417",
-              "name" : "DeIdentify",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "95c2cbe8-a8ea-35ab-be23-1b9dea39e83f",
+              "name" : "RouteOnAttribute",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 184.0,
-                "y" : -104.0
+                "x" : 776.0,
+                "y" : 296.0
               },
               "properties" : {
-                "De-identification Service URL" : "#{DEID_SERVICE_API_URL}",
-                "De-identified FHIR Server Username" : "#{DEID_FHIR_USER}",
-                "De-identified FHIR Server Password" : "#{DEID_FHIR_PASSWORD}",
-                "De-identified FHIR Server URL" : "#{DEID_FHIR_SERVER}"
+                "Routing Strategy" : "Route to Property name",
+                "Success" : "${invokehttp.status.code:equals('200')}"
               },
               "propertyDescriptors" : {
-                "De-identification Service URL" : {
-                  "displayName" : "De-identification Service URL",
+                "Routing Strategy" : {
+                  "displayName" : "Routing Strategy",
                   "identifiesControllerService" : false,
-                  "name" : "De-identification Service URL",
+                  "name" : "Routing Strategy",
                   "sensitive" : false
                 },
-                "De-identified FHIR Server Username" : {
-                  "displayName" : "De-identified FHIR Server Username",
+                "Success" : {
+                  "displayName" : "Success",
                   "identifiesControllerService" : false,
-                  "name" : "De-identified FHIR Server Username",
-                  "sensitive" : false
-                },
-                "De-identified FHIR Server Password" : {
-                  "displayName" : "De-identified FHIR Server Password",
-                  "identifiesControllerService" : false,
-                  "name" : "De-identified FHIR Server Password",
-                  "sensitive" : true
-                },
-                "De-identified FHIR Server URL" : {
-                  "displayName" : "De-identified FHIR Server URL",
-                  "identifiesControllerService" : false,
-                  "name" : "De-identified FHIR Server URL",
+                  "name" : "Success",
                   "sensitive" : false
                 }
               },
@@ -1661,7 +2121,257 @@
               "schedulingPeriod" : "0 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
-              "type" : "com.ibm.healthpatterns.processors.deid.DeIdentify",
+              "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ "Original" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.12.1"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "c1d3d962-e9d1-36b5-81c1-8933de1c2e91",
+              "name" : "InvokeHTTP",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 776.0,
+                "y" : 48.0
+              },
+              "properties" : {
+                "use-etag" : "false",
+                "Proxy Type" : "http",
+                "Connection Timeout" : "5 secs",
+                "send-message-body" : "true",
+                "set-form-filename" : "true",
+                "Always Output Response" : "false",
+                "etag-max-cache-size" : "10MB",
+                "idle-timeout" : "5 mins",
+                "Use Chunked Encoding" : "false",
+                "Follow Redirects" : "True",
+                "Remote URL" : "#{TERM_SERVICES_PREP_URL}",
+                "Content-Type" : "${mime.type}",
+                "max-idle-connections" : "5",
+                "Read Timeout" : "15 secs",
+                "Max Length To Put In Attribute" : "256",
+                "ignore-response-content" : "false",
+                "Digest Authentication" : "false",
+                "HTTP Method" : "POST",
+                "Add Response Headers to Request" : "false",
+                "Include Date Header" : "True",
+                "Penalize on \"No Retry\"" : "false"
+              },
+              "propertyDescriptors" : {
+                "Proxy Host" : {
+                  "displayName" : "Proxy Host",
+                  "identifiesControllerService" : false,
+                  "name" : "Proxy Host",
+                  "sensitive" : false
+                },
+                "Attributes to Send" : {
+                  "displayName" : "Attributes to Send",
+                  "identifiesControllerService" : false,
+                  "name" : "Attributes to Send",
+                  "sensitive" : false
+                },
+                "use-etag" : {
+                  "displayName" : "Use HTTP ETag",
+                  "identifiesControllerService" : false,
+                  "name" : "use-etag",
+                  "sensitive" : false
+                },
+                "proxy-configuration-service" : {
+                  "displayName" : "Proxy Configuration Service",
+                  "identifiesControllerService" : true,
+                  "name" : "proxy-configuration-service",
+                  "sensitive" : false
+                },
+                "Proxy Type" : {
+                  "displayName" : "Proxy Type",
+                  "identifiesControllerService" : false,
+                  "name" : "Proxy Type",
+                  "sensitive" : false
+                },
+                "Basic Authentication Password" : {
+                  "displayName" : "Basic Authentication Password",
+                  "identifiesControllerService" : false,
+                  "name" : "Basic Authentication Password",
+                  "sensitive" : true
+                },
+                "Connection Timeout" : {
+                  "displayName" : "Connection Timeout",
+                  "identifiesControllerService" : false,
+                  "name" : "Connection Timeout",
+                  "sensitive" : false
+                },
+                "send-message-body" : {
+                  "displayName" : "Send Message Body",
+                  "identifiesControllerService" : false,
+                  "name" : "send-message-body",
+                  "sensitive" : false
+                },
+                "set-form-filename" : {
+                  "displayName" : "Set Flowfile Form Data File Name",
+                  "identifiesControllerService" : false,
+                  "name" : "set-form-filename",
+                  "sensitive" : false
+                },
+                "Always Output Response" : {
+                  "displayName" : "Always Output Response",
+                  "identifiesControllerService" : false,
+                  "name" : "Always Output Response",
+                  "sensitive" : false
+                },
+                "etag-max-cache-size" : {
+                  "displayName" : "Maximum ETag Cache Size",
+                  "identifiesControllerService" : false,
+                  "name" : "etag-max-cache-size",
+                  "sensitive" : false
+                },
+                "idle-timeout" : {
+                  "displayName" : "Idle Timeout",
+                  "identifiesControllerService" : false,
+                  "name" : "idle-timeout",
+                  "sensitive" : false
+                },
+                "Put Response Body In Attribute" : {
+                  "displayName" : "Put Response Body In Attribute",
+                  "identifiesControllerService" : false,
+                  "name" : "Put Response Body In Attribute",
+                  "sensitive" : false
+                },
+                "Use Chunked Encoding" : {
+                  "displayName" : "Use Chunked Encoding",
+                  "identifiesControllerService" : false,
+                  "name" : "Use Chunked Encoding",
+                  "sensitive" : false
+                },
+                "Follow Redirects" : {
+                  "displayName" : "Follow Redirects",
+                  "identifiesControllerService" : false,
+                  "name" : "Follow Redirects",
+                  "sensitive" : false
+                },
+                "Remote URL" : {
+                  "displayName" : "Remote URL",
+                  "identifiesControllerService" : false,
+                  "name" : "Remote URL",
+                  "sensitive" : false
+                },
+                "Content-Type" : {
+                  "displayName" : "Content-Type",
+                  "identifiesControllerService" : false,
+                  "name" : "Content-Type",
+                  "sensitive" : false
+                },
+                "form-body-form-name" : {
+                  "displayName" : "Flowfile Form Data Name",
+                  "identifiesControllerService" : false,
+                  "name" : "form-body-form-name",
+                  "sensitive" : false
+                },
+                "max-idle-connections" : {
+                  "displayName" : "Max Idle Connections",
+                  "identifiesControllerService" : false,
+                  "name" : "max-idle-connections",
+                  "sensitive" : false
+                },
+                "invokehttp-proxy-user" : {
+                  "displayName" : "Proxy Username",
+                  "identifiesControllerService" : false,
+                  "name" : "invokehttp-proxy-user",
+                  "sensitive" : false
+                },
+                "Read Timeout" : {
+                  "displayName" : "Read Timeout",
+                  "identifiesControllerService" : false,
+                  "name" : "Read Timeout",
+                  "sensitive" : false
+                },
+                "Max Length To Put In Attribute" : {
+                  "displayName" : "Max Length To Put In Attribute",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Length To Put In Attribute",
+                  "sensitive" : false
+                },
+                "invokehttp-proxy-password" : {
+                  "displayName" : "Proxy Password",
+                  "identifiesControllerService" : false,
+                  "name" : "invokehttp-proxy-password",
+                  "sensitive" : true
+                },
+                "ignore-response-content" : {
+                  "displayName" : "Ignore response's content",
+                  "identifiesControllerService" : false,
+                  "name" : "ignore-response-content",
+                  "sensitive" : false
+                },
+                "Proxy Port" : {
+                  "displayName" : "Proxy Port",
+                  "identifiesControllerService" : false,
+                  "name" : "Proxy Port",
+                  "sensitive" : false
+                },
+                "SSL Context Service" : {
+                  "displayName" : "SSL Context Service",
+                  "identifiesControllerService" : true,
+                  "name" : "SSL Context Service",
+                  "sensitive" : false
+                },
+                "Digest Authentication" : {
+                  "displayName" : "Use Digest Authentication",
+                  "identifiesControllerService" : false,
+                  "name" : "Digest Authentication",
+                  "sensitive" : false
+                },
+                "HTTP Method" : {
+                  "displayName" : "HTTP Method",
+                  "identifiesControllerService" : false,
+                  "name" : "HTTP Method",
+                  "sensitive" : false
+                },
+                "Add Response Headers to Request" : {
+                  "displayName" : "Add Response Headers to Request",
+                  "identifiesControllerService" : false,
+                  "name" : "Add Response Headers to Request",
+                  "sensitive" : false
+                },
+                "Basic Authentication Username" : {
+                  "displayName" : "Basic Authentication Username",
+                  "identifiesControllerService" : false,
+                  "name" : "Basic Authentication Username",
+                  "sensitive" : false
+                },
+                "Include Date Header" : {
+                  "displayName" : "Include Date Header",
+                  "identifiesControllerService" : false,
+                  "name" : "Include Date Header",
+                  "sensitive" : false
+                },
+                "Penalize on \"No Retry\"" : {
+                  "displayName" : "Penalize on \"No Retry\"",
+                  "identifiesControllerService" : false,
+                  "name" : "Penalize on \"No Retry\"",
+                  "sensitive" : false
+                },
+                "Useragent" : {
+                  "displayName" : "Useragent",
+                  "identifiesControllerService" : false,
+                  "name" : "Useragent",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
               "yieldDuration" : "1 sec"
             } ],
             "remoteProcessGroups" : [ ],
@@ -1679,7 +2389,7 @@
             "componentType" : "PROCESSOR",
             "concurrentlySchedulableTaskCount" : 1,
             "executionNode" : "ALL",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
             "name" : "RouteOnAttribute",
             "penaltyDuration" : "30 sec",
@@ -1724,7 +2434,7 @@
             "componentType" : "PROCESSOR",
             "concurrentlySchedulableTaskCount" : 1,
             "executionNode" : "ALL",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "f1a1f3a5-2b12-36dd-8f93-63772746b2eb",
             "name" : "RouteOnAttribute",
             "penaltyDuration" : "30 sec",
@@ -1769,7 +2479,7 @@
             "componentType" : "PROCESSOR",
             "concurrentlySchedulableTaskCount" : 1,
             "executionNode" : "ALL",
-            "groupIdentifier" : "f00c88e2-ace1-3c45-b9d1-482b0d97abda",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
             "identifier" : "1875c95f-253a-37c5-9589-d3353d5d9af0",
             "name" : "RouteOnAttribute",
             "penaltyDuration" : "30 sec",
@@ -1818,7 +2528,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
           "identifier" : "fe6cb592-1960-3474-9428-af4e2438b6b9",
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
@@ -1869,7 +2579,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
           "identifier" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
           "name" : "Publish Enriched Patient",
           "penaltyDuration" : "30 sec",
@@ -2073,7 +2783,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
           "identifier" : "e67a05b4-6f93-357c-abe7-3ab07bcc3621",
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
@@ -2124,7 +2834,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "32510b34-d358-3020-bb3d-187c6fc907f4",
+          "groupIdentifier" : "127abaf2-03b9-38ba-8997-f6892f9101ca",
           "identifier" : "22f030d1-d837-3920-ab44-9dd6a7288ec3",
           "name" : "Listening for Updated Patients",
           "penaltyDuration" : "30 sec",
@@ -2328,6 +3038,11 @@
             "value" : "True"
           }, {
             "description" : "",
+            "name" : "DEID_PREP_URL",
+            "sensitive" : false,
+            "value" : "http://ingestion-deid-prep:8080"
+          }, {
+            "description" : "",
             "name" : "kafka.auth.user",
             "sensitive" : false,
             "value" : "token"
@@ -2350,158 +3065,11 @@
             "description" : "",
             "name" : "kafka.auth.password",
             "sensitive" : true
-          } ]
-        },
-        "Clinical Ingestion De-Identification Parameter Context" : {
-          "name" : "Clinical Ingestion De-Identification Parameter Context",
-          "parameters" : [ {
-            "description" : "",
-            "name" : "DEID_SERVICE_API_URL",
-            "sensitive" : false,
-            "value" : "http://ingestion-deid:8080/api/v1"
           }, {
             "description" : "",
-            "name" : "DEID_APIKEY",
-            "sensitive" : true
-          }, {
-            "description" : "",
-            "name" : "DEID_FHIR_SERVER",
+            "name" : "TERM_SERVICES_PREP_URL",
             "sensitive" : false,
-            "value" : "http://ingestion-fhir-deid/fhir-server/api/v4"
-          }, {
-            "description" : "",
-            "name" : "DEID_FHIR_PASSWORD",
-            "sensitive" : true
-          }, {
-            "description" : "",
-            "name" : "Basic Authentication Password",
-            "sensitive" : true
-          }, {
-            "description" : "",
-            "name" : "DEID_FHIR_USER",
-            "sensitive" : false,
-            "value" : "fhiruser"
-          } ]
-        },
-        "cms_adapter_parameters" : {
-          "name" : "cms_adapter_parameters",
-          "parameters" : [ {
-            "description" : "FHIR api for patient access",
-            "name" : "FHIR_URL_PatientAccess",
-            "sensitive" : false,
-            "value" : "http://ingestion-fhir/fhir-server/api/v4"
-          }, {
-            "description" : "FHIR server user for Patient Access FHIR URL",
-            "name" : "FHIR_User_PatientAccess",
-            "sensitive" : false,
-            "value" : "fhiruser"
-          }, {
-            "description" : "Filter for notification topic in environment specified",
-            "name" : "kafka.topic.notification",
-            "sensitive" : false,
-            "value" : "ingest.clinical.notification"
-          }, {
-            "description" : "FHIR server user for Provider Directory FHIR URL",
-            "name" : "FHIR_User_ProviderDirectory",
-            "sensitive" : false,
-            "value" : "fhiruser"
-          }, {
-            "description" : "CMSIOP Eventstream user id",
-            "name" : "kafka.auth.user",
-            "sensitive" : false,
-            "value" : "token"
-          }, {
-            "description" : "FHIR server user credentials for Patient Access FHIR URL",
-            "name" : "FHIR_UserPwd_PatientAccess",
-            "sensitive" : true
-          }, {
-            "description" : "Time to wait for batch resources to return from processing before terminating the batch.",
-            "name" : "batchProcessingTimeout",
-            "sensitive" : false,
-            "value" : "10 minutes"
-          }, {
-            "description" : "FHIR api for provider",
-            "name" : "FHIR_URL_ProviderDirectory",
-            "sensitive" : false,
-            "value" : "http://ingestion-fhir/fhir-server/api/v4"
-          }, {
-            "description" : "Filter for input topic for the environment specified",
-            "name" : "kafka.topic.in",
-            "sensitive" : false,
-            "value" : "ingest.clinical.in"
-          }, {
-            "description" : "Specifies the timeout that will be used when the expected number of records in a batch have yet to appear on the kafka topic.",
-            "name" : "expectedRecordsTimeout",
-            "sensitive" : false,
-            "value" : "5 minutes"
-          }, {
-            "description" : "",
-            "name" : "hri.ibm.client.key",
-            "sensitive" : false,
-            "value" : "fdceaa7b-11fe-4d11-9fbf-6af267beeea9"
-          }, {
-            "description" : "Set to 'True' to send non-bundle FHIR resources as bundles to the FHIR server for improved performance.",
-            "name" : "autoBuildBundles",
-            "sensitive" : false,
-            "value" : "True"
-          }, {
-            "description" : "The maximum number of resources to add to a bundle for when autobundling is enabled.",
-            "name" : "maxResourcesInBundle",
-            "sensitive" : false,
-            "value" : "20"
-          }, {
-            "description" : "Default setting for the FHIR Prefer header setting to enable warnings to be returned for resources with no errors.\n\nValues are: OperationOutcome or minimal\n\nOperationOutcome - returns warnings for resources without errors.\nminimal - returns errors and warnings for resources with errors.",
-            "name" : "defaultFHIRPreferHeaderSetting",
-            "sensitive" : false,
-            "value" : "OperationOutcome"
-          }, {
-            "description" : "Consumer group used by the pipeline adapters in environment specified",
-            "name" : "kafka.consumer.group",
-            "sensitive" : false,
-            "value" : "Clinical_Ingestion_Group"
-          }, {
-            "description" : "Comma-delimited list of brokers for eventstream instance",
-            "name" : "kafka.brokers",
-            "sensitive" : false,
-            "value" : "ingestion-kafka:9092"
-          }, {
-            "description" : "Parameter to control orchestration of batches within tenants.  Used internally in the pipeline",
-            "name" : "applicationIdCritRegion",
-            "sensitive" : false,
-            "value" : "CMS_Interop_FHIR_Adapter_dev"
-          }, {
-            "description" : "",
-            "name" : "clinical.ingestion.listen.port",
-            "sensitive" : false,
-            "value" : "7001"
-          }, {
-            "description" : "Used for the GetHriIngestRecords processor.  Needs to be unique per environment.",
-            "name" : "kafka.ingest.group",
-            "sensitive" : false,
-            "value" : "Clinical_Ingestion_Ingest_Group"
-          }, {
-            "description" : "CMSIOP Eventstreams credentials",
-            "name" : "kafka.auth.password",
-            "sensitive" : true
-          }, {
-            "description" : "FHIR server user credentials for Provider Directory FHIR URL",
-            "name" : "FHIR_UserPwd_ProviderDirectory",
-            "sensitive" : true
-          }, {
-            "description" : "Endpoint for the HRI instance",
-            "name" : "hri.api.endpoint",
-            "sensitive" : false,
-            "value" : "https://6deb5bcd.us-south.apigw.appdomain.cloud/hri"
-          }, {
-            "description" : "Filter used for error topics",
-            "name" : "kafka.topic.failure",
-            "sensitive" : false,
-            "value" : "ingest.clinical.error"
-          }, {
-            "description" : "",
-            "name" : "applicationIdIndexBatch",
-            "sensitive" : false,
-            "value" : "CMS_Interop_Index_Batch_dev"
+            "value" : "http://ingestion-term-services-prep:8080"
           } ]
         },
         "ASCVD Parameter Context" : {
