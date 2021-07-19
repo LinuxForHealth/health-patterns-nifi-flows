@@ -9,9 +9,9 @@ flows:
     author: anonymous
     created: 1626718802232
     flowName: Clinical Ingestion
-  1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 6, file: FHIR_Bundle_Enrichment.snapshot,
-    comments: Switch from custom NIFI processors to separate services for Deid/Terminology
-      Services/ASCVD enrichments, author: anonymous, created: 1625595441608, flowName: FHIR
+  1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 7, file: FHIR_Bundle_Enrichment.snapshot,
+    comments: Add parameters for deid-prep call so configName and pushToFhir can be
+      programmatically updated., author: anonymous, created: 1626730449563, flowName: FHIR
       Bundle Enrichment, flowDesc: Alvearie Enrichment pipeline - this flow will enrich
       a FHIR bundle in various ways}
 layoutVer: 1
