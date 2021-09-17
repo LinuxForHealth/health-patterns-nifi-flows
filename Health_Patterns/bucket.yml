@@ -9,8 +9,8 @@ flows:
     author: anonymous
     created: 1626718802232
     flowName: Clinical Ingestion
-  1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 10, file: FHIR_Bundle_Enrichment.snapshot,
-    comments: Remove slash from endpoint, author: anonymous, created: 1629810980434,
+  1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 11, file: FHIR_Bundle_Enrichment.snapshot,
+    comments: Change nlp-insights endpoint, author: anonymous, created: 1631909183859,
     flowName: FHIR Bundle Enrichment, flowDesc: Alvearie Enrichment pipeline - this
       flow will enrich a FHIR bundle in various ways}
 layoutVer: 1
