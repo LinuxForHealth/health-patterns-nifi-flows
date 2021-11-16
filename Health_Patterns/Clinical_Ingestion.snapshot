@@ -1833,9 +1833,9 @@
               "canonical-value-lookup-cache-size" : "100",
               "FHIRPreferSetting" : "minimal",
               "DeidentifyData" : "${DeidentifyData:replaceEmpty(${deidentifydata})}",
-              "failureTopic" : "#{kafka.topic.in}.error",
+              "failureTopic" : "#{ingest.topic.in}.error",
               "Delete Attributes Expression" : "deidentifydata|resolveterminology|requestid|runascvd",
-              "kafka.topic" : "#{kafka.topic.in}",
+              "kafka.topic" : "#{ingest.topic.in}",
               "RunASCVD" : "${RunASCVD:replaceEmpty(${runascvd})}",
               "tenant" : "default",
               "startDate" : "${now():format(\"yyyy-MM-dd'T'HH:mm:ss'Z'\")} \n"
