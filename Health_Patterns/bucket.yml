@@ -6,5 +6,8 @@ flows:
     comments: Allow synchronous enrich request, author: anonymous, created: 1637002417237,
     flowName: FHIR Bundle Enrichment, flowDesc: Alvearie Enrichment pipeline - this
       flow will enrich a FHIR bundle in various ways}
+  6adc5021-2290-45ca-b092-94a6c41d6691: {ver: 1, file: Data_Quality_Checks.snapshot,
+    comments: Data Quality Checks (on bulk data), author: anonymous, created: 1638404672081,
+    flowName: Data Quality Checks, flowDesc: Data Quality Checks (on bulk data)}
 layoutVer: 1
 bucketId: c601a7b4-f047-461e-ac13-2f140f8fb9b2
