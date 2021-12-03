@@ -1,10 +1,13 @@
 flows:
-  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 38, file: Clinical_Ingestion.snapshot,
-    comments: Fix non-blocking kafka_key issue, author: anonymous, created: 1637079913256,
-    flowName: Clinical Ingestion}
+  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 39, file: Clinical_Ingestion.snapshot,
+    comments: Add data-quality service into ingestion pattern (Alvearie#71), author: anonymous,
+    created: 1638484645636, flowName: Clinical Ingestion}
   1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 13, file: FHIR_Bundle_Enrichment.snapshot,
     comments: Allow synchronous enrich request, author: anonymous, created: 1637002417237,
     flowName: FHIR Bundle Enrichment, flowDesc: Alvearie Enrichment pipeline - this
       flow will enrich a FHIR bundle in various ways}
+  6adc5021-2290-45ca-b092-94a6c41d6691: {ver: 1, file: Data_Quality_Checks.snapshot,
+    comments: Data Quality Checks (on bulk data), author: anonymous, created: 1638404672081,
+    flowName: Data Quality Checks, flowDesc: Data Quality Checks (on bulk data)}
 layoutVer: 1
 bucketId: c601a7b4-f047-461e-ac13-2f140f8fb9b2
