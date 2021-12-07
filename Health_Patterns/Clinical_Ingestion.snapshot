@@ -18089,13 +18089,7 @@
           "connections" : [ {
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
-            "bends" : [ {
-              "x" : 2992.0,
-              "y" : 3184.0
-            }, {
-              "x" : 2992.0,
-              "y" : 3680.0
-            } ],
+            "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
               "groupId" : "9bfb47b7-06d8-36ec-80c0-42c967c5c158",
@@ -18206,34 +18200,6 @@
               "type" : "OUTPUT_PORT"
             },
             "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "groupId" : "9bfb47b7-06d8-36ec-80c0-42c967c5c158",
-              "id" : "004bd802-a7d1-3df4-9123-8ee3038a4fb9",
-              "name" : "Invalid FHIR Data",
-              "type" : "OUTPUT_PORT"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "9bfb47b7-06d8-36ec-80c0-42c967c5c158",
-            "identifier" : "2511f7e1-4ff7-32a2-b801-81e8eb1bc2ff",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-              "id" : "87427553-b2e5-35b7-9cfb-fdd3b277d8d2",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
-            },
-            "zIndex" : 0
           } ],
           "controllerServices" : [ ],
           "flowFileConcurrency" : "UNBOUNDED",
@@ -18264,8 +18230,8 @@
             "identifier" : "c653b104-41af-36c2-a583-56bdacb80c47",
             "name" : "Valid FHIR Data",
             "position" : {
-              "x" : 2336.0,
-              "y" : 3656.0
+              "x" : 2520.0,
+              "y" : 3664.0
             },
             "type" : "OUTPUT_PORT"
           }, {
@@ -18276,8 +18242,8 @@
             "identifier" : "004bd802-a7d1-3df4-9123-8ee3038a4fb9",
             "name" : "Invalid FHIR Data",
             "position" : {
-              "x" : 2712.0,
-              "y" : 3656.0
+              "x" : 3128.0,
+              "y" : 3152.0
             },
             "type" : "OUTPUT_PORT"
           } ],
@@ -19185,16 +19151,14 @@
             "connections" : [ {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 768.0,
-                "y" : 1016.0
-              } ],
+              "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
                 "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "87427553-b2e5-35b7-9cfb-fdd3b277d8d2",
-                "name" : "Failure",
-                "type" : "OUTPUT_PORT"
+                "id" : "0e001173-116e-3a65-9570-5de8459dfc12",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
@@ -19210,6 +19174,36 @@
                 "comments" : "",
                 "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
                 "id" : "c22dc9a2-96e0-376e-844d-469c6de91590",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+                "id" : "40f25242-3be6-3e15-9723-2acf28eb740e",
+                "name" : "Run FHIR Data Quality Service",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+              "identifier" : "a1831f2c-6678-32ef-883f-bc0184f3550a",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "RunFHIRDataQuality" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+                "id" : "02f0a0f5-c6b6-3c74-9d49-5546f8752ed5",
                 "name" : "RouteOnAttribute",
                 "type" : "PROCESSOR"
               },
@@ -19243,7 +19237,7 @@
                 "comments" : "",
                 "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
                 "id" : "40f25242-3be6-3e15-9723-2acf28eb740e",
-                "name" : "Run FHIR Deequ Service",
+                "name" : "Run FHIR Data Quality Service",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -19251,31 +19245,32 @@
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
               "bends" : [ {
-                "x" : 1256.0,
-                "y" : 1112.0
+                "x" : 792.0,
+                "y" : 1256.0
               } ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
                 "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "87427553-b2e5-35b7-9cfb-fdd3b277d8d2",
-                "name" : "Failure",
+                "id" : "ddbd8996-c9cf-3609-87f9-2f8f279e3b28",
+                "name" : "Success",
                 "type" : "OUTPUT_PORT"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-              "identifier" : "55a978d5-e265-377f-b643-97ba7b8430fb",
+              "identifier" : "67bcd999-ff9a-30aa-a2d0-d5ac7cd0bf6c",
               "labelIndex" : 0,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
               "name" : "",
               "partitioningAttribute" : "",
               "prioritizers" : [ ],
-              "selectedRelationships" : [ "retries_exceeded", "failure" ],
+              "selectedRelationships" : [ "success" ],
               "source" : {
                 "comments" : "",
                 "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "e5cafe85-6007-3b68-940e-d7eb9fadad78",
-                "name" : "RetryFlowFile",
+                "id" : "0e001173-116e-3a65-9570-5de8459dfc12",
+                "name" : "UpdateAttribute",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -19312,6 +19307,102 @@
             }, {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+                "id" : "0e001173-116e-3a65-9570-5de8459dfc12",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+              "identifier" : "954eec8a-0def-39b0-8915-fa761d80212d",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retries_exceeded", "failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+                "id" : "e5cafe85-6007-3b68-940e-d7eb9fadad78",
+                "name" : "RetryFlowFile",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 1024.0,
+                "y" : 848.0
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+                "id" : "0e001173-116e-3a65-9570-5de8459dfc12",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+              "identifier" : "54d30fb8-3220-3c85-b809-8228cdb4529e",
+              "labelIndex" : 0,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "No Retry", "Failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+                "id" : "40f25242-3be6-3e15-9723-2acf28eb740e",
+                "name" : "Run FHIR Data Quality Service",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 936.0,
+                "y" : 728.0
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+                "id" : "40f25242-3be6-3e15-9723-2acf28eb740e",
+                "name" : "Run FHIR Data Quality Service",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+              "identifier" : "485a155e-a9dc-32fd-ae04-cc520f38027f",
+              "labelIndex" : 0,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+                "id" : "e5cafe85-6007-3b68-940e-d7eb9fadad78",
+                "name" : "RetryFlowFile",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
               "bends" : [ {
                 "x" : 288.0,
                 "y" : 496.0
@@ -19342,41 +19433,6 @@
                 "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
                 "id" : "02f0a0f5-c6b6-3c74-9d49-5546f8752ed5",
                 "name" : "RouteOnAttribute",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 944.0,
-                "y" : 816.0
-              }, {
-                "x" : 944.0,
-                "y" : 1112.0
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "87427553-b2e5-35b7-9cfb-fdd3b277d8d2",
-                "name" : "Failure",
-                "type" : "OUTPUT_PORT"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-              "identifier" : "54d30fb8-3220-3c85-b809-8228cdb4529e",
-              "labelIndex" : 0,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "No Retry", "Failure" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "40f25242-3be6-3e15-9723-2acf28eb740e",
-                "name" : "Run FHIR Deequ Service",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -19436,37 +19492,7 @@
                 "comments" : "",
                 "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
                 "id" : "40f25242-3be6-3e15-9723-2acf28eb740e",
-                "name" : "Run FHIR Deequ Service",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "40f25242-3be6-3e15-9723-2acf28eb740e",
-                "name" : "Run FHIR Deequ Service",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-              "identifier" : "b78b3f9a-972e-3e10-9f66-a733274cbe83",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "RunFHIRDeequ" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "02f0a0f5-c6b6-3c74-9d49-5546f8752ed5",
-                "name" : "RouteOnAttribute",
+                "name" : "Run FHIR Data Quality Service",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -19503,39 +19529,6 @@
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 936.0,
-                "y" : 728.0
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "40f25242-3be6-3e15-9723-2acf28eb740e",
-                "name" : "Run FHIR Deequ Service",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-              "identifier" : "485a155e-a9dc-32fd-ae04-cc520f38027f",
-              "labelIndex" : 0,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-                "id" : "e5cafe85-6007-3b68-940e-d7eb9fadad78",
-                "name" : "RetryFlowFile",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
             } ],
             "controllerServices" : [ ],
             "flowFileConcurrency" : "UNBOUNDED",
@@ -19558,7 +19551,7 @@
               "type" : "INPUT_PORT"
             } ],
             "labels" : [ ],
-            "name" : "Data Quality Checks",
+            "name" : "FHIR Data Quality Check",
             "outputPorts" : [ {
               "allowRemoteAccess" : false,
               "comments" : "",
@@ -19569,18 +19562,6 @@
               "name" : "Success",
               "position" : {
                 "x" : 392.0,
-                "y" : 1304.0
-              },
-              "type" : "OUTPUT_PORT"
-            }, {
-              "allowRemoteAccess" : false,
-              "componentType" : "OUTPUT_PORT",
-              "concurrentlySchedulableTaskCount" : 1,
-              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
-              "identifier" : "87427553-b2e5-35b7-9cfb-fdd3b277d8d2",
-              "name" : "Failure",
-              "position" : {
-                "x" : 680.0,
                 "y" : 1304.0
               },
               "type" : "OUTPUT_PORT"
@@ -19639,6 +19620,70 @@
               "autoTerminatedRelationships" : [ ],
               "bulletinLevel" : "WARN",
               "bundle" : {
+                "artifact" : "nifi-update-attribute-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.12.1"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
+              "identifier" : "0e001173-116e-3a65-9570-5de8459dfc12",
+              "name" : "UpdateAttribute",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 848.0,
+                "y" : 1048.0
+              },
+              "properties" : {
+                "Store State" : "Do not store state",
+                "canonical-value-lookup-cache-size" : "100",
+                "FHIR_Data_Quality_Response" : "FHIR Data Quality Service failed to run: ${invokehttp.status.message}"
+              },
+              "propertyDescriptors" : {
+                "Delete Attributes Expression" : {
+                  "displayName" : "Delete Attributes Expression",
+                  "identifiesControllerService" : false,
+                  "name" : "Delete Attributes Expression",
+                  "sensitive" : false
+                },
+                "Store State" : {
+                  "displayName" : "Store State",
+                  "identifiesControllerService" : false,
+                  "name" : "Store State",
+                  "sensitive" : false
+                },
+                "canonical-value-lookup-cache-size" : {
+                  "displayName" : "Cache Value Lookup Cache Size",
+                  "identifiesControllerService" : false,
+                  "name" : "canonical-value-lookup-cache-size",
+                  "sensitive" : false
+                },
+                "FHIR_Data_Quality_Response" : {
+                  "displayName" : "FHIR_Data_Quality_Response",
+                  "identifiesControllerService" : false,
+                  "name" : "FHIR_Data_Quality_Response",
+                  "sensitive" : false
+                },
+                "Stateful Variables Initial Value" : {
+                  "displayName" : "Stateful Variables Initial Value",
+                  "identifiesControllerService" : false,
+                  "name" : "Stateful Variables Initial Value",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
                 "version" : "1.12.1"
@@ -19656,20 +19701,20 @@
                 "y" : 432.0
               },
               "properties" : {
-                "Routing Strategy" : "Route to Property name",
-                "RunFHIRDeequ" : "${RunFHIRDeequ:notNull():and(${RunFHIRDeequ:isEmpty():not()}):ifElse(${RunFHIRDeequ},#{RunFHIRDeequ}):equalsIgnoreCase(\"true\")}"
+                "RunFHIRDataQuality" : "${RunFHIRDataQuality:notNull():and(${RunFHIRDataQuality:isEmpty():not()}):ifElse(${RunFHIRDataQuality},#{RunFHIRDataQuality}):equalsIgnoreCase(\"true\")}",
+                "Routing Strategy" : "Route to Property name"
               },
               "propertyDescriptors" : {
+                "RunFHIRDataQuality" : {
+                  "displayName" : "RunFHIRDataQuality",
+                  "identifiesControllerService" : false,
+                  "name" : "RunFHIRDataQuality",
+                  "sensitive" : false
+                },
                 "Routing Strategy" : {
                   "displayName" : "Routing Strategy",
                   "identifiesControllerService" : false,
                   "name" : "Routing Strategy",
-                  "sensitive" : false
-                },
-                "RunFHIRDeequ" : {
-                  "displayName" : "RunFHIRDeequ",
-                  "identifiesControllerService" : false,
-                  "name" : "RunFHIRDeequ",
                   "sensitive" : false
                 }
               },
@@ -19694,7 +19739,7 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "288c92d1-c7ab-3978-bc37-474549888f2e",
               "identifier" : "40f25242-3be6-3e15-9723-2acf28eb740e",
-              "name" : "Run FHIR Deequ Service",
+              "name" : "Run FHIR Data Quality Service",
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : 448.0,
@@ -19709,10 +19754,10 @@
                 "Always Output Response" : "false",
                 "etag-max-cache-size" : "10MB",
                 "idle-timeout" : "5 mins",
-                "Put Response Body In Attribute" : "FHIR_Deequ_Response",
+                "Put Response Body In Attribute" : "FHIR_Data_Quality_Response",
                 "Use Chunked Encoding" : "false",
                 "Follow Redirects" : "True",
-                "Remote URL" : "#{RUN_FHIR_DEEQU_URL}",
+                "Remote URL" : "#{RUN_FHIR_DATA_QUALITY_URL}",
                 "Content-Type" : "${mime.type}",
                 "max-idle-connections" : "5",
                 "Read Timeout" : "60 secs",
@@ -19948,8 +19993,8 @@
               "name" : "RetryFlowFile",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 1080.0,
-                "y" : 640.0
+                "x" : 1160.0,
+                "y" : 624.0
               },
               "properties" : {
                 "penalize-retries" : "true",
@@ -20018,7 +20063,7 @@
                 "y" : 1088.0
               },
               "properties" : {
-                "log-message" : "${FHIR_Deequ_Response}",
+                "log-message" : "${FHIR_Data_Quality_Response}",
                 "log-level" : "info"
               },
               "propertyDescriptors" : {
