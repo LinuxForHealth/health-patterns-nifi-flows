@@ -1,6 +1,6 @@
 flows:
-  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 38, file: Clinical_Ingestion.snapshot,
-    comments: Fix non-blocking kafka_key issue, author: anonymous, created: 1637079913256,
+  07fefa93-4207-4363-b46d-4e92a25d7bf6: {ver: 39, file: Clinical_Ingestion.snapshot,
+    comments: Add FHIR_Deequ to Validation, author: anonymous, created: 1638904513114,
     flowName: Clinical Ingestion}
   1681a7e6-fdfe-4956-9ce1-6c9302f3b32f: {ver: 13, file: FHIR_Bundle_Enrichment.snapshot,
     comments: Allow synchronous enrich request, author: anonymous, created: 1637002417237,
