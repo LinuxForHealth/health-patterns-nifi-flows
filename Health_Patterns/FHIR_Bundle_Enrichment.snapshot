@@ -15,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+            "groupId" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
             "id" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
             "name" : "Publish Enriched Patient to Kafka",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "abe46573-9ed9-3628-835c-bc0e4d1567be",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -45,13 +45,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+            "groupId" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
             "id" : "5276c55a-aad0-3655-a86b-4119b0b3f8a8",
             "name" : "Publish Enrich Failure to Kafka",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "fa649e04-30e5-3cb8-bd60-3c6407d56f94",
           "labelIndex" : 0,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -80,7 +80,7 @@
             "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "3746cafa-4908-3847-9159-6ec0587c094e",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -91,7 +91,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+            "groupId" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
             "id" : "22f030d1-d837-3920-ab44-9dd6a7288ec3",
             "name" : "Listening for Updated Patients",
             "type" : "PROCESSOR"
@@ -104,13 +104,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+            "groupId" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
             "id" : "fe6cb592-1960-3474-9428-af4e2438b6b9",
             "name" : "LogMessage",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "08eb306c-427a-3812-a00a-83aba165da01",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -118,43 +118,13 @@
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "success" ],
+          "selectedRelationships" : [ "success", "failure" ],
           "source" : {
             "comments" : "",
-            "groupId" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+            "groupId" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
             "id" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
             "name" : "Publish Enriched Patient to Kafka",
             "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
-            "id" : "e67a05b4-6f93-357c-abe7-3ab07bcc3621",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
-          "identifier" : "4d228851-7b9e-3040-a4c5-33e3c7f662d1",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
-            "id" : "519fb1ad-adc7-310d-921d-ea273ef35367",
-            "name" : "DeID FHIR Resource",
-            "type" : "OUTPUT_PORT"
           },
           "zIndex" : 0
         }, {
@@ -167,13 +137,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+            "groupId" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
             "id" : "e67a05b4-6f93-357c-abe7-3ab07bcc3621",
             "name" : "LogMessage",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "40f3de73-0cff-35c9-a1eb-0de5f4cf9377",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -190,16 +160,46 @@
             "type" : "OUTPUT_PORT"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
+            "id" : "e67a05b4-6f93-357c-abe7-3ab07bcc3621",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
+          "identifier" : "4d228851-7b9e-3040-a4c5-33e3c7f662d1",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "id" : "519fb1ad-adc7-310d-921d-ea273ef35367",
+            "name" : "DeID FHIR Resource",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+        "identifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
         "inputPorts" : [ ],
         "labels" : [ {
           "componentType" : "LABEL",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "height" : 32.0,
           "identifier" : "22b10441-7d00-3dfa-aebe-063f1a886b11",
           "label" : "enrich.topic.in",
@@ -213,7 +213,7 @@
           "width" : 152.0
         }, {
           "componentType" : "LABEL",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "height" : 32.0,
           "identifier" : "e415c284-4f99-3947-bfeb-13772e87e98f",
           "label" : "enrich.topic.out",
@@ -227,7 +227,7 @@
           "width" : 160.0
         }, {
           "componentType" : "LABEL",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "height" : 32.0,
           "identifier" : "21aca402-f148-3208-9ff8-e709381f1ae1",
           "label" : "enrich.topic.failure",
@@ -242,9 +242,10 @@
         } ],
         "name" : "health-patterns-enrich-dataflow",
         "outputPorts" : [ ],
+        "parameterContextName" : "enrichment-parameter-context",
         "position" : {
-          "x" : 1.0,
-          "y" : 1.0
+          "x" : 648.0,
+          "y" : 344.0
         },
         "processGroups" : [ {
           "comments" : "",
@@ -285,34 +286,6 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
-              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
-              "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
-            "identifier" : "b68ad56d-8905-34c2-86a1-b6e3bad48331",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
-              "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
               "comments" : "",
               "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "22182f75-4fb7-34be-afeb-62c56ec96f8f",
@@ -334,6 +307,34 @@
               "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
               "id" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
               "name" : "FHIR Response",
+              "type" : "OUTPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
+              "name" : "Failure",
+              "type" : "OUTPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "b68ad56d-8905-34c2-86a1-b6e3bad48331",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "groupId" : "de428c9e-fb4f-320f-b556-7b47d1e18084",
+              "id" : "b6ece790-754c-3ce3-9792-8c8c7b038ab2",
+              "name" : "Failure",
               "type" : "OUTPUT_PORT"
             },
             "zIndex" : 0
@@ -582,6 +583,36 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "comments" : "",
+              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+              "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
+              "name" : "RouteOnAttribute",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
+            "identifier" : "4ea12a5c-bd7a-39be-a72d-2554aba8e4b5",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "id" : "1f5f5055-9e5c-3256-8918-b354c885135a",
+              "name" : "Output",
+              "type" : "OUTPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
               "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
               "id" : "59f220e8-5232-3976-b5df-2816ea6da8a2",
               "name" : "Failure",
@@ -632,36 +663,6 @@
               "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "e8cc5a19-56bf-3544-9096-58afa401a844",
-              "id" : "e8b8920f-ddb7-31e1-aac1-b5e88fa36f27",
-              "name" : "RouteOnAttribute",
-              "type" : "PROCESSOR"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
-            "identifier" : "4ea12a5c-bd7a-39be-a72d-2554aba8e4b5",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
-              "id" : "1f5f5055-9e5c-3256-8918-b354c885135a",
-              "name" : "Output",
-              "type" : "OUTPUT_PORT"
             },
             "zIndex" : 0
           }, {
@@ -789,7 +790,7 @@
           "flowFileConcurrency" : "UNBOUNDED",
           "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
           "funnels" : [ ],
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "e8cc5a19-56bf-3544-9096-58afa401a844",
           "inputPorts" : [ {
             "allowRemoteAccess" : false,
@@ -919,6 +920,7 @@
             },
             "type" : "OUTPUT_PORT"
           } ],
+          "parameterContextName" : "enrichment-parameter-context",
           "position" : {
             "x" : 2232.0,
             "y" : 1368.0
@@ -1126,6 +1128,7 @@
               },
               "type" : "OUTPUT_PORT"
             } ],
+            "parameterContextName" : "enrichment-parameter-context",
             "position" : {
               "x" : 904.0,
               "y" : 480.0
@@ -1137,7 +1140,7 @@
               "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
-                "version" : "1.12.1"
+                "version" : "1.13.2"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
@@ -1182,7 +1185,7 @@
               "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
-                "version" : "1.12.1"
+                "version" : "1.13.2"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
@@ -1204,6 +1207,7 @@
                 "set-form-filename" : "true",
                 "Always Output Response" : "false",
                 "etag-max-cache-size" : "10MB",
+                "disable-http2" : "False",
                 "idle-timeout" : "5 mins",
                 "Use Chunked Encoding" : "false",
                 "Follow Redirects" : "True",
@@ -1284,6 +1288,12 @@
                   "displayName" : "Maximum ETag Cache Size",
                   "identifiesControllerService" : false,
                   "name" : "etag-max-cache-size",
+                  "sensitive" : false
+                },
+                "disable-http2" : {
+                  "displayName" : "Disable HTTP/2",
+                  "identifiesControllerService" : false,
+                  "name" : "disable-http2",
                   "sensitive" : false
                 },
                 "idle-timeout" : {
@@ -1440,20 +1450,20 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
-                "id" : "6e2c3cf7-8b41-3bcf-809d-459f81ffff06",
-                "name" : "RouteOnAttribute",
-                "type" : "PROCESSOR"
+                "id" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
+                "name" : "FHIR Response",
+                "type" : "OUTPUT_PORT"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
-              "identifier" : "9ae25684-6d91-3d37-a207-dc588b071a60",
+              "identifier" : "39cdac38-cd3d-3b66-be3a-f3d3584a6aca",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
               "name" : "",
               "partitioningAttribute" : "",
               "prioritizers" : [ ],
-              "selectedRelationships" : [ "Response" ],
+              "selectedRelationships" : [ "Original" ],
               "source" : {
                 "comments" : "",
                 "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
@@ -1470,20 +1480,20 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
-                "id" : "f9f5fa94-6d58-3ae3-b1bf-66a706acafae",
-                "name" : "FHIR Response",
-                "type" : "OUTPUT_PORT"
+                "id" : "6e2c3cf7-8b41-3bcf-809d-459f81ffff06",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
-              "identifier" : "39cdac38-cd3d-3b66-be3a-f3d3584a6aca",
+              "identifier" : "9ae25684-6d91-3d37-a207-dc588b071a60",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
               "name" : "",
               "partitioningAttribute" : "",
               "prioritizers" : [ ],
-              "selectedRelationships" : [ "Original" ],
+              "selectedRelationships" : [ "Response" ],
               "source" : {
                 "comments" : "",
                 "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
@@ -1527,6 +1537,35 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "36a7aa41-7b61-36f3-b1b2-5708f8e82f3e",
+                "name" : "Failure",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+              "identifier" : "c7638529-4328-32a9-baf1-d05232d00e1c",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "unmatched" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
+                "id" : "6e2c3cf7-8b41-3bcf-809d-459f81ffff06",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
                 "comments" : "",
                 "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
                 "id" : "73cacc40-a805-35a9-8bdb-8baf9c3b1249",
@@ -1549,35 +1588,6 @@
                 "id" : "aee62770-b784-3db0-b17e-b8d7c8a97ce2",
                 "name" : "FHIR Resource",
                 "type" : "INPUT_PORT"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
-                "id" : "36a7aa41-7b61-36f3-b1b2-5708f8e82f3e",
-                "name" : "Failure",
-                "type" : "OUTPUT_PORT"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
-              "identifier" : "c7638529-4328-32a9-baf1-d05232d00e1c",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "unmatched" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "3ceec2e4-5b00-3eb2-99e7-09f596491da8",
-                "id" : "6e2c3cf7-8b41-3bcf-809d-459f81ffff06",
-                "name" : "RouteOnAttribute",
-                "type" : "PROCESSOR"
               },
               "zIndex" : 0
             }, {
@@ -1673,6 +1683,7 @@
               },
               "type" : "OUTPUT_PORT"
             } ],
+            "parameterContextName" : "enrichment-parameter-context",
             "position" : {
               "x" : 896.0,
               "y" : 768.0
@@ -1684,7 +1695,7 @@
               "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
-                "version" : "1.12.1"
+                "version" : "1.13.2"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
@@ -1706,6 +1717,7 @@
                 "set-form-filename" : "true",
                 "Always Output Response" : "false",
                 "etag-max-cache-size" : "10MB",
+                "disable-http2" : "False",
                 "idle-timeout" : "5 mins",
                 "Use Chunked Encoding" : "false",
                 "Follow Redirects" : "True",
@@ -1786,6 +1798,12 @@
                   "displayName" : "Maximum ETag Cache Size",
                   "identifiesControllerService" : false,
                   "name" : "etag-max-cache-size",
+                  "sensitive" : false
+                },
+                "disable-http2" : {
+                  "displayName" : "Disable HTTP/2",
+                  "identifiesControllerService" : false,
+                  "name" : "disable-http2",
                   "sensitive" : false
                 },
                 "idle-timeout" : {
@@ -1934,7 +1952,7 @@
               "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
-                "version" : "1.12.1"
+                "version" : "1.13.2"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
@@ -2179,6 +2197,7 @@
               },
               "type" : "OUTPUT_PORT"
             } ],
+            "parameterContextName" : "enrichment-parameter-context",
             "position" : {
               "x" : 904.0,
               "y" : 1360.0
@@ -2190,7 +2209,7 @@
               "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
-                "version" : "1.12.1"
+                "version" : "1.13.2"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
@@ -2212,6 +2231,7 @@
                 "set-form-filename" : "true",
                 "Always Output Response" : "false",
                 "etag-max-cache-size" : "10MB",
+                "disable-http2" : "False",
                 "idle-timeout" : "5 mins",
                 "Use Chunked Encoding" : "false",
                 "Follow Redirects" : "True",
@@ -2292,6 +2312,12 @@
                   "displayName" : "Maximum ETag Cache Size",
                   "identifiesControllerService" : false,
                   "name" : "etag-max-cache-size",
+                  "sensitive" : false
+                },
+                "disable-http2" : {
+                  "displayName" : "Disable HTTP/2",
+                  "identifiesControllerService" : false,
+                  "name" : "disable-http2",
                   "sensitive" : false
                 },
                 "idle-timeout" : {
@@ -2440,7 +2466,7 @@
               "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
-                "version" : "1.12.1"
+                "version" : "1.13.2"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
@@ -2584,36 +2610,6 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
-                "id" : "95c2cbe8-a8ea-35ab-be23-1b9dea39e83f",
-                "name" : "RouteOnAttribute",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
-              "identifier" : "ef433c89-44b7-3074-a292-06401597bb96",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "Response" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
-                "id" : "c1d3d962-e9d1-36b5-81c1-8933de1c2e91",
-                "name" : "InvokeHTTP",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
                 "id" : "c1d3d962-e9d1-36b5-81c1-8933de1c2e91",
                 "name" : "InvokeHTTP",
                 "type" : "PROCESSOR"
@@ -2634,6 +2630,36 @@
                 "id" : "d257175c-4548-311a-9003-56f9305285a9",
                 "name" : "FHIR Resource",
                 "type" : "INPUT_PORT"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "95c2cbe8-a8ea-35ab-be23-1b9dea39e83f",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "00b735b9-5103-37f6-8392-09327e6550c8",
+              "identifier" : "ef433c89-44b7-3074-a292-06401597bb96",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "Response" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "00b735b9-5103-37f6-8392-09327e6550c8",
+                "id" : "c1d3d962-e9d1-36b5-81c1-8933de1c2e91",
+                "name" : "InvokeHTTP",
+                "type" : "PROCESSOR"
               },
               "zIndex" : 0
             } ],
@@ -2685,6 +2711,7 @@
               },
               "type" : "OUTPUT_PORT"
             } ],
+            "parameterContextName" : "enrichment-parameter-context",
             "position" : {
               "x" : 904.0,
               "y" : 1056.0
@@ -2696,7 +2723,7 @@
               "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
-                "version" : "1.12.1"
+                "version" : "1.13.2"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
@@ -2741,7 +2768,7 @@
               "bundle" : {
                 "artifact" : "nifi-standard-nar",
                 "group" : "org.apache.nifi",
-                "version" : "1.12.1"
+                "version" : "1.13.2"
               },
               "comments" : "",
               "componentType" : "PROCESSOR",
@@ -2763,6 +2790,7 @@
                 "set-form-filename" : "true",
                 "Always Output Response" : "false",
                 "etag-max-cache-size" : "10MB",
+                "disable-http2" : "False",
                 "idle-timeout" : "5 mins",
                 "Use Chunked Encoding" : "false",
                 "Follow Redirects" : "True",
@@ -2843,6 +2871,12 @@
                   "displayName" : "Maximum ETag Cache Size",
                   "identifiesControllerService" : false,
                   "name" : "etag-max-cache-size",
+                  "sensitive" : false
+                },
+                "disable-http2" : {
+                  "displayName" : "Disable HTTP/2",
+                  "identifiesControllerService" : false,
+                  "name" : "disable-http2",
                   "sensitive" : false
                 },
                 "idle-timeout" : {
@@ -2995,7 +3029,7 @@
             "bundle" : {
               "artifact" : "nifi-standard-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.12.1"
+              "version" : "1.13.2"
             },
             "comments" : "",
             "componentType" : "PROCESSOR",
@@ -3040,7 +3074,7 @@
             "bundle" : {
               "artifact" : "nifi-standard-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.12.1"
+              "version" : "1.13.2"
             },
             "comments" : "",
             "componentType" : "PROCESSOR",
@@ -3085,7 +3119,7 @@
             "bundle" : {
               "artifact" : "nifi-standard-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.12.1"
+              "version" : "1.13.2"
             },
             "comments" : "",
             "componentType" : "PROCESSOR",
@@ -3130,7 +3164,7 @@
             "bundle" : {
               "artifact" : "nifi-standard-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.12.1"
+              "version" : "1.13.2"
             },
             "comments" : "",
             "componentType" : "PROCESSOR",
@@ -3175,7 +3209,7 @@
             "bundle" : {
               "artifact" : "nifi-standard-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.12.1"
+              "version" : "1.13.2"
             },
             "comments" : "",
             "componentType" : "PROCESSOR",
@@ -3197,23 +3231,23 @@
               "log-message" : {
                 "displayName" : "Log message",
                 "identifiesControllerService" : false,
-              "name" : "log-message",
-              "sensitive" : false
+                "name" : "log-message",
+                "sensitive" : false
+              },
+              "log-level" : {
+                "displayName" : "Log Level",
+                "identifiesControllerService" : false,
+                "name" : "log-level",
+                "sensitive" : false
+              },
+              "log-prefix" : {
+                "displayName" : "Log prefix",
+                "identifiesControllerService" : false,
+                "name" : "log-prefix",
+                "sensitive" : false
+              }
             },
-            "log-level" : {
-              "displayName" : "Log Level",
-              "identifiesControllerService" : false,
-              "name" : "log-level",
-              "sensitive" : false
-            },
-            "log-prefix" : {
-              "displayName" : "Log prefix",
-              "identifiesControllerService" : false,
-              "name" : "log-prefix",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
+            "runDurationMillis" : 0,
             "scheduledState" : "ENABLED",
             "schedulingPeriod" : "0 sec",
             "schedulingStrategy" : "TIMER_DRIVEN",
@@ -3230,13 +3264,13 @@
           "bundle" : {
             "artifact" : "nifi-kafka-2-6-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.12.1"
+            "version" : "1.13.2"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "5276c55a-aad0-3655-a86b-4119b0b3f8a8",
           "name" : "Publish Enrich Failure to Kafka",
           "penaltyDuration" : "30 sec",
@@ -3434,13 +3468,13 @@
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.12.1"
+            "version" : "1.13.2"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "fe6cb592-1960-3474-9428-af4e2438b6b9",
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
@@ -3485,13 +3519,13 @@
           "bundle" : {
             "artifact" : "nifi-kafka-2-6-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.12.1"
+            "version" : "1.13.2"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "c789fe01-dbbe-3d00-89d3-6ca663bb475c",
           "name" : "Publish Enriched Patient to Kafka",
           "penaltyDuration" : "30 sec",
@@ -3689,13 +3723,13 @@
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.12.1"
+            "version" : "1.13.2"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "e67a05b4-6f93-357c-abe7-3ab07bcc3621",
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
@@ -3740,19 +3774,19 @@
           "bundle" : {
             "artifact" : "nifi-kafka-2-6-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.12.1"
+            "version" : "1.13.2"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "4d174149-2911-3abf-a7d2-2cc6209157cb",
+          "groupIdentifier" : "1175fe87-3dad-314c-9409-a4bb58f0039a",
           "identifier" : "22f030d1-d837-3920-ab44-9dd6a7288ec3",
           "name" : "Listening for Updated Patients",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 2248.0,
-            "y" : 1088.0
+            "y" : 1080.0
           },
           "properties" : {
             "header-name-regex" : ".*",
@@ -3768,6 +3802,7 @@
             "honor-transactions" : "true",
             "Communications Timeout" : "60 secs",
             "topic" : "#{enrich.topic.in}",
+            "separate-by-key" : "false",
             "message-header-encoding" : "UTF-8",
             "sasl.password" : "#{kafka.auth.password}",
             "key-attribute-encoding" : "utf-8",
@@ -3882,6 +3917,12 @@
               "name" : "topic",
               "sensitive" : false
             },
+            "separate-by-key" : {
+              "displayName" : "Separate By Key",
+              "identifiesControllerService" : false,
+              "name" : "separate-by-key",
+              "sensitive" : false
+            },
             "message-header-encoding" : {
               "displayName" : "Message Header Encoding",
               "identifiesControllerService" : false,
@@ -3925,7 +3966,75 @@
         "variables" : { }
       },
       "flowEncodingVersion" : "1.0",
-      "parameterContexts" : { }
+      "parameterContexts" : {
+        "enrichment-parameter-context" : {
+          "name" : "enrichment-parameter-context",
+          "parameters" : [ {
+            "name" : "ResolveTerminology",
+            "sensitive" : false,
+            "value" : "True"
+          }, {
+            "name" : "DEID_PREP_URL",
+            "sensitive" : false,
+            "value" : "http://ingestion-deid-prep:8080"
+          }, {
+            "name" : "kafka.auth.user",
+            "sensitive" : false,
+            "value" : "token"
+          }, {
+            "name" : "DeidentifyData",
+            "sensitive" : false,
+            "value" : "True"
+          }, {
+            "name" : "ADD_NLP_INSIGHTS_URL",
+            "sensitive" : false,
+            "value" : "http://ingestion-nlp-insights:5000"
+          }, {
+            "name" : "TERM_SERVICES_PREP_URL",
+            "sensitive" : false,
+            "value" : "http://ingestion-term-services-prep:8080"
+          }, {
+            "name" : "AddNLPInsights",
+            "sensitive" : false,
+            "value" : "True"
+          }, {
+            "name" : "kafka.brokers",
+            "sensitive" : false,
+            "value" : "ingestion-kafka:9092"
+          }, {
+            "name" : "enrich.topic.failure",
+            "sensitive" : false,
+            "value" : "enrich.topic.failure"
+          }, {
+            "name" : "ASCVD_FROM_FHIR_URL",
+            "sensitive" : false,
+            "value" : "http://ingestion-ascvd-from-fhir:5000"
+          }, {
+            "name" : "enrich.topic.in",
+            "sensitive" : false,
+            "value" : "enrich.topic.in"
+          }, {
+            "name" : "RunASCVD",
+            "sensitive" : false,
+            "value" : "True"
+          }, {
+            "name" : "kafka.auth.password",
+            "sensitive" : true
+          }, {
+            "name" : "DEID_PUSH_TO_FHIR",
+            "sensitive" : false,
+            "value" : "True"
+          }, {
+            "name" : "enrich.topic.out",
+            "sensitive" : false,
+            "value" : "enrich.topic.out"
+          }, {
+            "name" : "DEID_CONFIG_NAME",
+            "sensitive" : false,
+            "value" : "default"
+          } ]
+        }
+      }
     }
   }
 }
